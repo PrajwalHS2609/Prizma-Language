@@ -1,6 +1,6 @@
 import React from "react";
-import rightArrow from "./../../../Imgs/redDot.png";
-import redDot from "./../../../Imgs/right-arrow.png";
+import redDot from "./../../../Imgs/redDot.png";
+import rightArrow from "./../../../Imgs/right-arrow.png";
 import Image from "next/image";
 import "./../GermanA1/GermanA1.css";
 const GermanA2Curriculum = () => {

@@ -163,3 +163,13 @@
   /* border: solid red; */
   width: 100%;
 }
+
+.reviewsContainer {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;overflow:hidden ;
+}
+#reviews {
+  font-size: 30px;
+}
