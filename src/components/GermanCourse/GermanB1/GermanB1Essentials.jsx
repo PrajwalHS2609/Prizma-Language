@@ -1,4 +1,9 @@
-import React from 'react'
+"use client"
+import React, { useState } from "react";
+import "./../GermanCourse.css";import GermanB1Curriculum from './GermanB1Curriculum';
+import GermanB1Description from './GermanB1Description';
+import GermanA1Instructor from '../GermanA1/GermanA1Instructor';
+import GermanA1Reviews from '../GermanA1/GermanA1Reviews';
 
 const GermanB1Essentials = () => {
     const [activeTab, setActiveTab] = useState("GermanB1Curriculum"); // Default is Curriculum
