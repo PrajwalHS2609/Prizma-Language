@@ -1,0 +1,110 @@
+.homeMembers {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 50px;
+}
+.homeMembersHead {
+  /* border: solid blue; */
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.homeMembersHead > p {
+  text-align: justify;
+  font-size: 18px;
+  color: grey;
+}
+.homeMembersHead > h6 {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+.homeMembersHead > h2 {
+  font-weight: bolder;
+  font-size: 45px;
+}
+.homeMembersHead > h2 > span {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: transparent;
+}
+.homeMembersMain {
+  /* border: solid green; */
+  width: 80%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+/* --------------------------homeMembersCard----------------------- */
+.homeMembersCard {
+  border: dotted var(--customColor);
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  transition: 300ms ease-in-out;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+.homeMembersCard:hover .homeMembersCardImg > img {
+  transform: scale(1.1);
+}
+.homeMembersCardImg > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: 300ms ease-in-out;
+}
+.homeMembersCardImg {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.homeMembersCardTxt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeMembersCardTxt > h5 {
+  font-weight: bold;
+}
+.homeMembersCardTxt > h6 {
+  font-weight: bold;
+  color: grey;
+}
+.homeMembersCardTxt > span {
+  width: 100%;
+  /* border: solid; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.memberSocialIcon {
+  /* border: solid red; */
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  color: white;
+  background-color: var(--customColor);
+}

@@ -1,0 +1,98 @@
+.homeSub {
+  /* border: solid red; */
+  width: 80%;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--customGradient);
+  border-radius: 10px;
+}
+.homeSubContent {
+  /* border: solid black; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.homeSubContent2-Item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.homeSubContent2-Item > input {
+  font-size: 20px;
+}
+.homeSubItem > h2 {
+  color: white;
+}
+.homeSubContent2-Item > button {
+  border: white solid;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 5px;
+  transition: 300ms ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+.homeSubContent2-Item > button::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: var(--customColor);
+  position: absolute;
+  transition: 300ms ease-in-out;
+  left: 0;
+  z-index: -1;
+}
+.homeSubContent2-Item > button:hover::after {
+  width: 100%;
+}
+.homeSubContent2-Item > input {
+  border: none;
+  outline: none;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeSub {
+    /* border: solid red; */
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .homeSubContent {
+    /* border: solid black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .homeSubItem > h2 {
+    text-align: center;
+  }
+  .homeSubContent2-Item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

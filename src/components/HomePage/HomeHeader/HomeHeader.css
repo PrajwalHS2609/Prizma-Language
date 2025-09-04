@@ -1,0 +1,326 @@
+.homeHeaderContainer {
+  /* border: solid; */
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(to right, #decdf0, white, #cdf0ce, white);
+  position: relative;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 10px; */
+}
+.firstImg {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  z-index: 3;
+}
+.homeHeaderContent1 {
+  /* border: solid red; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px;
+}
+.header1 {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 50px;
+}
+.header1 > h6 {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  font-weight: bold;
+  color: transparent;
+  font-size: 18px;
+}
+.header1 > h2 {
+  font-size: 50px;
+  width: 100%;
+  font-weight: bolder;
+}
+.header1 > h2 > span {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: transparent;
+}
+.header1 > p {
+  color: grey;
+  font-size: 18px;
+  width: 80%;
+  font-weight: 500;
+}
+.homeHeaderBtn {
+  /* border: solid red; */
+  width: 100%;
+}
+.homeHeaderBtn > button {
+  padding: 10px;
+  font-size: 20px;
+  width: 240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  border-radius: 5px;
+  position: relative;
+  background-color: transparent;
+  font-weight: bold;
+  color: black;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
+
+.homeHeaderBtn > button::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 25%;
+  left: 0px;
+  top: 0px;
+  transition: 300ms ease-in-out;
+  z-index: -1;
+}
+.homeHeaderBtn > button:hover::after {
+  width: 100%;
+}
+.homeHeaderBtn > button:hover .menuBtnIcon {
+  transform: translateX(10px);
+}
+.menuBtnIcon {
+  color: white;
+  transition: 300ms ease-in-out;
+}
+/* -----------------------homeHeaderContent2----------------------------------- */
+.homeHeaderContent2 {
+  /* border: solid blue; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.homeHeaderImg {
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.homeHeaderImg > img {
+  object-fit: contain;
+  width: 75%;
+  height: 100%;
+}
+/* ----------------------homeHeaderStuCard--------------------------- */
+.homeHeaderStuCard {
+  /* border: solid red; */
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+  width: 230px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgb(186, 186, 186);
+  transition: 300ms ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.homeHeaderStuUser {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(205, 203, 203);
+  transition: 300ms ease-in-out;
+}
+.homeHeaderStuCard:hover .homeHeaderStuUser {
+  background-color: var(--customColor);
+}
+.homeHeaderStuTxt > h5 {
+  letter-spacing: 5px;
+  text-align: center;
+}
+.homeHeaderStuTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeHeaderStuUserIco {
+  font-size: 30px;
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: #00cfb0;
+}
+.homeHeaderStu {
+  /* border: solid; */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.homeHeaderStuItem {
+  border: solid white;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+}
+.homeHeaderStuItem:nth-child(1) {
+  z-index: 0;
+  left: 0;
+}
+.homeHeaderStuItem:nth-child(2) {
+  z-index: 1;
+  left: 45px;
+}
+.homeHeaderStuItem:nth-child(3) {
+  z-index: 2;
+  left: 85px;
+}
+.homeHeaderStuItem:nth-child(4) {
+  z-index: 3;
+  left: 125px;
+}
+.homeHeaderStuItem > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* ------------------------homeHeaderRate-------------------- */
+.homeHeaderFloatRate {
+  /* border: solid; */
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  right: 100px;
+  top: 200px;
+}
+.homeHeaderFloatRate > img {
+  height: 25px;
+  width: 25px;
+}
+.homeHeaderFloatRate > h5 {
+  font-weight: bold;
+  height: 100%;
+  margin-top: 10px;
+}
+.homeHeaderStarIco {
+  color: #ffb200;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .homeHeaderContainer {
+    /* border: solid; */
+    width: 100%;
+    height: 100%;
+    /* padding: 10px; */
+    flex-direction: column;
+  }
+  .homeHeaderContent1 {
+    /* border: solid red; */
+    width: 100%;
+    padding: 10px;
+  }
+  .firstImg {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    z-index: 3;
+  }
+  .header1 {
+    /* border: solid green; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .header1 > h2 {
+    font-size: 60px;
+    width: 80%;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .homeHeaderBtn {
+    /* border: solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header1 > h2 {
+    font-size: 40px;
+    width: 100%;
+    font-weight: bolder;
+  }
+  /* ------------------------homeHeaderContent2-------------------- */
+  .homeHeaderContent2 {
+    /* border: solid blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homeHeaderFloatRate {
+    /* border: solid; */
+    width: 200px;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    right: -30px;
+    top: 0px;
+    transform: scale(0.6);
+  }
+  .homeHeaderStuCard {
+    /* border: solid red; */
+    bottom: -50px;
+    left: 0px;
+    width: 200px;
+    height: 250px;
+    gap: 10px;
+    padding: 10px;
+    transform: scale(0.6);
+  }
+}

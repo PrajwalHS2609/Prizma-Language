@@ -1,0 +1,107 @@
+.homeFeatures {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.homeFeaturesHead {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeFeaturesHead > h6 {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  font-weight: bold;
+  color: transparent;
+  font-size: 18px;
+}
+.homeFeaturesHead > h2 {
+  font-size: 45px;
+  font-weight: bolder;
+  width: 80%;
+  text-align: center;
+}
+.homeFeaturesHead > h2 > span {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: transparent;
+}
+.homeFeaturesMain {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.homeFeaturesMainContent {
+  /* border: solid blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: row;
+}
+.homeFeaturesMainContent > div {
+  width: 100%;
+  /* border: solid red; */
+}
+.item {
+  /* border: solid green; */
+  width: 280px;
+  height: 400px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+}
+.item-imgContainer {
+  /* border: solid yellowgreen; */
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  overflow: hidden;
+  transition: 300ms ease-in-out;
+  box-shadow: 0 0 5px var(--customColor);
+
+}
+.item:hover .item-imgContainer {
+  box-shadow: 0 0 10px var(--customColor);
+}
+.item-imgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item > h5 {
+  color: black;
+  text-align: center;
+}
+.item > p {
+  text-align: justify;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeFeaturesHead > h2 {
+    font-size: 30px;
+  }
+  .item {
+    /* border: solid green; */
+    margin: 0px;
+  }
+}

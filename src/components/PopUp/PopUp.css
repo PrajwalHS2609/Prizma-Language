@@ -1,0 +1,193 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.512);
+  overflow: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.popUpContainer {
+  /* border: solid red; */
+  height: 80%;
+  width: 50%;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+.popUpContent {
+  /* border: solid; */
+  width: 100%;
+  position: relative;
+  height: 50px;
+}
+.popUpContent:nth-child(2) {
+  /* border: solid green; */
+  height: 90%;
+}
+.popupIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  padding: 2px;
+  color: var(--customColor);
+  background-color: var(--customColor2);
+  border-radius: 100%;
+}
+.popUpForm {
+  /* border: solid blue; */
+  height: 100%;
+}
+.contactUsForm {
+  /* border: solid brown; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+.contactUsForm > form {
+  /* border: solid yellowgreen; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.firstInput {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.firstInput > input {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  width: 45%;
+  background-color: #f0f0f0;
+}
+.secondInput {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.secondInput > input {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  width: 45%;
+  background-color: #f0f0f0;
+}
+.secondInput > select {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  width: 45%;
+  background-color: #f0f0f0;
+}
+.secondInput > select > option {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+  width: 45%;
+  background-color: #f0f0f0;
+}
+.thirdInput {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.thirdInput > textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  font-size: 18px;
+}
+.contactFormBtn > button {
+  border: none;
+  width: 200px;
+  height: 50px;
+  background-color: var(--customColor);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  border-radius: 5px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactFormBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactFormBtn > button::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  left: 0px;
+  top: 0;
+  transition: 300ms ease-in-out;
+  z-index: -1;
+}
+.contactFormBtn > button:hover::after {
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .popUpContainer {
+    /* border: solid red; */
+    height: 100%;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px;
+    transform: scale(0.9);
+    margin-bottom: 20px;
+  }
+  .popUpContent {
+    /* border: solid; */
+    width: 100%;
+    position: relative;
+    height: 50px;
+  }
+  .popupIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    color: var(--customColor);
+    background-color: var(--customColor2);
+    border-radius: 100%;
+  }
+}

@@ -1,0 +1,166 @@
+.courseMain {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.courseMainHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.courseMainHead > h2 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.courseMainHead > h2 > span {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: transparent;
+}
+.courseMainHead > p {
+  color: grey;
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+}
+.courseCardContainer {
+  /* border: solid blue; */
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* --------------------------------courseMainCard--------------------------- */
+.courseMainCard {
+  /* border: solid red; */
+  width: 400px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.courseMainCardImg {
+  /* border: solid green; */
+  width: 100%;
+  height: 55%;
+  transition: 400ms ease-in-out;
+}
+.courseMainCard:hover .courseMainCardImg {
+  transform: translateY(-45px);
+}
+.courseMainCardImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.courseMainCardTxt {
+  /* border: solid brown; */
+  width: 100%;
+  height: 45%;
+  padding: 40px;
+  transition: 400ms ease-in-out;
+}
+.courseMainCard:hover .courseMainCardTxt {
+  transform: translateY(-45px);
+}
+.courseMainCardTxt > h3 {
+  font-weight: bold;
+}
+.courseMainCardTxt > p {
+  text-align: justify;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.courseMainCardTxt-Timing {
+  border: solid green;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.courseMainCardBtn {
+  /* border: solid yellow; */
+  width: 100%;
+  height: 200px;
+  background-color: var(--customColor);
+  transition: 400ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  position: relative;
+  &:hover {
+    background-color: var(--customColor2);
+  }
+}
+.courseMainCardBtn > a {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.courseMainCard:hover .courseMainCardBtn {
+  transform: translateY(-50px);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .courseCardContainer {
+    /* border: solid blue; */
+    width: 100%;
+    padding: 0px;
+    gap: 50px;
+  }
+  .courseMainHead > h2 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .courseMainHead > p {
+    color: grey;
+    font-size: 20px;
+    width: 100%;
+  }
+  .courseMainCardTxt {
+    /* border: solid brown; */
+    width: 100%;
+    height: 45%;
+    padding: 40px;
+    transform: translateY(-45px);
+  }
+  .courseMainCardImg {
+    /* border: solid green; */
+    width: 100%;
+    height: 55%;
+    transform: translateY(-45px);
+  }
+  .courseMainCard:hover .courseMainCardImg {
+    transform: translateY(0px);
+  }
+  .courseMainCard:hover .courseMainCardTxt {
+    transform: translateY(0px);
+  }
+  .courseMainCardBtn {
+    /* border: solid yellow; */
+    width: 100%;
+    height: 200px;
+    transform: translateY(-50px);
+  }
+  .courseMainCard:hover .courseMainCardBtn {
+    transform: translateY(0px);
+  }
+}

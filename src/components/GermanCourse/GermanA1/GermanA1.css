@@ -1,0 +1,165 @@
+/* -----------------------------NestedGermanCurriculum----------------- */
+.nestedGermanCurriculum {
+  border: 1px solid grey;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.nestedGermanCurriculum-Head {
+  background-color: var(--customColor);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nestedGermanCurriculum-Head > h4 {
+  color: white;
+  margin-top: 5px;
+}
+.nestedGermanCurriculum-Content {
+  /* border: solid green; */
+  padding: 20px;
+}
+.nestedGermanCurriculum-Content > h4 {
+  color: var(--customColor);
+}
+.nestedGermanCurriculum-Content > p > h5 {
+  color: var(--customColor);
+  font-size: 25px;
+}
+.nestedGermanCurriculum-Content > p > li {
+  margin-top: 20px;
+  padding: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+.nestedGermanCurriculum-Content > p > li > img {
+  width: 20px;
+  height: 20px;
+}
+#nestedGermanCurriculum-Content1 {
+  padding: 10px;
+}
+#nestedGermanCurriculum-Content1 > h4 {
+  color: var(--customColor);
+}
+#nestedGermanCurriculum-Content1 > p {
+  font-size: 20px;text-align: justify;
+}
+/* ------------------------------nestedGermanInstructor------------------------ */
+.nestedGermanInstructor {
+  /* border: solid red; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: rgb(252, 232, 232);
+  border-radius: 10px;
+}
+.nestedGermanInstructor-content:nth-child(1) {
+  border: 5px solid var(--customColor);
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.nestedGermanInstructor-content:nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nestedGermanInstructor-content:nth-child(2) {
+  width: 80%;
+}
+.nestedGermanInstructor-content:nth-child(2) > h5 {
+  width: 80%;
+  color: var(--customColor);
+  font-weight: bold;
+}
+.nestedGermanInstructor-content:nth-child(2) > p {
+  text-align: justify;
+}
+.nestedGermanInstructor-features {
+  /* border: solid green; */
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+  flex-wrap: wrap;
+  gap: 30px;
+  overflow: hidden;
+}
+.instructorCard {
+  /* border: solid blue; */
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px grey;
+  position: relative;
+  }
+.instructorCard > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.instructorCardCover {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.385);
+  transform: translateY(85%);
+  border-radius: 10px;
+  transition: 300ms ease-in-out;
+  gap: 30px;
+}
+
+.instructorCard:hover .instructorCardCover {
+  transform: translateY(0);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.instructorCardCover > h5 {
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+.instructorCardCover > p {
+  text-align: justify;
+  color: white;
+}
+.nestedGermanInstructor-item {
+  /* border: solid yellowgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+/* --------------------------nestedGermanReview-------------------- */
+.nestedGermanReview {
+  /* border: solid red; */
+  width: 100%;
+}

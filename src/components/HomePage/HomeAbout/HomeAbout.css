@@ -1,0 +1,215 @@
+.homeAbout {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.homeAboutContent1 {
+  width: 45%;
+  height: 100%;
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeAboutImg {
+  /* border: solid blue; */
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeAboutImgContent {
+  /* border: solid brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  height: 100%;
+}
+
+.homeAboutImgItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeAboutImgItem2 > img {
+  width: 100%;
+  height: 100%;
+}
+.homeAboutImgItem > img {
+  width: 80%;
+  height: 100%;
+}
+.homeAboutImgItem:nth-child(1) > img {
+  width: 60%;
+}
+.homeAboutContent2 {
+  /* border: solid salmon; */
+  width: 43%;
+}
+.homeAboutTxt {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.homeAboutTxt > h6 {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+.homeAboutTxt > h2 {
+  font-weight: bolder;
+  font-size: 40px;
+}
+.homeAboutTxt > h2 > span {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: transparent;
+}
+.homeAboutTxt > h3 {
+  font-weight: bolder;
+}
+.homeAboutTxt > h3 > span {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: transparent;
+}
+.homeAboutTxt > p {
+  font-size: 18px;
+  color: grey;
+  text-align: justify;
+}
+.homeAboutTxt > a > button {
+  width: 200px;
+  height: 50px;
+}
+.homeAboutXp {
+  /* border: solid red; */
+  padding: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 20px;
+}
+.homeAboutXp > span > h3 {
+  color: white;
+  font-size: 50px;
+}
+.homeAboutXp > span > p {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+.aboutImgIcon {
+  font-size: 40px;
+  color: white;
+  transform: rotate(-40deg);
+  font-weight: lighter;
+}
+.aboutTxtBtn {
+  /* border: solid red; */
+  width: 100%;
+}
+.aboutTxtBtn > button {
+  padding: 10px;
+  font-size: 20px;
+  width: 240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  border-radius: 5px;
+  position: relative;
+  background-color: transparent;
+  font-weight: bold;
+  color: black;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
+
+.aboutTxtBtn > button::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 25%;
+  left: 0px;
+  top: 0px;
+  transition: 300ms ease-in-out;
+  z-index: -1;
+}
+.aboutTxtBtn > button:hover::after {
+  width: 100%;
+}
+.aboutTxtBtn > button:hover .menuBtnIcon {
+  transform: translateX(10px);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .homeAbout {
+    /* border: solid red; */
+    width: 100%;
+    flex-direction: column;
+  }
+  .homeAboutContent1 {
+    width: 100%;
+    height: 100%;
+    /* border: solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeAboutContent2 {
+    /* border: solid salmon; */
+    width: 100%;
+  }
+
+  .homeAboutXp > span > h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  .homeAboutXp > span > p {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  .homeAboutXp {
+    /* border: solid red; */
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .homeAboutTxt {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .homeAboutTxt > h2 {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+  }
+}

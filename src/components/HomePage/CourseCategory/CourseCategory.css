@@ -1,0 +1,164 @@
+.courseCategory {
+  /* border: solid red; */
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.courseCategoryHead-container {
+  /* border: solid blue; */
+  width: 88%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courseCategoryHead-content {
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.courseCategoryHead-content > h6 {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  font-weight: bold;
+  color: transparent;
+  font-size: 18px;
+}
+.courseCategoryHead-content > h2 {
+  font-size: 45px;
+  font-weight: bolder;
+}
+.courseCategoryHead-content > h2 > span {
+  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background-clip: text;
+  color: transparent;
+}
+.courseCategoryHead-container > a {
+  text-decoration: none;
+}
+.courseCategoryHead-container > a > button {
+  border: none;
+  width: fit-content;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.courseCategoryHead-container > a > button::after {
+  content: "";
+  position: absolute;
+  background-color: var(--customColor);
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  left: 0px;
+  top: 0;
+  transition: 300ms ease-in-out;
+  z-index: -1;
+}
+.courseCategoryHead-container > a > button:hover::after {
+  width: 100%;
+}
+/* ----------------------courseCategoryMain-------------------- */
+.courseCategoryMain {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.courseCategoryCard {
+  /* border: solid green; */
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #fdcbac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 300ms ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+.hexagon {
+  width: 100px;
+  height: 57.74px; /* Calculated height for a perfect hexagon */
+  background-color: white;
+  position: relative;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 28.87px solid white; /* Calculated for the top triangle */
+}
+
+.hexagon::after {
+  top: 100%;
+  width: 0;
+  border-top: 28.87px solid white; /* Calculated for the bottom triangle */
+}
+.hexagon > img {
+  position: absolute;
+  z-index: 1;
+}
+.courseCategoryCardTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#courseCategoryCard1 {
+  background-color: #d9fbb7;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .courseCategoryHead-container {
+    /* border: solid blue; */
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .courseCategoryHead-content {
+    /* border: solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .courseCategoryHead-content > h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+  }
+}
