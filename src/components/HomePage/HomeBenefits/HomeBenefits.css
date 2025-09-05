@@ -17,7 +17,7 @@
   flex-direction: column;
 }
 .homeBenefitsHead > h6 {
-  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background:var(--customGradient);
   background-clip: text;
   font-weight: bold;
   color: transparent;
@@ -30,7 +30,7 @@
   text-align: center;
 }
 .homeBenefitsHead > h2 > span {
-  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background:var(--customGradient);
   background-clip: text;
   color: transparent;
 }

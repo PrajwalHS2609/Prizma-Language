@@ -1,19 +1,21 @@
 "use client"
-import React, { useState } from "react";
-import GermanC2Curriculum from "./GermanC2Curriculum";
-import GermanC2Description from "./GermanC2Description";
-import GermanA1Instructor from "../GermanA1/GermanA1Instructor";
-import GermanA1Reviews from "../GermanA1/GermanA1Reviews";
-import "./../../Styles.css"
-const GermanC2Essentials = () => {
-  const [activeTab, setActiveTab] = useState("GermanC2Curriculum"); // Default is Curriculum
+
+import React, { useState } from 'react'
+import FrenchA2Curriculum from './FrenchA2Curriculum';
+import FrenchA2Description from './FrenchA2Description';
+import GermanA1Instructor from '../../GermanCourse/GermanA1/GermanA1Instructor';
+import GermanA1Reviews from '../../GermanCourse/GermanA1/GermanA1Reviews';
+import "./../../Styles.css";
+
+const FrenchA2Essentials = () => {
+      const [activeTab, setActiveTab] = useState("FrenchA2Curriculum"); // Default is Curriculum
 
   const renderContent = () => {
     switch (activeTab) {
-      case "GermanC2Curriculum":
-        return <GermanC2Curriculum />;
-      case "GermanC2Description":
-        return <GermanC2Description />;
+      case "FrenchA2Curriculum":
+        return <FrenchA2Curriculum />;
+      case "FrenchA2Description":
+        return <FrenchA2Description />;
       case "GermanA1Instructor":
         return <GermanA1Instructor />;
       case "GermanA1Reviews":
@@ -22,24 +24,25 @@ const GermanC2Essentials = () => {
         return null;
     }
   };
-  return  <div className="courseEssentials-container" id="details">
-      <h2>German C2 Course Essentials</h2>
+  return (
+ <div className="courseEssentials-container" id="details">
+      <h2>French A2 Course Essentials</h2>
       <div className="courseEssentials-nestedContainer">
         {/* Navigation Tabs */}
         <nav className="courseEssentialsNestedNav">
           <ul>
             <li>
               <button
-                className={activeTab === "GermanC2Curriculum" ? "active" : ""}
-                onClick={() => setActiveTab("GermanC2Curriculum")}
+                className={activeTab === "FrenchA2Curriculum" ? "active" : ""}
+                onClick={() => setActiveTab("FrenchA2Curriculum")}
               >
                 Curriculum
               </button>
             </li>
             <li>
               <button
-                className={activeTab === "GermanC2Description" ? "active" : ""}
-                onClick={() => setActiveTab("GermanC2Description")}
+                className={activeTab === "FrenchA2Description" ? "active" : ""}
+                onClick={() => setActiveTab("FrenchA2Description")}
               >
                 Description
               </button>
@@ -66,7 +69,8 @@ const GermanC2Essentials = () => {
         {/* Display Content */}
         <div className="courseEssentials-content">{renderContent()}</div>
       </div>
-    </div>;
-};
+    </div>
+  )
+}
 
-export default GermanC2Essentials;
+export default FrenchA2Essentials

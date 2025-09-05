@@ -24,7 +24,7 @@
   height: 500px;
 }
 .aboutUsMainTxt > h6 {
-  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background:var(--customGradient);
   background-clip: text;
   color: transparent;
   font-weight: 600;
@@ -34,7 +34,7 @@
   font-size: 45px;
 }
 .aboutUsMainTxt > h2 > span {
-  background: linear-gradient(to right, #0065f3, #00f0aa);
+  background:var(--customGradient);
   background-clip: text;
   color: transparent;
 }
