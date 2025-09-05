@@ -34,14 +34,14 @@ const CourseMain = () => {
           alt="spanish course img"
           head="Spanish"
           para="Spanish is the second most spoken language on earth, second only to Mandarin, and growing in use every day."
-          link=""
+          link="/spanish-course"
         />
-                <CourseMainCard
+        <CourseMainCard
           img="https://images.pexels.com/photos/629142/pexels-photo-629142.jpeg"
           alt="Italian course img"
           head="Italian"
           para="If you have a solid grasp of elementary level vocabulary and grammar, and want to delve deeper into the language, our pre-intermediate courses are a great continuation."
-          link=""
+          link="/italian-course"
         />
         {/* <CourseMainCard
           img="https://scuola.vamtam.com/wp-content/uploads/2020/04/cat-2-453x453.jpg"

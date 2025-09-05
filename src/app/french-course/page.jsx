@@ -1,6 +1,8 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import FrenchCourseHead from "../../components/FrenchCourse/FrenchCourseHead";
 import FrenchCourseLvl from "../../components/FrenchCourse/FrenchCourseLvl";
+import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
+import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 
@@ -17,6 +19,8 @@ return(
     />
     <FrenchCourseHead />
     <FrenchCourseLvl />
+     <HomeFeatures />
+      <HomeBenefits />
     <HomeWhy />
     <HomeTestimonial />
   </div>

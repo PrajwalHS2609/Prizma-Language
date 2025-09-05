@@ -1,8 +1,12 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import GermanCourseEssential from "../../components/GermanCourse/GermanCourseEssential";
 import GermanCourseLvl from "../../components/GermanCourse/GermanCourseLvl";
+import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
+import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import HomeBenefits from './../../components/HomePage/HomeBenefits/HomeBenefits';
+import HomeFeatures from './../../components/HomePage/HomeFeatures/HomeFeatures';
 
 export default function GermanA1Course() {
   return (
@@ -16,6 +20,8 @@ export default function GermanA1Course() {
       />
       <GermanCourseEssential />
       <GermanCourseLvl />
+       <HomeFeatures />
+      <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
     </div>

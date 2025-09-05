@@ -1,6 +1,8 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import FrenchB1Essentials from "../../components/FrenchCourse/FrenchB1/FrenchB1Essentials";
 import FrenchCourseLvl from "../../components/FrenchCourse/FrenchCourseLvl";
+import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
+import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 
@@ -16,6 +18,8 @@ export default function FrenchB1Course() {
       />
       <FrenchB1Essentials />
       <FrenchCourseLvl />
+       <HomeFeatures />
+      <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
     </div>

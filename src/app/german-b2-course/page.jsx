@@ -3,6 +3,8 @@ import GermanB2Essentials from "../../components/GermanCourse/GermanB2/GermanB2E
 import GermanCourseLvl from "../../components/GermanCourse/GermanCourseLvl";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import HomeFeatures from './../../components/HomePage/HomeFeatures/HomeFeatures';
+import HomeBenefits from './../../components/HomePage/HomeBenefits/HomeBenefits';
 
 export default function GermanB2Course(){
     return(
@@ -16,6 +18,8 @@ export default function GermanB2Course(){
       />
       <GermanB2Essentials/>
       <GermanCourseLvl />
+       <HomeFeatures />
+      <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
     </div>

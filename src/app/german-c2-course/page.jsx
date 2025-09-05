@@ -1,6 +1,8 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import GermanC2Essentials from "../../components/GermanCourse/GermanC2/GermanC2Essentials";
 import GermanCourseLvl from "../../components/GermanCourse/GermanCourseLvl";
+import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
+import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 
@@ -16,6 +18,8 @@ export default function GermanC2Course() {
       />
       <GermanC2Essentials />
       <GermanCourseLvl />
+       <HomeFeatures />
+      <HomeBenefits  />
       <HomeWhy />
       <HomeTestimonial />
     </div>
