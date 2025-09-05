@@ -5,8 +5,7 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-import HomeBenefits from './../../components/HomePage/HomeBenefits/HomeBenefits';
-import HomeFeatures from './../../components/HomePage/HomeFeatures/HomeFeatures';
+
 
 export default function GermanA1Course() {
   return (
