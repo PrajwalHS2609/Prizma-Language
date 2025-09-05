@@ -1,54 +1,109 @@
+"use client";
 import React from "react";
-import "./HomeWhy.css";
-import { FaUserGraduate } from "react-icons/fa";
-import { BiSolidBookBookmark } from "react-icons/bi";
-import { FaGraduationCap } from "react-icons/fa6";
-import { FaChalkboard } from "react-icons/fa";
+import {
+  FaChalkboardTeacher,
+  FaVideo,
+  FaUsers,
+  FaUserTie,
+} from "react-icons/fa";
+import { FaCertificate, FaMapMarkerAlt, FaSmile } from "react-icons/fa";
 
+import "./HomeWhy.css";
 const HomeWhy = () => {
   return (
-    <div className="homeWhy">
-      <div className="homeWhyCover">
-        <div className="homeWhyContent">
-          <div className="homeWhyItem">
-            <FaUserGraduate className="whyIcon"/>
-          </div>
-          <span>
-            {" "}
-            <h3>8000+</h3>
-            <p>Enrolled Students</p>
-          </span>
-        </div>
-        <div className="homeWhyContent">
-          <div className="homeWhyItem">
-            <BiSolidBookBookmark className="whyIcon"/>
+    <div className="training-container">
+      {/* Left Side */}
+      <div className="training-left">
+        <h2>Training Delivery Modes</h2>
+        <p>
+          PrizmaAcademy learning offers <span>4 learning modes</span> to choose from
+        </p>
 
+        <div className="training-list">
+          <div className="training-item">
+            <span className="number">1</span>
+            <div>
+              <h3>Classroom Training</h3>
+              <p>
+                Learn from qualified, accredited, certified & highly experienced
+                trainers in a classroom.
+              </p>
+            </div>
           </div>
-          <span>
-            {" "}
-            <h3>6</h3>
+
+          <div className="training-item">
+            <span className="number">2</span>
+            <div>
+              <h3>Live Virtual Training</h3>
+              <p>
+                Enroll for Instructor-led Live Online Sessions and attend from
+                anywhere.
+              </p>
+            </div>
+          </div>
+
+          <div className="training-item">
+            <span className="number">3</span>
+            <div>
+              <h3>Corporate Group Training</h3>
+              <p>
+                Cost-effective and customized instructor-led onsite training for
+                enterprises.
+              </p>
+            </div>
+          </div>
+
+          <div className="training-item">
+            <span className="number">4</span>
+            <div>
+              <h3>Focused 1-to-1 Training</h3>
+              <p>
+                Achieve focused learning with a dedicated trainer and custom
+                dates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Side */}
+      {/* Right Side */}
+      <div className="training-right">
+        <div className="stat-card">
+          <div className="icon-circle">
+            <FaCertificate className="icon" />
+          </div>
+          <div className="stat-counter">
+            <h4>8000+</h4>
+            <p>Enrolled Students</p>
+          </div>
+        </div>
+        <div className="stat-card">
+          <div className="icon-circle">
+            <FaUsers className="icon" />
+          </div>
+          <div className="stat-counter">
+            <h4>4</h4>
             <p>Foreign Languages</p>
-          </span>
-        </div>
-        <div className="homeWhyContent">
-          <div className="homeWhyItem">
-            <FaGraduationCap className="whyIcon"/>
           </div>
-          <span>
-            {" "}
-            <h3>95%</h3>
+        </div>
+        <div className="stat-card">
+          <div className="icon-circle">
+            <FaMapMarkerAlt className="icon" />
+          </div>
+          <div className="stat-counter">
+            <h4>95%</h4>
             <p>A1 & A2</p>
-          </span>
-        </div>
-        <div className="homeWhyContent">
-          <div className="homeWhyItem">
-            <FaChalkboard className="whyIcon"/>
           </div>
-          <span>
-            {" "}
-            <h3>1600+</h3>
+        </div>
+        <div className="stat-card">
+          <div className="icon-circle">
+            <FaSmile className="icon" />
+          </div>
+          <div className="stat-counter">
+            <h4>1600+</h4>
             <p>Reviews</p>
-          </span>
+          </div>
         </div>
       </div>
     </div>

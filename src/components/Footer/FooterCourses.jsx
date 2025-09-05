@@ -13,8 +13,8 @@ const FooterCourses = () => {
       <li>
         {" "}
         <Link
-          href="/german"
-         className={pathname === "/german" ? "active" : ""}
+          href="/german-course"
+         className={pathname === "/german-course" ? "active" : ""}
         >
           German
         </Link>
@@ -22,8 +22,8 @@ const FooterCourses = () => {
       <li>
         {" "}
         <Link
-          href="/spanish"
-         className={pathname === "/spanish" ? "active" : ""}
+          href="/spanish-course"
+         className={pathname === "/spanish-course" ? "active" : ""}
         >
           Spanish
         </Link>
@@ -31,8 +31,8 @@ const FooterCourses = () => {
       <li>
         {" "}
         <Link
-          href="/french"
-         className={pathname === "/french" ? "active" : ""}
+          href="/french-course"
+         className={pathname === "/french-course" ? "active" : ""}
         >
           French
         </Link>
@@ -40,8 +40,8 @@ const FooterCourses = () => {
             <li>
         {" "}
         <Link
-          href="/italian"
-         className={pathname === "/italian" ? "active" : ""}
+          href="/italian-course"
+         className={pathname === "/italian-course" ? "active" : ""}
         >
           Italian
         </Link>
