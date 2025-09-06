@@ -3,12 +3,12 @@ import FrenchA1Essentials from "../../components/FrenchCourse/FrenchA1/FrenchA1E
 import FrenchCourseLvl from "../../components/FrenchCourse/FrenchCourseLvl";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-import HomeFeatures from './../../components/HomePage/HomeFeatures/HomeFeatures';
-import HomeBenefits from './../../components/HomePage/HomeBenefits/HomeBenefits';
+import HomeFeatures from "./../../components/HomePage/HomeFeatures/HomeFeatures";
+import HomeBenefits from "./../../components/HomePage/HomeBenefits/HomeBenefits";
 
-export default function FrenchA1Course(){
-    return(
-         <div>
+export default function FrenchA1Course() {
+  return (
+    <div>
       <CourseHeader
         country="French"
         img="https://scuola.vamtam.com/wp-content/uploads/2020/01/4French-3-453x453.jpg"
@@ -18,10 +18,10 @@ export default function FrenchA1Course(){
       />
       <FrenchA1Essentials />
       <FrenchCourseLvl />
-       <HomeFeatures />
+      <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
     </div>
-    )
+  );
 }

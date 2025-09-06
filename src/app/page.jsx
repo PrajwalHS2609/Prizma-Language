@@ -6,10 +6,12 @@ import HomeFeatures from "../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeBenefits from "../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeWhy from "../components/HomePage/HomeWhy/HomeWhy";
 import HomeTestimonial from "../components/HomePage/HomeTestimonial/HomeTestimonial";
+import CefrShow from './../components/HomePage/CefrShow/CefrShow';
 export default function HomePage() {
   return (
     <div>
       <HomeHeader />
+      <CefrShow/>
       <CourseCategory />
       <HomeAbout />
       <HomeCourses />

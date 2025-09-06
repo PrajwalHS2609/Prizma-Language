@@ -1,5 +1,6 @@
 import AboutUsHeader from "../../components/AboutUsPage/AboutUsHeader/AboutUsHeader";
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
+import GermanContent from "../../components/GermanCourse/GermanContent";
 import GermanCourseHead from "../../components/GermanCourse/GermanCourseHead";
 import GermanCourseLvl from "../../components/GermanCourse/GermanCourseLvl";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
@@ -18,11 +19,12 @@ export default function GermanCourse() {
         link="/"
       />
       <GermanCourseHead />
-      <GermanCourseLvl />   
-       <HomeFeatures />
+      <GermanCourseLvl />
+      <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
+      <GermanContent />
     </div>
   );
 }

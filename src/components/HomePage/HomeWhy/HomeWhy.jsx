@@ -16,17 +16,18 @@ const HomeWhy = () => {
       <div className="training-left">
         <h2>Training Delivery Modes</h2>
         <p>
-          PrizmaAcademy learning offers <span>4 learning modes</span> to choose from
+          PrizmaAcademy learning offers <span>3 learning modes</span> to choose
+          from
         </p>
 
         <div className="training-list">
           <div className="training-item">
             <span className="number">1</span>
             <div>
-              <h3>Classroom Training</h3>
+              <h3>Focused 1-to-1 Training</h3>
               <p>
-                Learn from qualified, accredited, certified & highly experienced
-                trainers in a classroom.
+                Achieve focused learning with a dedicated trainer and custom
+                dates.
               </p>
             </div>
           </div>
@@ -52,17 +53,6 @@ const HomeWhy = () => {
               </p>
             </div>
           </div>
-
-          <div className="training-item">
-            <span className="number">4</span>
-            <div>
-              <h3>Focused 1-to-1 Training</h3>
-              <p>
-                Achieve focused learning with a dedicated trainer and custom
-                dates.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -74,7 +64,7 @@ const HomeWhy = () => {
             <FaCertificate className="icon" />
           </div>
           <div className="stat-counter">
-            <h4>8000+</h4>
+            <h4>10000+</h4>
             <p>Enrolled Students</p>
           </div>
         </div>
