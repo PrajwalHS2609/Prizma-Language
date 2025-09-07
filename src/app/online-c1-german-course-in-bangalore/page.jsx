@@ -1,27 +1,29 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
-import GermanB2Essentials from "../../components/GermanCourse/GermanB2/GermanB2Essentials";
+import GermanC1Essentials from "../../components/GermanCourse/GermanC1/GermaC1Essentials";
+import GermanC1Content from "../../components/GermanCourse/GermanC1/GermanC1Content";
 import GermanCourseLvl from "../../components/GermanCourse/GermanCourseLvl";
+import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
+import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-import HomeFeatures from './../../components/HomePage/HomeFeatures/HomeFeatures';
-import HomeBenefits from './../../components/HomePage/HomeBenefits/HomeBenefits';
 
-export default function GermanB2Course(){
-    return(
-        <div>
+export default function GermanC1Course() {
+  return (
+    <div>
       <CourseHeader
         country="German"
         img="https://scuola.vamtam.com/wp-content/uploads/2019/12/h-39.jpg"
-        heading="German B2 Language Course"
+        heading="German C1 Language Course"
         description="If you have a basic knowledge of German , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
         link="/"
       />
-      <GermanB2Essentials/>
+      <GermanC1Essentials />
       <GermanCourseLvl />
        <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
+      <GermanC1Content/>
     </div>
-    )
+  );
 }

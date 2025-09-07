@@ -13,7 +13,7 @@ const CourseMain = () => {
           alt="german Course Img"
           head="German"
           para=" If you have a basic knowledge of German , you are ready to move on to our Elementary courses where you'll build upon the foundations."
-          link="/german-course"
+          link="/online-german-course-in-bangalore"
         />
         <CourseMainCard
           img="https://scuola.vamtam.com/wp-content/uploads/2020/01/4French-3-453x453.jpg"

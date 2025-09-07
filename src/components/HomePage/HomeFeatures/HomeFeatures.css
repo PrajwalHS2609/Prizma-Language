@@ -103,5 +103,7 @@
   .item {
     /* border: solid green; */
     margin: 0px;
+      margin-left: 50px;
+
   }
 }

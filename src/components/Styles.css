@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
   padding: 3rem;
   text-align: center;
 }
@@ -36,9 +35,13 @@
   padding: 30px;
   background-color: var(--customColor2);
 }
-.courseHead-content > h2 {
+.courseHead-content > h1 {
   color: var(--headerColor);
   font-size: 40px; /* Responsive font size */
+}
+.courseHead-content > h2 {
+  color: var(--headerColor);
+  font-size: 35px; /* Responsive font size */
 }
 .courseHead-content > p {
   font-size: clamp(1rem, 1.2vw, 1.25rem);

@@ -1,4 +1,6 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
+import GermanA1Content from "../../components/GermanCourse/GermanA1/GermanA1Content";
+import GermanA1Head from "../../components/GermanCourse/GermanA1/GermanA1Head";
 import GermanCourseEssential from "../../components/GermanCourse/GermanCourseEssential";
 import GermanCourseLvl from "../../components/GermanCourse/GermanCourseLvl";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
@@ -23,6 +25,7 @@ export default function GermanA1Course() {
       <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
+      <GermanA1Content/>
     </div>
   );
 }
