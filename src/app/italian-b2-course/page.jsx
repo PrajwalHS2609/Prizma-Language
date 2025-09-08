@@ -3,17 +3,19 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import ItalianB2Essentials from "../../components/ItalianCourse/ItalianB2/ItalianB2Essentials";
 
-export default function ItalianA1Course() {
+export default function ItalianB2Course() {
   return (
     <div>
       <CourseHeader
         country="Italian"
-        img="https://images.pexels.com/photos/629142/pexels-photo-629142.jpeg"
-        heading="Italian A1 Language Course"
-        description="If you have a basic knowledge of Italian , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
+        img="https://scuola.vamtam.com/wp-content/uploads/2020/01/4French-3-453x453.jpg"
+        heading="Italian B2 Language Course"
+        description="If you have a basic knowledge of French , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
         link="/"
       />
+      <ItalianB2Essentials/>
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />

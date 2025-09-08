@@ -3,17 +3,20 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import ItalianA2Essentials from "../../components/ItalianCourse/ItalianA2/ItalianA2Essentials";
 
-export default function ItalianA1Course() {
+export default function ItalianA2Course() {
   return (
     <div>
       <CourseHeader
         country="Italian"
         img="https://images.pexels.com/photos/629142/pexels-photo-629142.jpeg"
-        heading="Italian A1 Language Course"
+        heading="Italian A2 Language Course"
         description="If you have a basic knowledge of Italian , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
         link="/"
       />
+      <ItalianA2Essentials />
+
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
