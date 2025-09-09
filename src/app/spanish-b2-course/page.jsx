@@ -5,14 +5,15 @@ import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTesti
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import SpanishB2Essentials from "../../components/SpanishCourse/SpanishB2/SpanishB2Essentials";
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
-
+import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
+import spainFlag from "./../../Imgs/Language Course/Spanish.png";
 export default function SpanishB2Course(){
     return(
     <div>
       <CourseHeader
         country="Spanish"
-        img="https://scuola.vamtam.com/wp-content/uploads/2019/12/h-39.jpg"
-        heading="Spanish B2 Language Course"
+        img={spanishBanner}
+        bar={spainFlag}        heading="Spanish B2 Language Course"
         description="If you have a basic knowledge of Spanish , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
         link="/"
       />

@@ -11,10 +11,10 @@ const CourseHeader = (props) => {
     <div className="coursesHeader-container">
       <div className="coursesHeader-content">
         <h2>{props.country}</h2>
-        <div className="bar"></div>
+        <div className="bar"><Image src={props.bar} alt=""/></div>
       </div>
       <div className="coursesHeader-content">
-        <img src={props.img} alt={props.heading} />
+        <Image src={props.img} alt={props.heading} />
         <div className="coursesHeader-cover">
           <div className="coursesHeader-title">
             <h2>{props.heading}</h2>

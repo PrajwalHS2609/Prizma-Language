@@ -7,7 +7,8 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-
+import germanyBanner from "./../../Imgs/CourseBanner/germany.png"
+import germanFlag from "./../../Imgs/Language Course/German.png"
 export const metadata = {
   title:
     "Online A1 German Course in Bangalore | Online A1 German Classes in Bangalore ",
@@ -21,10 +22,10 @@ export default function GermanA1Course() {
     <div>
       <CourseHeader
         country="German"
-        img="https://scuola.vamtam.com/wp-content/uploads/2019/12/h-39.jpg"
-        heading="German A1 Language Course"
+        img={germanyBanner}
+        bar={germanFlag}        heading="German A1 Language Course"
         description="If you have a basic knowledge of German , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
-        link="/"
+        link="/online-a1-german-course-in-bangalore"
       />
       <GermanCourseEssential />
       <GermanCourseLvl />

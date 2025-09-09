@@ -144,7 +144,7 @@ const GermanA1Instructor = () => {
         </div>
 
         {/* Carousel */}
-        <div className="nestedGermanInstructor-features">
+        {/* <div className="nestedGermanInstructor-features">
           <Carousel
             responsive={responsive}
             swipeable
@@ -172,7 +172,7 @@ const GermanA1Instructor = () => {
               </div>
             ))}
           </Carousel>
-        </div>
+        </div> */}
       </div>
     </div>
   );

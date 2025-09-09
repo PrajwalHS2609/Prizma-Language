@@ -7,6 +7,8 @@ import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import GermanA2Content from "../../components/GermanCourse/GermanA2/GermanA2Content";
 import GermanA2Head from "../../components/GermanCourse/GermanA2/GermanA2Head";
+import germanyBanner from "./../../Imgs/CourseBanner/germany.png";
+import germanFlag from "./../../Imgs/Language Course/German.png";
 export const metadata = {
   title: " ",
   description: "",
@@ -18,10 +20,11 @@ export default function GermanA2Course() {
     <div>
       <CourseHeader
         country="German"
-        img="https://scuola.vamtam.com/wp-content/uploads/2019/12/h-39.jpg"
+        img={germanyBanner}
+        bar={germanFlag}
         heading="German A2 Language Course"
         description="If you have a basic knowledge of German , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
-        link="/"
+        link="/online-a2-german-course-in-bangalore"
       />
       <GermanA2Essential />
       <GermanCourseLvl />

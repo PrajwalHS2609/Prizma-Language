@@ -6,6 +6,9 @@ import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeFeatures from '../../components/HomePage/HomeFeatures/HomeFeatures';
 import HomeBenefits from '../../components/HomePage/HomeBenefits/HomeBenefits';
 import GermanB1Content from "../../components/GermanCourse/GermanB1/GermanB1Content";
+import germanyBanner from "./../../Imgs/CourseBanner/germany.png"
+import germanFlag from "./../../Imgs/Language Course/German.png"
+
 export const metadata = {
   title: "Online B1 German Course in Bangalore | Online B1 German Classes in Bangalore",
   description: "Online B1 German Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills. ",
@@ -17,10 +20,10 @@ export default function GermanB1Course() {
     <div>
       <CourseHeader
         country="German"
-        img="https://scuola.vamtam.com/wp-content/uploads/2019/12/h-39.jpg"
-        heading="German B1 Language Course"
+        img={germanyBanner}
+        bar={germanFlag}        heading="German B1 Language Course"
         description="If you have a basic knowledge of German , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
-        link="/"
+        link="/online-b1-german-course-in-bangalore"
       />
       <GermanB1Essentials />
       <GermanCourseLvl />

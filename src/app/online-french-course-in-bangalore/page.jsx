@@ -6,6 +6,9 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import frenchBanner from "./../../Imgs/CourseBanner/france.png";
+import frenchFlag from "./../../Imgs/Language Course/French.png";
+
 export const metadata = {
   title:
     "Online French Course in Bangalore | Online French Classes in Bangalore",
@@ -20,10 +23,11 @@ export default function FrenchCourse() {
       {" "}
       <CourseHeader
         country="French"
-        img="https://scuola.vamtam.com/wp-content/uploads/2019/12/h-39.jpg"
+        img={frenchBanner}
+        bar={frenchFlag}
         heading="Online French Language Course"
         description="If you have a basic knowledge of French , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
-        link="/"
+        link="/online-french-course-in-bangalore"
       />
       <FrenchCourseHead />
       <FrenchCourseLvl />

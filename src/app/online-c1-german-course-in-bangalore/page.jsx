@@ -6,9 +6,13 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import germanyBanner from "./../../Imgs/CourseBanner/germany.png";
+import germanFlag from "./../../Imgs/Language Course/German.png";
 export const metadata = {
-  title: "Online C1 German Course in Bangalore | Online C1 German Classes in Bangalore ",
-  description: "Online C1 German Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills. ",
+  title:
+    "Online C1 German Course in Bangalore | Online C1 German Classes in Bangalore ",
+  description:
+    "Online C1 German Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills. ",
   canonical: "https://prizmaacademy.com/online-c1-german-course-in-bangalore",
   keywords: [],
 };
@@ -17,18 +21,19 @@ export default function GermanC1Course() {
     <div>
       <CourseHeader
         country="German"
-        img="https://scuola.vamtam.com/wp-content/uploads/2019/12/h-39.jpg"
+        img={germanyBanner}
+        bar={germanFlag}
         heading="German C1 Language Course"
         description="If you have a basic knowledge of German , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
-        link="/"
+        link="/online-c1-german-course-in-bangalore"
       />
       <GermanC1Essentials />
       <GermanCourseLvl />
-       <HomeFeatures />
+      <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
-      <GermanC1Content/>
+      <GermanC1Content />
     </div>
   );
 }

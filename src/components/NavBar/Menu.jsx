@@ -84,10 +84,10 @@ const Menu = () => {
                 <Link href="/online-french-course-in-bangalore">French</Link>
               </li>
               <li>
-                <Link href="/">Spanish</Link>
+                <Link href="/spanish-course">Spanish</Link>
               </li>
               <li>
-                <Link href="/">Italian</Link>
+                <Link href="/italian-course">Italian</Link>
               </li>
             </ul>
           </div>

@@ -5,6 +5,8 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import frenchBanner from "./../../Imgs/CourseBanner/france.png";
+import frenchFlag from "./../../Imgs/Language Course/French.png";
 export const metadata = {
   title:
     "Online B1 French Course in Bangalore | Online B1 French Classes in Bangalore",
@@ -18,14 +20,15 @@ export default function FrenchB1Course() {
     <div>
       <CourseHeader
         country="French"
-        img="https://scuola.vamtam.com/wp-content/uploads/2020/01/4French-3-453x453.jpg"
+        img={frenchBanner}
+        bar={frenchFlag}
         heading="French B1 Language Course"
         description="If you have a basic knowledge of French , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
-        link="/"
+        link="/online-b1-french-course-in-bangalore"
       />
       <FrenchB1Essentials />
       <FrenchCourseLvl />
-       <HomeFeatures />
+      <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
