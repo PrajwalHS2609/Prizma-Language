@@ -1,1 +1,7 @@
 need to add countries and companies in similar to goodwayattestation
+
+add light color for customColor2
+
+make video testimonial and reviews common 
+
+add whatsapp popup
