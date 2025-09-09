@@ -6,7 +6,12 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-
+export const metadata = {
+  title: "Online C1 German Course in Bangalore | Online C1 German Classes in Bangalore ",
+  description: "Online C1 German Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills. ",
+  canonical: "https://prizmaacademy.com/online-c1-german-course-in-bangalore",
+  keywords: [],
+};
 export default function GermanC1Course() {
   return (
     <div>

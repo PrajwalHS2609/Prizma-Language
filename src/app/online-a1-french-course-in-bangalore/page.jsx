@@ -1,24 +1,31 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
-import FrenchB1Essentials from "../../components/FrenchCourse/FrenchB1/FrenchB1Essentials";
+import FrenchA1Essentials from "../../components/FrenchCourse/FrenchA1/FrenchA1Essentials";
 import FrenchCourseLvl from "../../components/FrenchCourse/FrenchCourseLvl";
-import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
-import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-
-export default function FrenchB1Course() {
+import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
+import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
+export const metadata = {
+  title:
+    "Online A1 French Course in Bangalore | Online A1 French Classes in Bangalore",
+  description:
+    "Online A1 French Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills.",
+  canonical: "https://prizmaacademy.com/online-a1-french-course-in-bangalore",
+  keywords: [],
+};
+export default function FrenchA1Course() {
   return (
     <div>
       <CourseHeader
         country="French"
         img="https://scuola.vamtam.com/wp-content/uploads/2020/01/4French-3-453x453.jpg"
-        heading="French B1 Language Course"
+        heading="French A1 Language Course"
         description="If you have a basic knowledge of French , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
         link="/"
       />
-      <FrenchB1Essentials />
+      <FrenchA1Essentials />
       <FrenchCourseLvl />
-       <HomeFeatures />
+      <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />

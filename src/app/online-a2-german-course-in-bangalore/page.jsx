@@ -7,7 +7,12 @@ import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import GermanA2Content from "../../components/GermanCourse/GermanA2/GermanA2Content";
 import GermanA2Head from "../../components/GermanCourse/GermanA2/GermanA2Head";
-
+export const metadata = {
+  title: " ",
+  description: "",
+  canonical: "",
+  keywords: [],
+};
 export default function GermanA2Course() {
   return (
     <div>

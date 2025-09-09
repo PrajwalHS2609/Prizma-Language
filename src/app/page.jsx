@@ -5,14 +5,14 @@ import HomeCourses from "../components/HomePage/HomeCourses/HomeCourses";
 import HomeFeatures from "../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeBenefits from "../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeWhy from "../components/HomePage/HomeWhy/HomeWhy";
-import HomeTestimonial from "../components/HomePage/HomeTestimonial/HomeTestimonial";
-import CefrShow from './../components/HomePage/CefrShow/CefrShow';
-import HomeYoutube from './../components/HomePage/HomeYoutube/HomeYoutube';
+import CefrShow from "./../components/HomePage/CefrShow/CefrShow";
+import HomeYoutube from "./../components/HomePage/HomeYoutube/HomeYoutube";
+import HomeReviews from "./../components/HomePage/HomeReviews/HomeReviews";
 export default function HomePage() {
   return (
     <div>
       <HomeHeader />
-      <CefrShow/>
+      <CefrShow />
       <CourseCategory />
       <HomeAbout />
       <HomeCourses />
@@ -20,8 +20,9 @@ export default function HomePage() {
       <HomeBenefits />
       <HomeWhy />
       {/* <HomeSubscribe /> */}
-      <HomeTestimonial />
-      <HomeYoutube/>
+      {/* <HomeTestimonial /> */}
+      <HomeReviews />
+      <HomeYoutube />
     </div>
   );
 }

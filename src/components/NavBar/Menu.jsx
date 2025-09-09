@@ -1,4 +1,4 @@
-"use clients"
+"use clients";
 import React, { useRef, useState } from "react";
 import "./NavBar.css";
 import menuBar from "./../../Imgs/menuBar.png";
@@ -7,11 +7,11 @@ import plus from "./../../Imgs/plus.png";
 import { FaArrowRight } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 
-import Link  from 'next/link';
+import Link from "next/link";
 import Image from "next/image";
 const Menu = () => {
   let [drop, setDrop] = useState(false);
-    const pathname = usePathname();
+  const pathname = usePathname();
 
   let dropRef = useRef();
   let showSideBar = () => {
@@ -61,7 +61,7 @@ const Menu = () => {
         <li>
           <Link
             href="/"
-           className={pathname === "/" ? "active" : ""}
+            className={pathname === "/" ? "active" : ""}
             onClick={hideSideBar}
           >
             Home
@@ -70,16 +70,32 @@ const Menu = () => {
         <li>
           <Link
             href="/courses"
-           className={pathname === "/courses" ? "active" : ""}
+            className={pathname === "/courses" ? "active" : ""}
             onClick={hideSideBar}
           >
             Courses
           </Link>
+          <div className="menuDropDown">
+            <ul>
+              <li>
+                <Link href="/online-german-course-in-bangalore">German</Link>
+              </li>
+              <li>
+                <Link href="/online-french-course-in-bangalore">French</Link>
+              </li>
+              <li>
+                <Link href="/">Spanish</Link>
+              </li>
+              <li>
+                <Link href="/">Italian</Link>
+              </li>
+            </ul>
+          </div>
         </li>
         <li>
           <Link
             href="/about-us"
-           className={pathname === "/about-us" ? "active" : ""}
+            className={pathname === "/about-us" ? "active" : ""}
             onClick={hideSideBar}
           >
             About
@@ -88,7 +104,7 @@ const Menu = () => {
         <li>
           <Link
             href="/blog"
-           className={pathname === "/blog" ? "active" : ""}
+            className={pathname === "/blog" ? "active" : ""}
             onClick={hideSideBar}
           >
             Blog
@@ -97,7 +113,7 @@ const Menu = () => {
         <li>
           <Link
             href="/contact-us"
-           className={pathname === "/contact-us" ? "active" : ""}
+            className={pathname === "/contact-us" ? "active" : ""}
             onClick={hideSideBar}
           >
             Contact Us
@@ -112,7 +128,12 @@ const Menu = () => {
           onClick={showSideBar}
           className="menu"
         />
-        <Image src={exit} alt="menuBar" onClick={hideSideBar} className="exit" />
+        <Image
+          src={exit}
+          alt="menuBar"
+          onClick={hideSideBar}
+          className="exit"
+        />
       </div>
       <div className="respMenu">
         <div className="innerRespMenu">
@@ -120,7 +141,7 @@ const Menu = () => {
             {" "}
             <Link
               href="/"
-             className={pathname === "/" ? "active" : ""}
+              className={pathname === "/" ? "active" : ""}
               onClick={hideSideBar}
             >
               Home
@@ -131,13 +152,18 @@ const Menu = () => {
               {" "}
               <Link
                 href="/courses"
-               className={pathname === "/courses" ? "active" : ""}
+                className={pathname === "/courses" ? "active" : ""}
                 onClick={hideSideBar}
               >
                 Courses
               </Link>
               <span>
-                <Image src={plus} alt="" className="plus" onClick={handleDrop} />
+                <Image
+                  src={plus}
+                  alt=""
+                  className="plus"
+                  onClick={handleDrop}
+                />
               </span>
             </div>
             {/* ---------------------------respDropDown-------------------------------------------- */}
@@ -145,8 +171,12 @@ const Menu = () => {
               <li>
                 {" "}
                 <Link
-                  href="/german"
-                 className={pathname === "/german" ? "active" : ""}
+                  href="/online-german-course-in-bangalore"
+                  className={
+                    pathname === "/online-german-course-in-bangalore"
+                      ? "active"
+                      : ""
+                  }
                   onClick={hideSideBar}
                 >
                   German
@@ -156,7 +186,7 @@ const Menu = () => {
                 {" "}
                 <Link
                   href="/spanish"
-                 className={pathname === "/spanish" ? "active" : ""}
+                  className={pathname === "/spanish" ? "active" : ""}
                   onClick={hideSideBar}
                 >
                   Spanish
@@ -166,17 +196,17 @@ const Menu = () => {
                 {" "}
                 <Link
                   href="/french"
-                 className={pathname === "/french" ? "active" : ""}
+                  className={pathname === "/french" ? "active" : ""}
                   onClick={hideSideBar}
                 >
                   French
                 </Link>
               </li>
-                          <li>
+              <li>
                 {" "}
                 <Link
                   href="/italian"
-                 className={pathname === "/italian" ? "active" : ""}
+                  className={pathname === "/italian" ? "active" : ""}
                   onClick={hideSideBar}
                 >
                   Italian
@@ -218,7 +248,7 @@ const Menu = () => {
             {" "}
             <Link
               href="/about-us"
-             className={pathname === "/about-us" ? "active" : ""}
+              className={pathname === "/about-us" ? "active" : ""}
               onClick={hideSideBar}
             >
               About
@@ -228,7 +258,7 @@ const Menu = () => {
             {" "}
             <Link
               href="/blog"
-             className={pathname === "/blog" ? "active" : ""}
+              className={pathname === "/blog" ? "active" : ""}
               onClick={hideSideBar}
             >
               Blog
@@ -238,13 +268,13 @@ const Menu = () => {
             {" "}
             <Link
               href="/contact-us"
-             className={pathname === "/contact-us" ? "active" : ""}
+              className={pathname === "/contact-us" ? "active" : ""}
               onClick={hideSideBar}
             >
               Contact Us
             </Link>
           </li>
-          
+
           <li className="menuContainerBtn-Container">
             <div className="menuContainerBtn">
               {" "}

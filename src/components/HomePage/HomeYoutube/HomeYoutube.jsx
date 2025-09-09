@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "./HomeYoutube.css";
 import ReactPlayer from "react-player";
@@ -19,7 +19,7 @@ const HomeYoutube = () => {
   return (
     <div className="homeYt-container">
       <h2>
-        Students <span>Speech </span> Videos
+        <span>Fluent</span> & <span>Confident</span>
       </h2>
       <div className="homeYt-wrapper">
         {vid.map((x) => (

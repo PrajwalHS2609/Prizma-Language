@@ -1,0 +1,33 @@
+.nestedGermanReview {
+  /* border: solid red; */
+  width: 100%;
+}
+
+.reviewsContainer {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  overflow: hidden;
+  padding: 30px;
+}
+.reviewsContainer > h2 {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+.reviewsContainer > h2 > span {
+  color: var(--customColor);
+}
+#reviews {
+  font-size: 30px;
+}
+.dNtlyB {
+  display: none;
+}
+@media screen and (max-width:768px) {
+    .reviewsContainer > h2 {
+  font-size: 30px;
+    }
+}

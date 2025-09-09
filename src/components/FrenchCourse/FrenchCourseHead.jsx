@@ -3,9 +3,9 @@ import "./../Styles.css";
 const FrenchCourseHead = () => {
   return (
     <div className="courseHead">
-      <h2>
+      <h1>
         Online <span>French</span> Language Course{" "}
-      </h2>
+      </h1>
       <p>
         Prizma Academy is a leading institution that runs online French classes
         in Bangalore with the most up-to-date methods by a dedicated and

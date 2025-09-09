@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "./HomeCourses.css";
 import rating from "./../../../Imgs/rating.png";
@@ -24,11 +24,7 @@ const HomeCoursesCard = (props) => {
           <Image src={rating} alt="" /> <span>(4.9 ratings)</span>
         </div>
         <div className="homeCoursesCardTxt">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-            provident laudantium recusandae quis accusamus quo reprehenderit
-            sunt
-          </p>
+          <p>{props.courseDescription}</p>
         </div>
         <div className="homeCoursesCardTxt">
           <div className="enroll">

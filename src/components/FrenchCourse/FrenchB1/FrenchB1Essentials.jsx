@@ -25,7 +25,7 @@ const FrenchB1Essentials = () => {
   };
   return (
  <div className="courseEssentials-container" id="details">
-      <h2>French A1 Course Essentials</h2>
+      <h2>French B1 Course Essentials</h2>
       <div className="courseEssentials-nestedContainer">
         {/* Navigation Tabs */}
         <nav className="courseEssentialsNestedNav">

@@ -16,7 +16,7 @@
   flex-direction: column;
 }
 .homeCoursesHead > h6 {
-  background:var(--customGradient);
+  background: var(--customGradient);
   background-clip: text;
   font-weight: bold;
   color: transparent;
@@ -27,7 +27,7 @@
   font-weight: bolder;
 }
 .homeCoursesHead > h2 > span {
-  background:var(--customGradient);
+  background: var(--customGradient);
   background-clip: text;
   color: transparent;
 }
@@ -44,12 +44,16 @@
 .homeCoursesCard {
   /* border: solid green; */
   width: 400px;
-  height:100%;
+  height: 500px;
   border-radius: 10px;
   box-shadow: 0 0 10px 10px rgb(150, 150, 150);
   overflow: hidden;
   transition: 300ms ease-in-out;
   margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   &:hover {
     transform: translateY(-15px);
   }

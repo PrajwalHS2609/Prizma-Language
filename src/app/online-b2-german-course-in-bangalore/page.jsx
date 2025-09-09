@@ -6,7 +6,12 @@ import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeFeatures from '../../components/HomePage/HomeFeatures/HomeFeatures';
 import HomeBenefits from '../../components/HomePage/HomeBenefits/HomeBenefits';
 import GermanB2Content from "../../components/GermanCourse/GermanB2/GermanB2Content";
-
+export const metadata = {
+  title: "Online B2 German Course in Bangalore | Online B2 German Classes in Bangalore ",
+  description: "Online B2 German Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills",
+  canonical: "https://prizmaacademy.com/online-b2-german-course-in-bangalore",
+  keywords: [],
+};
 export default function GermanB2Course(){
     return(
         <div>

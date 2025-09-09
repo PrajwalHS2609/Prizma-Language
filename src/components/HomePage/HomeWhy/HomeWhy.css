@@ -4,7 +4,7 @@
   align-items: flex-start;
   gap: 2rem;
   padding: 4rem;
-  background: #fff9f9;
+  background: var(--customColor2);
   flex-wrap: wrap;
 }
 
@@ -15,11 +15,13 @@
 .training-left h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: white;
 }
 
 .training-left p {
   margin-bottom: 2rem;
   font-size: 1.1rem;
+  color: white;
 }
 
 .training-left p span {
@@ -54,12 +56,13 @@
 .training-item h3 {
   margin: 0;
   color: #2a2a2a;
+  color: white;
 }
 
 .training-item p {
   margin: 0.2rem 0 0;
   font-size: 0.95rem;
-  color: #555;
+  color: white;
 }
 
 /* Right Side */
@@ -122,18 +125,13 @@
 /* Responsive */
 @media (max-width: 768px) {
   .training-left {
-  width: 100%;
+    width: 100%;
+  }
+  .training-container {
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .training-item .number {
+    background: #fcfcfc;
+  }
 }
-.training-container {
-
-  gap: 2rem;
-  padding: 2rem;
-
-}
-.training-item .number {
-  background: #fcfcfc;
-
-}
-}
-
-

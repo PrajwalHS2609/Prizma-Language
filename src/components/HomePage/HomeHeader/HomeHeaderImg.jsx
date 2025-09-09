@@ -2,15 +2,16 @@ import React from "react";
 import "./HomeHeader.css";
 import { FaUser } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
+import headerBanner from "./../../../Imgs/headerBanner.png"
 
 import google from "./../../../Imgs/google.png";
 import Image from "next/image";
 const HomeHeaderImg = () => {
   return (
     <div className="homeHeaderImg">
-      <img
-        src="https://demo.themeies.com/edugen-html/assets/images/banner/banner1.png"
-        alt=""
+      <Image
+        src={headerBanner}
+        alt="headerBanner"
       />
       <div className="homeHeaderStuCard">
         <div className="homeHeaderStuUser">

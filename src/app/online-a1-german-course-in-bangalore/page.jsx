@@ -8,7 +8,14 @@ import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 
-
+export const metadata = {
+  title:
+    "Online A1 German Course in Bangalore | Online A1 German Classes in Bangalore ",
+  description:
+    "Online A1 German Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills.",
+  canonical: "https://prizmaacademy.com/online-a1-german-course-in-bangalore",
+  keywords: [],
+};
 export default function GermanA1Course() {
   return (
     <div>
@@ -21,11 +28,11 @@ export default function GermanA1Course() {
       />
       <GermanCourseEssential />
       <GermanCourseLvl />
-       <HomeFeatures />
+      <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
-      <GermanA1Content/>
+      <GermanA1Content />
     </div>
   );
 }

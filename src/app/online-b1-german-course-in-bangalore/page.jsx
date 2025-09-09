@@ -5,9 +5,13 @@ import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTesti
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeFeatures from '../../components/HomePage/HomeFeatures/HomeFeatures';
 import HomeBenefits from '../../components/HomePage/HomeBenefits/HomeBenefits';
-import GermanB1Head from "../../components/GermanCourse/GermanB1/GermanB1Head";
 import GermanB1Content from "../../components/GermanCourse/GermanB1/GermanB1Content";
-
+export const metadata = {
+  title: "Online B1 German Course in Bangalore | Online B1 German Classes in Bangalore",
+  description: "Online B1 German Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills. ",
+  canonical: "https://prizmaacademy.com/online-b1-german-course-in-bangalore",
+  keywords: [],
+};
 export default function GermanB1Course() {
   return (
     <div>

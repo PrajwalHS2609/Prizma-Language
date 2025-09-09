@@ -6,7 +6,14 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-
+export const metadata = {
+  title:
+    "Online C2 German Course in Bangalore | Online C2 German Classes in Bangalore ",
+  description:
+    "Online C2 German Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills. ",
+  canonical: "https://prizmaacademy.com/online-c2-german-course-in-bangalore",
+  keywords: [],
+};
 export default function GermanC2Course() {
   return (
     <div>
@@ -19,11 +26,11 @@ export default function GermanC2Course() {
       />
       <GermanC2Essentials />
       <GermanCourseLvl />
-       <HomeFeatures />
-      <HomeBenefits  />
+      <HomeFeatures />
+      <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
-      <GermanC2Content/>
+      <GermanC2Content />
     </div>
   );
 }

@@ -122,8 +122,8 @@
   position: relative;
 }
 .homeHeaderImg > img {
-  object-fit: contain;
-  width: 75%;
+  object-fit: cover;
+  width: 100%;
   height: 100%;
 }
 /* ----------------------homeHeaderStuCard--------------------------- */

@@ -7,7 +7,14 @@ import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-
+export const metadata = {
+  title:
+    "Online German Course in Bangalore | Online German Classes in Bangalore ",
+  description:
+    "Online German Course in Bangalore from Certified Trainers, learners can cover every level from beginner (A1) to advanced (C2) and develop strong speaking, listening, reading, and writing skills.",
+  canonical: "https://prizmaacademy.com/online-german-course-in-bangalore",
+  keywords: [],
+};
 export default function GermanCourse() {
   return (
     <div>

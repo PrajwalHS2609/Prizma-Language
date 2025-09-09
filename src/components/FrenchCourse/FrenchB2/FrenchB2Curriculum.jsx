@@ -5,7 +5,7 @@ const FrenchB2Curriculum = () => {
   return (
     <div className="nestedGermanCurriculum">
       <div className="nestedGermanCurriculum-Head">
-        <h4>Online French A2 Course Curriculum</h4>
+        <h4>Online French B2 Course Curriculum</h4>
       </div>
       <div className="nestedGermanCurriculum-Content">
         <p>
