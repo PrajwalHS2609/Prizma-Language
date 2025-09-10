@@ -1,0 +1,89 @@
+.thankyou-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000; /* dark background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Word cloud */
+.wordcloud {
+  position: relative;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.word {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(var(--random-color));
+  opacity: 0.85;
+  animation: float 6s infinite ease-in-out alternate;
+}
+
+.word:nth-child(odd) { color: #ffcc00; }
+.word:nth-child(even) { color: #00e5ff; }
+.word:nth-child(3n) { color: #ff4081; }
+.word:nth-child(5n) { color: #76ff03; }
+
+.thankyou-main {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ff9800;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Floating animation for words */
+@keyframes float {
+  from { transform: translateY(0px) rotate(0deg); }
+  to { transform: translateY(-10px) rotate(3deg); }
+}
+
+/* Buttons */
+.thankyou-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #ff9800;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #e67e22;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  background: #ff9800;
+  color: white;
+}

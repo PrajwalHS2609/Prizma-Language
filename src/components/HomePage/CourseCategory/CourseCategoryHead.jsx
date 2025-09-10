@@ -12,7 +12,7 @@ const CourseCategoryHead = () => {
           Explore Top <span>Categories</span>
         </h2>
       </div>
-      <Link href={"/"}>
+      <Link href={"/courses"}>
         {" "}
         <button>
           View All Categories{" "}
