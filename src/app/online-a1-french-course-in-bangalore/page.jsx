@@ -1,12 +1,13 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import FrenchA1Essentials from "../../components/FrenchCourse/FrenchA1/FrenchA1Essentials";
 import FrenchCourseLvl from "../../components/FrenchCourse/FrenchCourseLvl";
-import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import frenchBanner from "./../../Imgs/CourseBanner/france.png";
-import frenchFlag from "./../../Imgs/Language Course/French.png";
+import frenchFlag from "./../../Imgs/barImgs/french.png";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 export const metadata = {
   title:
     "Online A1 French Course in Bangalore | Online A1 French Classes in Bangalore",
@@ -31,7 +32,8 @@ export default function FrenchA1Course() {
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />{" "}
     </div>
   );
 }

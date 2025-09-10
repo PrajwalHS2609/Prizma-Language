@@ -6,7 +6,7 @@ import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import SpanishA2Essentials from "../../components/SpanishCourse/SpanishA2/SpanishA2Essentials";
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
 import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
-import spainFlag from "./../../Imgs/Language Course/Spanish.png";
+import spainFlag from "./../../Imgs/barImgs/spain.png";
 export default function SpanishA2Course() {
   return (
     <div>

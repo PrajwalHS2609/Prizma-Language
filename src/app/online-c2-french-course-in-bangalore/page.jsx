@@ -3,11 +3,12 @@ import FrenchC2Content from "../../components/FrenchCourse/FrenchC2/FrenchC2Cont
 import FrenchCourseLvl from "../../components/FrenchCourse/FrenchCourseLvl";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
-import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import FrenchC2Essentials from "../../components/FrenchCourse/FrenchC2/FrenchC2Essentials";
 import frenchBanner from "./../../Imgs/CourseBanner/france.png";
-import frenchFlag from "./../../Imgs/Language Course/French.png";
+import frenchFlag from "./../../Imgs/barImgs/french.png";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 export default function FrenchC1Course() {
   return (
     <div>
@@ -24,7 +25,8 @@ export default function FrenchC1Course() {
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />
       <FrenchC2Content />
     </div>
   );

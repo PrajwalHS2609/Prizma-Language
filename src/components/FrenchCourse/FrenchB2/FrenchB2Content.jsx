@@ -1,6 +1,9 @@
-import React from "react";
-
+"use client";
+import React, { useState } from "react";
+import "./../../Styles.css";
 const FrenchB2Content = () => {
+    const [expanded, setExpanded] = useState(false);
+  
   return (
     <div className="courseHead">
       <div className="courseHead-content">

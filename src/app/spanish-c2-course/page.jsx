@@ -1,12 +1,14 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 import SpanishC2Essentials from "../../components/SpanishCourse/SpanishC2/SpanishC2Essentials";
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
 import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
-import spainFlag from "./../../Imgs/Language Course/Spanish.png";
+import spainFlag from "./../../Imgs/barImgs/spain.png";
 export default function SpanishC2Course() {
   return (
     <div>
@@ -24,6 +26,8 @@ export default function SpanishC2Course() {
       <HomeBenefits />
       <HomeWhy />
       <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />
     </div>
   );
 }

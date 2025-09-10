@@ -74,9 +74,17 @@
     padding: 1rem;
     text-align: center;
   }
+  .courseHead > h1 {
+  font-weight: bold;
+  font-size: 35px; /* Responsive font size */
+}
   .courseHead-content > h2 {
     font-size: 30px; /* Responsive font size */
   }
+  .courseHead > h2 {
+  font-weight: bold;
+  font-size: 30px; /* Responsive font size */
+}
 }
 /* ----------------- Course Level ------------------- */
 .courseLvl {

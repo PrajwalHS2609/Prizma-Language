@@ -185,7 +185,7 @@ const Menu = () => {
               <li>
                 {" "}
                 <Link
-                  href="/spanish"
+                  href="/spanish-course"
                   className={pathname === "/spanish" ? "active" : ""}
                   onClick={hideSideBar}
                 >
@@ -195,7 +195,7 @@ const Menu = () => {
               <li>
                 {" "}
                 <Link
-                  href="/french"
+                  href="/online-french-course-in-bangalore"
                   className={pathname === "/french" ? "active" : ""}
                   onClick={hideSideBar}
                 >
@@ -205,7 +205,7 @@ const Menu = () => {
               <li>
                 {" "}
                 <Link
-                  href="/italian"
+                  href="/italian-course"
                   className={pathname === "/italian" ? "active" : ""}
                   onClick={hideSideBar}
                 >

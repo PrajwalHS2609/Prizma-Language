@@ -4,10 +4,11 @@ import GermanC2Essentials from "../../components/GermanCourse/GermanC2/GermanC2E
 import GermanCourseLvl from "../../components/GermanCourse/GermanCourseLvl";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
-import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-import germanyBanner from "./../../Imgs/CourseBanner/germany.png"
-import germanFlag from "./../../Imgs/Language Course/German.png"
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
+import germanyBanner from "./../../Imgs/CourseBanner/germany.png";
+import germanFlag from "./../../Imgs/barImgs/german.png";
 export const metadata = {
   title:
     "Online C2 German Course in Bangalore | Online C2 German Classes in Bangalore ",
@@ -32,7 +33,8 @@ export default function GermanC2Course() {
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />
       <GermanC2Content />
     </div>
   );

@@ -1,12 +1,13 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
-import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 import ItalianCourseHead from "../../components/ItalianCourse/ItalianCourseHead";
 import ItalianCourseLvl from "../../components/ItalianCourse/ItalianCourseLvl";
 import italyBanner from "./../../Imgs/CourseBanner/italy.png";
-import italyFlag from "./../../Imgs/Language Course/Italian.png";
+import italyFlag from "./../../Imgs/barImgs/italy.png";
 
 export default function ItalianCourse() {
   return (
@@ -25,7 +26,8 @@ export default function ItalianCourse() {
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />
     </div>
   );
 }

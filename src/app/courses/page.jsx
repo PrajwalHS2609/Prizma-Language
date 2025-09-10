@@ -1,7 +1,8 @@
 import AboutUsHeader from "../../components/AboutUsPage/AboutUsHeader/AboutUsHeader";
 import CourseMain from "../../components/CoursePage/CourseMain/CourseMain";
-import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 
 export default function CoursePage() {
   return (
@@ -9,7 +10,8 @@ export default function CoursePage() {
       <AboutUsHeader heading="Courses" bread="Courses" />
       <CourseMain />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />{" "}
     </div>
   );
 }

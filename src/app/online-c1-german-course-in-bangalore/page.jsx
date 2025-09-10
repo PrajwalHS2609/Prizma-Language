@@ -4,10 +4,11 @@ import GermanC1Content from "../../components/GermanCourse/GermanC1/GermanC1Cont
 import GermanCourseLvl from "../../components/GermanCourse/GermanCourseLvl";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
-import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 import germanyBanner from "./../../Imgs/CourseBanner/germany.png";
-import germanFlag from "./../../Imgs/Language Course/German.png";
+import germanFlag from "./../../Imgs/barImgs/german.png";
 export const metadata = {
   title:
     "Online C1 German Course in Bangalore | Online C1 German Classes in Bangalore ",
@@ -32,7 +33,8 @@ export default function GermanC1Course() {
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />
       <GermanC1Content />
     </div>
   );

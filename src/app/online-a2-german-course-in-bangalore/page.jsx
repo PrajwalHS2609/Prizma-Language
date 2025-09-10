@@ -6,9 +6,10 @@ import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import GermanA2Content from "../../components/GermanCourse/GermanA2/GermanA2Content";
-import GermanA2Head from "../../components/GermanCourse/GermanA2/GermanA2Head";
 import germanyBanner from "./../../Imgs/CourseBanner/germany.png";
-import germanFlag from "./../../Imgs/Language Course/German.png";
+import germanFlag from "./../../Imgs/barImgs/german.png";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 export const metadata = {
   title: " ",
   description: "",
@@ -31,7 +32,8 @@ export default function GermanA2Course() {
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />
       <GermanA2Content />
     </div>
   );

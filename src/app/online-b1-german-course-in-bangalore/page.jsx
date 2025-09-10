@@ -7,7 +7,9 @@ import HomeFeatures from '../../components/HomePage/HomeFeatures/HomeFeatures';
 import HomeBenefits from '../../components/HomePage/HomeBenefits/HomeBenefits';
 import GermanB1Content from "../../components/GermanCourse/GermanB1/GermanB1Content";
 import germanyBanner from "./../../Imgs/CourseBanner/germany.png"
-import germanFlag from "./../../Imgs/Language Course/German.png"
+import germanFlag from "./../../Imgs/barImgs/german.png";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 
 export const metadata = {
   title: "Online B1 German Course in Bangalore | Online B1 German Classes in Bangalore",
@@ -30,7 +32,8 @@ export default function GermanB1Course() {
        <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />
       <GermanB1Content/>
     </div>
   );

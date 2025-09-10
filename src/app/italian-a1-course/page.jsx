@@ -1,10 +1,11 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
-import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 import italyBanner from "./../../Imgs/CourseBanner/italy.png";
-import italyFlag from "./../../Imgs/Language Course/Italian.png";
+import italyFlag from "./../../Imgs/barImgs/italy.png";
 export default function ItalianA1Course() {
   return (
     <div>
@@ -19,7 +20,8 @@ export default function ItalianA1Course() {
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />{" "}
     </div>
   );
 }

@@ -4,4 +4,3 @@ add light color for customColor2
 
 make video testimonial and reviews common 
 
-add whatsapp popup

@@ -276,7 +276,7 @@
     padding: 10px;
   }
   .header1 > h2 {
-    font-size: 60px;
+    font-size: 40px;
     width: 80%;
     font-weight: bolder;
     text-align: center;
@@ -289,7 +289,7 @@
     align-items: center;
   }
   .header1 > h2 {
-    font-size: 40px;
+    font-size: 35px;
     width: 100%;
     font-weight: bolder;
   }

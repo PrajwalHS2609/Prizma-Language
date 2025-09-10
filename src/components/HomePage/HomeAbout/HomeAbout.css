@@ -64,7 +64,7 @@
   gap: 10px;
 }
 .homeAboutTxt > h6 {
-  background:var(--customGradient);
+  background: var(--customGradient);
   background-clip: text;
   color: transparent;
   font-weight: 600;
@@ -74,7 +74,7 @@
   font-size: 40px;
 }
 .homeAboutTxt > h2 > span {
-  background:var(--customGradient);
+  background: var(--customGradient);
   background-clip: text;
   color: transparent;
 }
@@ -82,7 +82,7 @@
   font-weight: bolder;
 }
 .homeAboutTxt > h3 > span {
-  background:var(--customGradient);
+  background: var(--customGradient);
   background-clip: text;
   color: transparent;
 }
@@ -99,7 +99,7 @@
   /* border: solid red; */
   padding: 20px;
   width: 100%;
-  background:var(--customGradient);
+  background: var(--customGradient);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -123,6 +123,9 @@
 .aboutTxtBtn {
   /* border: solid red; */
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .aboutTxtBtn > button {
   padding: 10px;
