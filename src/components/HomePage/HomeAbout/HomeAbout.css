@@ -6,6 +6,7 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
+  background-color: var(--lightCustomColor);
 }
 .homeAboutContent1 {
   width: 45%;
