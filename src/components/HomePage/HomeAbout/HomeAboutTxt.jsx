@@ -39,7 +39,7 @@ const HomeAboutTxt = () => {
       <div className="aboutTxtBtn">
         <button onClick={handlePopUp}>
           <FaArrowRight className="menuBtnIcon"/>
-          Enroll Now
+          <span>Enroll Now</span>
         </button>
       </div>
     </div>

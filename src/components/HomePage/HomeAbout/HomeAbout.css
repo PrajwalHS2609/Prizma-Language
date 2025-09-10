@@ -121,13 +121,7 @@
   transform: rotate(-40deg);
   font-weight: lighter;
 }
-.aboutTxtBtn {
-  /* border: solid red; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .aboutTxtBtn > button {
   padding: 10px;
   font-size: 20px;
@@ -143,11 +137,15 @@
   color: black;
   transition: 300ms ease-in-out;
   cursor: pointer;
+  z-index: 2;
   &:hover {
     color: white;
   }
 }
-
+.aboutTxtBtn > button>span{
+  position: static;
+  z-index: 2;
+}
 .aboutTxtBtn > button::after {
   content: "";
   position: absolute;
@@ -157,8 +155,14 @@
   left: 0px;
   top: 0px;
   transition: 300ms ease-in-out;
-  z-index: -1;
+  z-index: 1;
 }
+
+.menuBtnIcon{
+  position: static;
+  z-index: 2;
+}
+
 .aboutTxtBtn > button:hover::after {
   width: 100%;
 }
