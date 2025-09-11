@@ -84,7 +84,7 @@ const Menu = () => {
                 <Link href="/online-french-course-in-bangalore">French</Link>
               </li>
               <li>
-                <Link href="/spanish-course">Spanish</Link>
+                <Link href="/online-spanish-course-in-bangalore">Spanish</Link>
               </li>
               <li>
                 <Link href="/italian-course">Italian</Link>
@@ -185,7 +185,7 @@ const Menu = () => {
               <li>
                 {" "}
                 <Link
-                  href="/spanish-course"
+                  href="/online-spanish-course-in-bangalore"
                   className={pathname === "/spanish" ? "active" : ""}
                   onClick={hideSideBar}
                 >

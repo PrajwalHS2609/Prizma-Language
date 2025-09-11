@@ -1,29 +1,41 @@
 import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
+import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
-import SpanishA1Essentials from "../../components/SpanishCourse/SpanishA1/SpanishA1Essentials";
+import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
+import SpanishCourseHead from "../../components/SpanishCourse/SpanishCourseHead";
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
 import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
 import spainFlag from "./../../Imgs/barImgs/spain.png";
-export default function SpanishA1Course() {
+export const metadata = {
+  title:
+    "Online Spanish Course in Bangalore | Online Spanish Classes in Bangalore",
+  description:
+    "Online Spanish Course in Bangalore from Certified Trainers, learners can cover every level from beginner (A1) to advanced (C2) and develop strong speaking, listening, reading, and writing skills.",
+  canonical: "https://prizmaacademy.com/online-spanish-course-in-bangalore",
+  keywords: [],
+};
+export default function SpanishCourse() {
   return (
     <div>
+      {" "}
       <CourseHeader
         country="Spanish"
         img={spanishBanner}
         bar={spainFlag}
-        heading="Spanish A1 Language Course"
+        heading="Online Spanish Language Course"
         description="If you have a basic knowledge of Spanish , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
         link="/"
       />
-      <SpanishA1Essentials />
+      <SpanishCourseHead />
       <SpanishCourseLvl />
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
+      <HomeReviews />
+      <HomeYoutube />{" "}
     </div>
   );
 }

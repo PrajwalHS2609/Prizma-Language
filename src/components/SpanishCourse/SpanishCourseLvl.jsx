@@ -1,23 +1,23 @@
-import React from 'react'
+import React from "react";
 import "./../Styles.css";
-import CourseMainCard from '../CoursePage/CourseMain/CourseMainCard';
+import CourseMainCard from "../CoursePage/CourseMain/CourseMainCard";
 
 const SpanishCourseLvl = () => {
   return (
- <div className="courseLvl" id="courseLvl">
+    <div className="courseLvl" id="courseLvl">
       <CourseMainCard
         img="https://scuola.vamtam.com/wp-content/uploads/2020/04/cat-3-453x453.jpg"
         alt="Spanish Course Img"
         head="Spanish A1 Level"
         para="Join our A1 Spanish classes in Bangalore at Prizma Academy, where we cater to both online learners."
-        link="spanish-a1-course"
+        link="/online-a2-spanish-course-in-bangalore"
       />
       <CourseMainCard
         img="https://scuola.vamtam.com/wp-content/uploads/2020/04/cat-3-453x453.jpg"
         alt="Spanish Course Img"
         head="Spanish A2 Level"
         para=" Learning a new language can open up a world of opportunities, both personally and professionally."
-        link="spanish-a2-course"
+        link="/online-a2-spanish-course-in-bangalore"
       />
       <CourseMainCard
         img="https://scuola.vamtam.com/wp-content/uploads/2020/04/cat-3-453x453.jpg"
@@ -48,7 +48,7 @@ const SpanishCourseLvl = () => {
         link="spanish-c2-course"
       />
     </div>
-  )
-}
+  );
+};
 
-export default SpanishCourseLvl
+export default SpanishCourseLvl;
