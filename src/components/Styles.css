@@ -75,16 +75,16 @@
     text-align: center;
   }
   .courseHead > h1 {
-  font-weight: bold;
-  font-size: 35px; /* Responsive font size */
-}
+    font-weight: bold;
+    font-size: 35px; /* Responsive font size */
+  }
   .courseHead-content > h2 {
     font-size: 30px; /* Responsive font size */
   }
   .courseHead > h2 {
-  font-weight: bold;
-  font-size: 30px; /* Responsive font size */
-}
+    font-weight: bold;
+    font-size: 30px; /* Responsive font size */
+  }
 }
 /* ----------------- Course Level ------------------- */
 .courseLvl {
@@ -386,4 +386,192 @@
 }
 #reviews {
   font-size: 30px;
+}
+
+/* ----------------------------------BlogPage------------------------------------ */
+.blogPage-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--lightCustomColor);
+}
+.blogPage-content {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.blogPage-content:nth-child(1) {
+  justify-content: space-between;
+}
+.blogPage-content:nth-child(2) {
+  padding: 3rem;
+  justify-content: space-evenly;
+}
+
+.blogPage-heading > h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.blogPage-heading > h2 > span {
+  color: var(--customColor);
+}
+.blogPage-heading > h6 {
+  font-weight: bold;
+  color: var(--customColor);
+}
+.blogPage-heading > a {
+  text-decoration: none;
+}
+.blogPage-heading > a > button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.blogPage-heading > a > button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: var(--customColor);
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 300ms ease;
+}
+.blogPage-heading > a > button:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.blogPage-HeadingIcon {
+  color: white;
+}
+.blogPage-Card {
+  /* border: solid green; */
+  width: 420px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(231, 231, 231);
+  background-color: white;
+  padding: 20px;
+  transition: 300ms ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+.blogPage-Card:hover .blogPage-wrapper > h3 {
+  color: var(--customColor);
+}
+.blogPage-ImgContainer {
+  /* border: solid teal; */
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.blogPage-Card:hover .blogPage-ImgContainer > img {
+  transform: scale(1.02);
+}
+.blogPage-ImgContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 300ms ease;
+}
+
+.blogPage-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.blogPage-wrapper > h3 {
+  text-align: center;
+}
+.blogPage-Card:hover .blogPage-wrapper > h3 {
+  color: var(--customColor);
+}
+
+.blogPage-wrapper > a {
+  text-decoration: none;
+}
+.blogPage-wrapper > a > button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: grey;
+  background-color: white;
+}
+.blogPage-ReadIcon {
+  color: grey;
+}
+.blogPage-item {
+  /* border: solid yellow; */
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  top: -60px;
+  border-radius: 10px;
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+  .blogPage-container {
+    /* border: solid red; */
+    padding: 10px;
+  }
+  .blogPage-content {
+    flex-direction: column;
+  }
+  .blogPage-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blogPage-content {
+    padding: 10px;
+  }
+  .blogPage-heading > h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .blogPage-Card {
+    /* border: solid green; */
+    width: 300px;
+    height: 100%;
+    gap: 10px;
+    margin: 10px;
+  }
+  .blogPage-content:nth-child(1) {
+    justify-content: space-between;
+    gap: 10px;
+  }
 }

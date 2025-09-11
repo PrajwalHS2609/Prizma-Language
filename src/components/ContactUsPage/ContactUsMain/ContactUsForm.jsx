@@ -3,7 +3,7 @@
 import React from "react";
 import "./ContactUsMain.css";
 import Swal from "sweetalert2";
-import { useRouter } from "next/navigation"; // <-- Import useRouter
+import { useRouter } from "next/navigation";
 const ContactUsForm = () => {
     const router = useRouter(); // <-- Initialize router
 
