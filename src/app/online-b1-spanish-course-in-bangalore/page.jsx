@@ -8,7 +8,15 @@ import SpanishB1Essentials from "../../components/SpanishCourse/SpanishB1/Spanis
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
 import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
 import spainFlag from "./../../Imgs/barImgs/spain.png";
-import SpanishB1Content from '../../components/SpanishCourse/SpanishB1/SpanishB1Content';
+import SpanishB1Content from "../../components/SpanishCourse/SpanishB1/SpanishB1Content";
+export const metadata = {
+  title:
+    "Online B1 Spanish Course in Bangalore | Online B1 Spanish Classes in Bangalore",
+  description:
+    "Online B1 Spanish Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills. ",
+  canonical: "https://prizmaacademy.com/online-b1-spanish-course-in-bangalore",
+  keywords: [],
+};
 export default function SpanishB1Course() {
   return (
     <div>
@@ -26,8 +34,7 @@ export default function SpanishB1Course() {
       <HomeBenefits />
       <HomeWhy />
       <HomeReviews />
-      <HomeYoutube />{" "}
-      <SpanishB1Content/>
+      <HomeYoutube /> <SpanishB1Content />
     </div>
   );
 }

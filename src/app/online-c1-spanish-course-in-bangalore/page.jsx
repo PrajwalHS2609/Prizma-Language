@@ -10,6 +10,14 @@ import SpanishC1Essentials from "../../components/SpanishCourse/SpanishC1/Spanis
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
 import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
 import spainFlag from "./../../Imgs/barImgs/spain.png";
+export const metadata = {
+  title:
+    "Online C1 Spanish Course in Bangalore | Online C1 Spanish Classes in Bangalore",
+  description:
+    "Online C1 Spanish Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills. ",
+  canonical: "https://prizmaacademy.com/online-c1-spanish-course-in-bangalore",
+  keywords: [],
+};
 export default function SpanishC1Course() {
   return (
     <div>
@@ -26,9 +34,8 @@ export default function SpanishC1Course() {
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeReviews /> 
-      <HomeYoutube />{" "}
-      <SpanishC1Content/>
+      <HomeReviews />
+      <HomeYoutube /> <SpanishC1Content />
     </div>
   );
 }

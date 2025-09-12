@@ -87,7 +87,7 @@ const Menu = () => {
                 <Link href="/online-spanish-course-in-bangalore">Spanish</Link>
               </li>
               <li>
-                <Link href="/italian-course">Italian</Link>
+                <Link href="/online-italian-course-in-bangalore">Italian</Link>
               </li>
             </ul>
           </div>
@@ -186,7 +186,7 @@ const Menu = () => {
                 {" "}
                 <Link
                   href="/online-spanish-course-in-bangalore"
-                  className={pathname === "/spanish" ? "active" : ""}
+                  className={pathname === "/online-spanish-course-in-bangalore" ? "active" : ""}
                   onClick={hideSideBar}
                 >
                   Spanish
@@ -196,7 +196,7 @@ const Menu = () => {
                 {" "}
                 <Link
                   href="/online-french-course-in-bangalore"
-                  className={pathname === "/french" ? "active" : ""}
+                  className={pathname === "/online-french-course-in-bangalore" ? "active" : ""}
                   onClick={hideSideBar}
                 >
                   French
@@ -205,8 +205,8 @@ const Menu = () => {
               <li>
                 {" "}
                 <Link
-                  href="/italian-course"
-                  className={pathname === "/italian" ? "active" : ""}
+                  href="/online-italian-course-in-bangalore"
+                  className={pathname === "/online-italian-course-in-bangalore" ? "active" : ""}
                   onClick={hideSideBar}
                 >
                   Italian

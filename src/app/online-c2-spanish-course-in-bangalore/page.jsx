@@ -10,6 +10,14 @@ import SpanishC2Essentials from "../../components/SpanishCourse/SpanishC2/Spanis
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
 import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
 import spainFlag from "./../../Imgs/barImgs/spain.png";
+export const metadata = {
+  title:
+    " Online C2 Spanish Course in Bangalore | Online C2 Spanish Classes in Bangalore",
+  description:
+    "Online C2 Spanish Course in Bangalore from Certified Trainers, beginner-level to develop strong speaking, listening, reading, and writing skills. ",
+  canonical: "https://prizmaacademy.com/online-c2-spanish-course-in-bangalore",
+  keywords: [],
+};
 export default function SpanishC2Course() {
   return (
     <div>

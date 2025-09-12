@@ -4,26 +4,34 @@ import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
-import ItalianB2Essentials from "../../components/ItalianCourse/ItalianB2/ItalianB2Essentials";
 import italyBanner from "./../../Imgs/CourseBanner/italy.png";
 import italyFlag from "./../../Imgs/barImgs/italy.png";
-export default function ItalianB2Course() {
+import ItalianA1Content from './../../components/ItalianCourse/ItalianA1/ItalianA1Content';
+export const metadata = {
+  title:
+    "Online A1 Italian Course in Bangalore | Online A1 Italian Classes in Bangalore",
+  description:
+    "A1 Online Italian Course in Bangalore has emerged as a practical and accessible way for learners to begin their journey into the world of Italian.",
+  canonical: "https://prizmaacademy.com/online-a1-italian-course-in-bangalore",
+  keywords: [],
+};
+export default function ItalianA1Course() {
   return (
     <div>
       <CourseHeader
         country="Italian"
         img={italyBanner}
         bar={italyFlag}
-        heading="Italian B2 Language Course"
-        description="If you have a basic knowledge of French , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
+        heading="Italian A1 Language Course"
+        description="If you have a basic knowledge of Italian , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
         link="/"
       />
-      <ItalianB2Essentials />
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
       <HomeReviews />
       <HomeYoutube />{" "}
+      <ItalianA1Content/>
     </div>
   );
 }
