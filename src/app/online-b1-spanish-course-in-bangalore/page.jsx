@@ -8,6 +8,7 @@ import SpanishB1Essentials from "../../components/SpanishCourse/SpanishB1/Spanis
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
 import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
 import spainFlag from "./../../Imgs/barImgs/spain.png";
+import SpanishB1Content from '../../components/SpanishCourse/SpanishB1/SpanishB1Content';
 export default function SpanishB1Course() {
   return (
     <div>
@@ -26,6 +27,7 @@ export default function SpanishB1Course() {
       <HomeWhy />
       <HomeReviews />
       <HomeYoutube />{" "}
+      <SpanishB1Content/>
     </div>
   );
 }

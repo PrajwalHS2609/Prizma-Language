@@ -5,29 +5,30 @@ import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
-import SpanishC2Essentials from "../../components/SpanishCourse/SpanishC2/SpanishC2Essentials";
+import SpanishB2Content from "../../components/SpanishCourse/SpanishB2/SpanishB2Content";
+import SpanishB2Essentials from "../../components/SpanishCourse/SpanishB2/SpanishB2Essentials";
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
 import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
 import spainFlag from "./../../Imgs/barImgs/spain.png";
-export default function SpanishC2Course() {
+export default function SpanishB2Course() {
   return (
     <div>
       <CourseHeader
         country="Spanish"
         img={spanishBanner}
         bar={spainFlag}
-        heading="Spanish C2 Language Course"
+        heading="Spanish B2 Language Course"
         description="If you have a basic knowledge of Spanish , you are ready to move on to our Elementary courses where you’ll build upon the foundations and gain a more solid understanding of the language."
         link="/"
       />
-      <SpanishC2Essentials />
+      <SpanishB2Essentials />
       <SpanishCourseLvl />
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
-      <HomeTestimonial />
       <HomeReviews />
       <HomeYoutube />
+      <SpanishB2Content/>
     </div>
   );
 }

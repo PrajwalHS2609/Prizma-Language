@@ -2,9 +2,9 @@ import CourseHeader from "../../components/CourseHeader/CourseHeader";
 import HomeBenefits from "../../components/HomePage/HomeBenefits/HomeBenefits";
 import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
-import HomeTestimonial from "../../components/HomePage/HomeTestimonial/HomeTestimonial";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
+import SpanishCourseContent from "../../components/SpanishCourse/SpanishCourseContent";
 import SpanishCourseHead from "../../components/SpanishCourse/SpanishCourseHead";
 import SpanishCourseLvl from "../../components/SpanishCourse/SpanishCourseLvl";
 import spanishBanner from "./../../Imgs/CourseBanner/spain.png";
@@ -35,7 +35,8 @@ export default function SpanishCourse() {
       <HomeBenefits />
       <HomeWhy />
       <HomeReviews />
-      <HomeYoutube />{" "}
+      <HomeYoutube />
+      <SpanishCourseContent />
     </div>
   );
 }
