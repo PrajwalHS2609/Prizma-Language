@@ -15,7 +15,7 @@ const Whatsapp = () => {
         accountName="Prizma Academy"
         avatar={logo.src} // Optional
         statusMessage="Typically replies within 1 min" // Optional
-        chatMessage="" // Optional
+        chatMessage="Learn with Certified Trainers at Prizma Academy — Flexible Timings, Expert Guidance & Real Results!" // Optional
         placeholder="Type a message..." // Optional
       />
     </div>

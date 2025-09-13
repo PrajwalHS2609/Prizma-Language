@@ -1,22 +1,26 @@
 import React from "react";
 import "./CourseMain.css";
 import CourseMainHead from "./CourseMainHead";
-import CourseMainCard from "./CourseMainCard";
+import CoursePageCard from "../CoursePageCard";
+import German from"./../../../Imgs/CourseBanner/germany.png"
+import French from"./../../../Imgs/CourseBanner/france.png"
+import Spanish from"./../../../Imgs/CourseBanner/spain.png"
+import Italian from"./../../../Imgs/CourseBanner/italy.png"
 
 const CourseMain = () => {
   return (
     <div className="courseMain">
       <CourseMainHead />
       <div className="courseCardContainer">
-        <CourseMainCard
-          img="https://scuola.vamtam.com/wp-content/uploads/2019/12/h-39-453x453.jpg"
+        <CoursePageCard
+          img={German}
           alt="german Course Img"
           head="German"
           para=" If you have a basic knowledge of German , you are ready to move on to our Elementary courses where you'll build upon the foundations."
           link="/online-german-course-in-bangalore"
         />
-        <CourseMainCard
-          img="https://scuola.vamtam.com/wp-content/uploads/2020/01/4French-3-453x453.jpg"
+        <CoursePageCard
+          img={French}
           alt="french course img"
           head="French"
           para="If you are looking to progress to a higher level of French, these courses are for you. Take your language skills to the next level and work on your fluency and confidence."
@@ -29,15 +33,15 @@ const CourseMain = () => {
           para="Work on your conversation skills as well as comprehension and cultural knowledge with our advanced level Japanese classes."
           link=""
         /> */}
-        <CourseMainCard
-          img="https://scuola.vamtam.com/wp-content/uploads/2020/04/cat-3-453x453.jpg"
+        <CoursePageCard
+          img={Spanish}
           alt="spanish course img"
           head="Spanish"
           para="Spanish is the second most spoken language on earth, second only to Mandarin, and growing in use every day."
           link="/spanish-course"
         />
-        <CourseMainCard
-          img="https://images.pexels.com/photos/629142/pexels-photo-629142.jpeg"
+        <CoursePageCard
+          img={Italian}
           alt="Italian course img"
           head="Italian"
           para="If you have a solid grasp of elementary level vocabulary and grammar, and want to delve deeper into the language, our pre-intermediate courses are a great continuation."

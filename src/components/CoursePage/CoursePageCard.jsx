@@ -1,16 +1,12 @@
 import React from "react";
-import "./CourseMain.css";
+import "./CourseMain/CourseMain.css";
 import Link from "next/link";
 import Image from "next/image";
-import LevelBg from "./../../../Imgs/LevelBg.jpg"
-const CourseMainCard = (props) => {
+const CoursePageCard = (props) => {
   return (
     <div className="courseMainCard">
       <div className="courseMainCardImg">
-      <Image src={LevelBg} alt="LevelBg"/>
-        <div className="courseMainCardText">
-          <h2>{props.text}</h2>
-        </div>
+        <Image src={props.img} alt="LevelBg" />
       </div>
       <div className="courseMainCardTxt">
         <h3>{props.head}</h3>
@@ -25,4 +21,4 @@ const CourseMainCard = (props) => {
   );
 };
 
-export default CourseMainCard;
+export default CoursePageCard;
