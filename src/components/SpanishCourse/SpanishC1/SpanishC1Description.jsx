@@ -10,18 +10,24 @@ const SpanishC1Description = () => {
         className="nestedGermanCurriculum-Content"
         id="nestedGermanCurriculum-Content1"
       >
-        <h4>COURSE DESCRIPTION</h4>
+        <h4>Online Spanish C1 Language Course</h4>
         <p>
-          C1 Advanced Level 1 Spanish course give you the necessary linguistic
-          competence to integrate in situations requiring an advanced use of the
-          language and knowledge of the cultural customs embedded within it.
-        </p>
-        <h4>COURSE DETAILS</h4>
-        <p>
-          After completing the C1 advanced level 1 Spanish course, you will be
-          able to produce clear, well-structured and detailed texts about topics
-          of some complexity, correctly using mechanisms of organization,
-          articulation and cohesion in the text.
+          Master advanced Spanish communication with Prizma Academy’s Online
+          Spanish C1 Language Course, designed for learners aiming to reach
+          near-native fluency. At this level, you will gain the skills to
+          understand complex texts, engage in detailed discussions, and express
+          your thoughts clearly with accuracy and confidence. The Online Spanish
+          C1 Language Course focuses on advanced grammar structures, nuanced
+          vocabulary, and idiomatic expressions to help you communicate
+          naturally in academic, professional, and social contexts. Through
+          engaging Online Spanish Classes, you will practice critical thinking,
+          debates, presentations, and advanced writing tasks, ensuring a deeper
+          cultural and linguistic understanding. Our certified trainers provide
+          personalized guidance and constructive feedback, helping you overcome
+          challenges and polish your communication skills. This course is ideal
+          for students, professionals, and individuals preparing for
+          international certifications or pursuing study and work opportunities
+          abroad where advanced Spanish proficiency is required.
         </p>
         <br />
       </div>

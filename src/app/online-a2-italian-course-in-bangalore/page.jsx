@@ -6,6 +6,7 @@ import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 import ItalianA2Content from "../../components/ItalianCourse/ItalianA2/ItalianA2Content";
 import ItalianA2Essentials from "../../components/ItalianCourse/ItalianA2/ItalianA2Essentials";
+import ItalianCourseLvl from "../../components/ItalianCourse/ItalianCourseLvl";
 import italyBanner from "./../../Imgs/CourseBanner/italy.png";
 import italyFlag from "./../../Imgs/barImgs/italy.png";
 
@@ -29,7 +30,7 @@ export default function ItalianA2Course() {
         link="/"
       />
       <ItalianA2Essentials />
-
+      <ItalianCourseLvl/>
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />

@@ -8,6 +8,7 @@ import ItalianB2Content from "../../components/ItalianCourse/ItalianB2/ItalianB2
 import ItalianB2Essentials from "../../components/ItalianCourse/ItalianB2/ItalianB2Essentials";
 import italyBanner from "./../../Imgs/CourseBanner/italy.png";
 import italyFlag from "./../../Imgs/barImgs/italy.png";
+import ItalianCourseLvl from './../../components/ItalianCourse/ItalianCourseLvl';
 export const metadata = {
   title:
     "Online B2 Italian Course in Bangalore | Online B2 Italian Classes in Bangalore",
@@ -28,6 +29,7 @@ export default function ItalianB2Course() {
         link="/"
       />
       <ItalianB2Essentials />
+      <ItalianCourseLvl/>
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />

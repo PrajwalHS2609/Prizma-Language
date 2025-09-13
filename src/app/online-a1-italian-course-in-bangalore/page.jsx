@@ -5,6 +5,7 @@ import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 import ItalianA1Essentials from "../../components/ItalianCourse/ItalianA1/ItalianA1Essentials";
+import ItalianCourseLvl from "../../components/ItalianCourse/ItalianCourseLvl";
 import ItalianCourse from "../online-italian-course-in-bangalore/page";
 import italyBanner from "./../../Imgs/CourseBanner/italy.png";
 import italyFlag from "./../../Imgs/barImgs/italy.png";
@@ -29,6 +30,7 @@ export default function ItalianA1Course() {
         link="/"
       />
       <ItalianA1Essentials />
+      <ItalianCourseLvl />
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />

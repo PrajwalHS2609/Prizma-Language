@@ -6,6 +6,7 @@ import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 import ItalianC1Content from "../../components/ItalianCourse/ItalianC1/ItalianC1Content";
 import ItalianC1Essentials from "../../components/ItalianCourse/ItalianC1/ItalianC1Essentials";
+import ItalianCourseLvl from "../../components/ItalianCourse/ItalianCourseLvl";
 import italyBanner from "./../../Imgs/CourseBanner/italy.png";
 import italyFlag from "./../../Imgs/barImgs/italy.png";
 
@@ -29,6 +30,8 @@ export default function ItalianC1Course() {
         link="/"
       />
       <ItalianC1Essentials />
+            <ItalianCourseLvl />
+
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />

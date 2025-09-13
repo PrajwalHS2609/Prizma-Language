@@ -10,20 +10,25 @@ const SpanishB2Description = () => {
         className="nestedGermanCurriculum-Content"
         id="nestedGermanCurriculum-Content1"
       >
-        <h4>COURSE DESCRIPTION</h4>
+        <h4>Online Spanish B2 Language Course</h4>
         <p>
-          B2 Intermediate Level 2 Spanish course equips you with sufficient
-          linguistic ability to cope in average day to day situations in normal
-          communicative circumstances which do not require specialized use of
-          the language.
-        </p>
-        <h4>COURSE DETAILS</h4>
-        <p>
-          After completing the B2 intermediate level 2 Spanish course, you will
-          be able to describe experiences, events, wishes and hopes, as well as
-          to be able to briefly express opinions or explain plans. Produce
-          simple and coherent texts about familiar topics, or topics of personal
-          interests.
+          Elevate your Spanish fluency with Prizma Academy’s Online Spanish B2
+          Language Course, designed for learners aiming to achieve an
+          advanced-intermediate level of communication. This course empowers you
+          to engage confidently in complex conversations, express ideas clearly,
+          and understand detailed texts across a wide range of topics. The
+          Online Spanish B2 Language Course places emphasis on refining grammar,
+          expanding vocabulary, and mastering idiomatic expressions to help you
+          sound more natural and professional in Spanish. Through interactive
+          Online Spanish Classes, you will practice debates, role-plays,
+          presentations, and written assignments, preparing you for real-world
+          interactions in academic, professional, or cultural contexts. Our
+          certified trainers provide structured guidance with personalized
+          feedback, ensuring steady progress. Flexible scheduling makes it
+          easier for working professionals, students, and travelers to fit
+          learning into their routines. Completing this course enhances your
+          readiness for higher-level certifications, study abroad opportunities,
+          or professional roles requiring strong Spanish communication skills.
         </p>
         <br />
       </div>

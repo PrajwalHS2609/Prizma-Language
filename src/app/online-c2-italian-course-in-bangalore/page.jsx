@@ -6,6 +6,7 @@ import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
 import ItalianC2Content from "../../components/ItalianCourse/ItalianC2/ItalianC2Content";
 import ItalianC2Essentials from "../../components/ItalianCourse/ItalianC2/ItalianC2Essentials";
+import ItalianCourseLvl from "../../components/ItalianCourse/ItalianCourseLvl";
 import italyBanner from "./../../Imgs/CourseBanner/italy.png";
 import italyFlag from "./../../Imgs/barImgs/italy.png";
 export const metadata = {
@@ -28,12 +29,13 @@ export default function ItalianC2Course() {
         link="/"
       />
       <ItalianC2Essentials />
+      <ItalianCourseLvl />
       <HomeFeatures />
       <HomeBenefits />
       <HomeWhy />
       <HomeReviews />
       <HomeYoutube />
-      <ItalianC2Content/>
+      <ItalianC2Content />
     </div>
   );
 }

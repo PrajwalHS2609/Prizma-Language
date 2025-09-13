@@ -4,12 +4,13 @@ import React from "react";
 import "./ContactUsMain.css";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
+
 const ContactUsForm = () => {
-    const router = useRouter(); // <-- Initialize router
+  const router = useRouter();
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    const form = event.target;
+    const form = event.target; // this will now be the <form>
     const formData = new FormData(form);
     formData.append("access_key", "8e8187ed-fc3e-4bd8-b553-0755da89ab07");
 
@@ -32,7 +33,7 @@ const ContactUsForm = () => {
         icon: "success",
         confirmButtonText: "OK",
       }).then(() => {
-        router.push("/thank-you"); // <-- Redirect after confirmation
+        router.push("/thank-you");
       });
       form.reset();
     } else {
@@ -43,35 +44,31 @@ const ContactUsForm = () => {
       });
     }
   };
+
   return (
     <div className="contactUsForm">
-      <form action="">
+      {/* Attach onSubmit to form */}
+      <form onSubmit={onSubmit}>
         <div className="firstInput">
-          <input type="text" name="" id="" placeholder="Name*" />
-          <input type="text" name="" id="" placeholder="Email*" />
+          <input type="text" name="name" placeholder="Name*" required />
+          <input type="email" name="email" placeholder="Email*" required />
         </div>
         <div className="secondInput">
-          <input type="text" name="" id="" placeholder="Phone*" />
-          <select name="" id="">
+          <input type="text" name="phone" placeholder="Phone*" required />
+          <select name="course" required>
             <option value="">Select Course</option>
             <option value="German">German</option>
             <option value="French">French</option>
             <option value="Spanish">Spanish</option>
-            {/* <option value="">Japanese</option>
-            <option value="">Korean</option> */}
             <option value="Italian">Italian</option>
           </select>
         </div>
         <div className="thirdInput">
-          <textarea
-            name=""
-            id=""
-            rows={5}
-            placeholder="Your Message"
-          ></textarea>
+          <textarea name="message" rows={5} placeholder="Your Message"></textarea>
         </div>
         <div className="contactFormBtn">
-          <button onClick={onSubmit}>Send Message</button>
+          {/* Button should be type="submit" */}
+          <button type="submit">Send Message</button>
         </div>
       </form>
     </div>
