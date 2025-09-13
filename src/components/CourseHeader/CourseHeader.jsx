@@ -1,12 +1,16 @@
+"use client"
 import React from "react";
 import "./CourseHeader.css";
 import reading from "./../../Imgs/reading.png";
 import listening from "./../../Imgs/listening.png";
 import writing from "./../../Imgs/writing.png";
 import speaking from "./../../Imgs/speaking.png";
-import Link from "next/link";
 import Image from "next/image";
 const CourseHeader = (props) => {
+    const handlePopUp = (e) => {
+    e.preventDefault();
+    document.querySelector(".popup").style.display = "flex";
+    }
   return (
     <div className="coursesHeader-container">
       <div className="coursesHeader-content">
@@ -41,7 +45,7 @@ const CourseHeader = (props) => {
               <p>{props.description}</p>
             </div>
             <div className="coursesHeader-despContent">
-              <Link href={props.link}>View Course Details</Link>
+              <button onClick={handlePopUp}>Speak To Advisor</button>
             </div>
           </div>
         </div>
@@ -73,7 +77,7 @@ const CourseHeader = (props) => {
             </p>
           </div>
           <div className="coursesHeader-despContent">
-            <Link href={"/"}>View Course Details</Link>
+            <button onClick={handlePopUp}>View Course Details</button>
           </div>
         </div>
       </div>
