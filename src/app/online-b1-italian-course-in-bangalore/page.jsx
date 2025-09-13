@@ -4,6 +4,7 @@ import HomeFeatures from "../../components/HomePage/HomeFeatures/HomeFeatures";
 import HomeReviews from "../../components/HomePage/HomeReviews/HomeReviews";
 import HomeWhy from "../../components/HomePage/HomeWhy/HomeWhy";
 import HomeYoutube from "../../components/HomePage/HomeYoutube/HomeYoutube";
+import ItalianB1Content from "../../components/ItalianCourse/ItalianB1/ItalianB1Content";
 import ItalianB1Essentials from "../../components/ItalianCourse/ItalianB1/ItalianB1Essentials";
 import italyBanner from "./../../Imgs/CourseBanner/italy.png";
 import italyFlag from "./../../Imgs/barImgs/italy.png";
@@ -32,6 +33,7 @@ export default function ItalianB1Course() {
       <HomeWhy />
       <HomeReviews />
       <HomeYoutube />{" "}
+      <ItalianB1Content/>
     </div>
   );
 }

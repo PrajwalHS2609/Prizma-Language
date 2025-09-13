@@ -9,7 +9,7 @@ const ItalianC2Content = () => {
     <div className="courseHead">
       <div className="courseHead-content">
         <h1>
-          Online C1 <span>Italian</span> Course in Bangalore
+          Online C2 <span>Italian</span> Course in Bangalore
         </h1>
         <p>
           {" "}
@@ -38,6 +38,8 @@ const ItalianC2Content = () => {
           structured to meet international exam requirements, academic needs,
           and professional expectations.
         </p>
+              {expanded && (
+        <>
         <p>
           A C2 Italian Course Online in Bangalore is not just about grammar and
           vocabulary. It is about mastering nuances, idiomatic expressions,
@@ -205,35 +207,12 @@ const ItalianC2Content = () => {
           opportunities, building global connections, and embracing a world of
           knowledge and culture.
         </p>
-      </div>
-      {expanded && (
-        <>
-          <div className="courseHead-content">
-            <h2> </h2>
-          </div>
-          <div className="courseHead-content">
-            <h2> </h2>
-          </div>
-          <div className="courseHead-content">
-            <h2> </h2>
-          </div>
-          <div className="courseHead-content">
-            <h2> </h2>
-          </div>
-          <div className="courseHead-content">
-            <h2> </h2>
-          </div>
-          <div className="courseHead-content">
-            <h2> </h2>
-          </div>
-          <div className="courseHead-content">
-            <h2> </h2>
-          </div>
         </>
       )}
       <button className="readMoreBtn" onClick={() => setExpanded(!expanded)}>
         {expanded ? "Read Less ▲" : "Read More ▼"}
       </button>
+      </div>
     </div>
   );
 };
