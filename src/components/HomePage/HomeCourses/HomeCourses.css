@@ -193,7 +193,7 @@
   .homeCourses {
     /* border: solid red; */
     gap: 50px;
-    padding: 20px;
+    padding: 10px;
   }
   .homeCoursesHead > h2 {
     font-size: 30px;
@@ -211,5 +211,14 @@
     /* border: solid green; */
     width: 350px;
     height: 100%;
+  }
+  .homeCoursesCardTxt {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
   }
 }
