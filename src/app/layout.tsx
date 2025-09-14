@@ -16,7 +16,9 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="./favIcon.png" />
          {/* Google tag (gtag.js) */}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMB4V5PHPS"></script>
+
 <meta name="google-site-verification" content="_fzSw7AvxEVOEegIsVXVh_hADpiIXYjbD7XAe_l5WIk"/>
+
 <script>
 {`  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
