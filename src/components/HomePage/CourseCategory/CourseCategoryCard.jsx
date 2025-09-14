@@ -1,5 +1,6 @@
 import React from "react";
 import "./CourseCategory.css";
+import Link from "next/link";
 const CourseCategoryCard = (props) => {
   return (
     <div className="courseCategoryCard" id={props.id}>
@@ -10,7 +11,7 @@ const CourseCategoryCard = (props) => {
         />
       </div>
       <div className="courseCategoryCardTxt">
-        <h3>{props.head}</h3>
+        <Link href={props.link}><h3>{props.head}</h3></Link>
         <p>{props.lvl}</p>
       </div>
     </div>

@@ -14,6 +14,7 @@ const HomeCoursesMain = () => {
         courseName="German Course"
         img={german}
         students="5000"
+        link="/online-a1-german-course-in-bangalore"
         courseDescription="Begin your German language journey with our course and develop a solid foundation in reading, writing, and speaking under expert guidance."
       />
       <HomeCoursesCard
@@ -21,6 +22,7 @@ const HomeCoursesMain = () => {
         courseName="French Course"
         img={french}
         students="1300"
+        link="/online-a1-french-course-in-bangalore"
         courseDescription="Lay the foundation for your French language skills with our course, focusing on reading, writing, and speaking under expert guidance."
       />
       <HomeCoursesCard
@@ -28,6 +30,7 @@ const HomeCoursesMain = () => {
         courseName="Spanish Course"
         img={spanish}
         students="700"
+        link="/online-a1-spanish-course-in-bangalore"
         courseDescription="Start your Spanish adventure with our course and build a strong foundation in reading, writing, and speaking."
       />
       {/* <HomeCoursesCard
@@ -47,6 +50,7 @@ const HomeCoursesMain = () => {
         courseName="Italian Course"
         img={italian}
         students="340"
+        link="/online-a1-italian-course-in-bangalore"
         courseDescription="Kickstart your Italian language skills with our course, focusing on mastering reading, writing, and speaking under expert guidance."
       />
     </div>

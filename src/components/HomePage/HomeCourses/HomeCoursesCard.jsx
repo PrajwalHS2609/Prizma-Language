@@ -20,7 +20,7 @@ const HomeCoursesCard = (props) => {
           <div className="courseType">{props.courseType}</div>
         </div>
         <div className="homeCoursesCardTxt">
-          <h4>{props.courseName}</h4>
+         <Link href={props.link}> <h4>{props.courseName}</h4></Link>
           <Image src={rating} alt="" /> <span>(4.9 ratings)</span>
         </div>
         <div className="homeCoursesCardTxt">

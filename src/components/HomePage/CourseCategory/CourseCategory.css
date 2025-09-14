@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 .courseCategoryHead-content > h6 {
-  background:var(--customGradient);
+  background: var(--customGradient);
   background-clip: text;
   font-weight: bold;
   color: transparent;
@@ -35,7 +35,7 @@
   font-weight: bolder;
 }
 .courseCategoryHead-content > h2 > span {
-  background:var(--customGradient);
+  background: var(--customGradient);
   background-clip: text;
   color: transparent;
 }
@@ -139,6 +139,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.courseCategoryCardTxt > a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: var(--customColor);
+  }
 }
 #courseCategoryCard1 {
   background-color: #d9fbb7;
