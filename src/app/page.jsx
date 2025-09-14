@@ -9,6 +9,13 @@ import CefrShow from "./../components/HomePage/CefrShow/CefrShow";
 import HomeYoutube from "./../components/HomePage/HomeYoutube/HomeYoutube";
 import HomeReviews from "./../components/HomePage/HomeReviews/HomeReviews";
 import Blog from "../components/HomePage/Blog/Blog";
+export const metadata = {
+  title:"Online Foreign Language Course - German, French, Spanish & Italian",
+  description:
+    "Master German, French, Spanish & Italian with Prizma Academy’s online courses. Learn from certified trainers with flexible, interactive classes.",
+  canonical: "https://prizmaacademy.com/",
+  keywords: [],
+};
 export default function HomePage() {
   return (
     <div>
