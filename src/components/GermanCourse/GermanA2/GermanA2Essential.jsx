@@ -15,8 +15,8 @@ const GermanA2Essential = () => {
     switch (activeTab) {
       case "GermanA2Curriculum":
         return <GermanA2Curriculum />;
-      case "GermanA1Description":
-        return <GermanA1Description />;
+      case "GermanA2Description":
+        return <GermanA2Description />;
       case "GermanA1Instructor":
         return <GermanA1Instructor />;
       case "GermanA1Reviews":

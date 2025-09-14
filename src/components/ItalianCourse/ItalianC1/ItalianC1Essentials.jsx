@@ -1,10 +1,10 @@
 "use client"
 import React, { useState } from 'react'
 import ItalianC1Description from './ItalianC1Description';
-import GermanA1Instructor from '../../GermanCourse/GermanA1/GermanA1Instructor';
 import GermanA1Reviews from '../../GermanCourse/GermanA1/GermanA1Reviews';
 import "./../../Styles.css";
 import ItalianC1Curriculum from './ItalianC1Curriculum';
+import ItalianCourseInstructor from '../ItalianCourseInstructor';
 
 const ItalianC1Essentials = () => {
      const [activeTab, setActiveTab] = useState("ItalianC1Curriculum"); // Default is Curriculum
@@ -15,8 +15,8 @@ const ItalianC1Essentials = () => {
         return <ItalianC1Curriculum />;
       case "ItalianC1Description":
         return <ItalianC1Description />;
-      case "GermanA1Instructor":
-        return <GermanA1Instructor />;
+      case "ItalianCourseInstructor":
+        return <ItalianCourseInstructor />;
       case "GermanA1Reviews":
         return <GermanA1Reviews />;
       default:
@@ -25,7 +25,7 @@ const ItalianC1Essentials = () => {
   };
   return (
  <div className="courseEssentials-container" id="details">
-      <h2>Italian A1 Course Essentials</h2>
+      <h2>Italian C1 Course Essentials</h2>
       <div className="courseEssentials-nestedContainer">
         {/* Navigation Tabs */}
         <nav className="courseEssentialsNestedNav">
@@ -48,8 +48,8 @@ const ItalianC1Essentials = () => {
             </li>
             <li>
               <button
-                className={activeTab === "GermanA1Instructor" ? "active" : ""}
-                onClick={() => setActiveTab("GermanA1Instructor")}
+                className={activeTab === "ItalianCourseInstructor" ? "active" : ""}
+                onClick={() => setActiveTab("ItalianCourseInstructor")}
               >
                 Instructor
               </button>

@@ -35,7 +35,8 @@ export default function SpanishC1Course() {
       <HomeBenefits />
       <HomeWhy />
       <HomeReviews />
-      <HomeYoutube /> <SpanishC1Content />
+      <HomeYoutube /> 
+      <SpanishC1Content />
     </div>
   );
 }

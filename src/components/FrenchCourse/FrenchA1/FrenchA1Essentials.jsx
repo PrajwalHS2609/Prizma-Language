@@ -3,9 +3,9 @@
 import React, { useState } from 'react'
 import FrenchA1Curriculum from './FrenchA1Curriculum';
 import FrenchA1Description from './FrenchA1Description';
-import GermanA1Instructor from '../../GermanCourse/GermanA1/GermanA1Instructor';
 import GermanA1Reviews from '../../GermanCourse/GermanA1/GermanA1Reviews';
 import "./../../Styles.css";
+import FrenchCourseInstructor from '../FrenchCourseInstructor';
 
 const FrenchA1Essentials = () => {
       const [activeTab, setActiveTab] = useState("FrenchA1Curriculum"); // Default is Curriculum
@@ -16,8 +16,8 @@ const FrenchA1Essentials = () => {
         return <FrenchA1Curriculum />;
       case "FrenchA1Description":
         return <FrenchA1Description />;
-      case "GermanA1Instructor":
-        return <GermanA1Instructor />;
+      case "FrenchCourseInstructor":
+        return <FrenchCourseInstructor />;
       case "GermanA1Reviews":
         return <GermanA1Reviews />;
       default:
@@ -49,8 +49,8 @@ const FrenchA1Essentials = () => {
             </li>
             <li>
               <button
-                className={activeTab === "GermanA1Instructor" ? "active" : ""}
-                onClick={() => setActiveTab("GermanA1Instructor")}
+                className={activeTab === "FrenchCourseInstructor" ? "active" : ""}
+                onClick={() => setActiveTab("FrenchCourseInstructor")}
               >
                 Instructor
               </button>

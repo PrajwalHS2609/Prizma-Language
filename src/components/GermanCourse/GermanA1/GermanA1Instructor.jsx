@@ -2,7 +2,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./../GermanA1/GermanA1.css"
+import "./../GermanA1/GermanA1.css";
 
 const GermanA1Instructor = () => {
   const responsive = {
@@ -135,10 +135,10 @@ const GermanA1Instructor = () => {
           </div>
           <div className="nestedGermanInstructor-content">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              nostrum molestiae sapiente laudantium praesentium fugiat
-              doloremque porro omnis ipsam obcaecati libero ducimus soluta quo
-              distinctio quos.
+              Our Certified German Trainer ensures expert guidance with
+              personalized teaching methods, helping learners build strong
+              grammar, vocabulary, and communication skills for academic,
+              professional, and cultural success.
             </p>
           </div>
         </div>

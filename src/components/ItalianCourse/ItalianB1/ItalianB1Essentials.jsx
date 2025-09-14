@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from "react";
-import GermanA1Instructor from "../../GermanCourse/GermanA1/GermanA1Instructor";
 import ItalianB1Curriculum from "./ItalianB1Curriculum";
 import ItalianB1Description from "./ItalianB1Description";
 import "./../../Styles.css";
+import ItalianCourseInstructor from "../ItalianCourseInstructor";
 
 const ItalianB1Essentials = () => {
   const [activeTab, setActiveTab] = useState("ItalianB1Curriculum"); // Default is Curriculum
@@ -14,8 +14,8 @@ const ItalianB1Essentials = () => {
         return <ItalianB1Curriculum />;
       case "ItalianB1Description":
         return <ItalianB1Description />;
-      case "GermanA1Instructor":
-        return <GermanA1Instructor />;
+      case "ItalianCourseInstructor":
+        return <ItalianCourseInstructor />;
       case "GermanA1Reviews":
         return <GermanA1Reviews />;
       default:
@@ -47,8 +47,8 @@ const ItalianB1Essentials = () => {
             </li>
             <li>
               <button
-                className={activeTab === "GermanA1Instructor" ? "active" : ""}
-                onClick={() => setActiveTab("GermanA1Instructor")}
+                className={activeTab === "ItalianCourseInstructor" ? "active" : ""}
+                onClick={() => setActiveTab("ItalianCourseInstructor")}
               >
                 Instructor
               </button>
