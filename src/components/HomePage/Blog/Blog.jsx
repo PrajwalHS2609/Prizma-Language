@@ -33,7 +33,7 @@ const Blog = () => {
           </h2>
         </div>
         <div className="blog-heading">
-          <Link href="/">
+          <Link href="/blog">
             {" "}
             <button>
               View All Blog <FaArrowRight className="blog-HeadingIcon" />

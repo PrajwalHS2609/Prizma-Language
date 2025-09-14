@@ -10,7 +10,7 @@ const HomeCourses = () => {
     <div className="homeCourses">
       <HomeCoursesHead />
       <HomeCoursesMain />
-      <Link href="">
+      <Link href="/courses">
         <button>
           View All Courses{" "}
           <FaArrowRight className="menuIcon"/>
