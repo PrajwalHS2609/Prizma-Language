@@ -1,6 +1,5 @@
 import React from "react";
 import { PortableText, type SanityDocument } from "next-sanity";
-import { client } from "@/sanity/client";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -11,6 +10,7 @@ import { portableTextComponents } from "./../../components/PortableTextComponent
 import BlogSidebar from "./../../components/BlogPage/BlogSidebar/BlogSidebar";
 import "@/components/Styles.css";
 import AboutUsHeader from "@/components/AboutUsPage/AboutUsHeader/AboutUsHeader";
+import { client } from "../../../sanity/lib/client";
 
 export const revalidate = 0;
 
