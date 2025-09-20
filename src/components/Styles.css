@@ -722,7 +722,7 @@
   width: 50%;
   right: -20px;
 }
-.blogHead-content>h1{
+.blogHead-content > h1 {
   color: var(--customColor);
 }
 .blogHead-content > h4 {
@@ -1144,7 +1144,7 @@
 .youtube-container {
   /* border: solid red; */
   width: 100%;
-  height:600px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1164,17 +1164,17 @@
     gap: 30px;
   }
   .youtube-container {
-  /* border: solid red; */
-  width: 100%;
-  height:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.youtube-container > iframe {
-  width: 100%;
-  height: 100%;
-}
+    /* border: solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .youtube-container > iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* ------------------------------slugContent---------------------------------------- */
@@ -1356,6 +1356,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .blog-wrapper1 {
@@ -1528,17 +1529,11 @@
     gap: 20px;
     padding: 10px;
   }
-  .blog-container {
-    /* border: solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+
   .blog-wrapper1 {
     /* border: solid blue; */
     width: 100%;
-    margin: 0 ;
+    margin: 0;
     padding: 10px;
   }
   .blog-wrapper1 > img {
@@ -1549,26 +1544,6 @@
   .blog-wrapper2 {
     /* border: solid red; */
     width: 100%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1020px) {
-  .blog-container {
-    /* border: solid red; */
-    flex-direction: column;
-  }
-  .blog-wrapper1 {
-    /* border: solid blue; */
-    width: 100%;
-    margin: 0 auto;
-  }
-  .blog-wrapper2 {
-    /* border: solid red; */
-    width: 100%;
-  }
-  .blogPost-container > ul > a > li > h4 {
-    text-align: justify;
-    font-size: 25px;
-    font-weight: 500;
   }
 }
 
@@ -1638,8 +1613,9 @@
 /* .blogHead-content>p>strong{
     color: var(--customColor);
 } */
-.blogHead-content>p>strong>a{
-    color: var(--customColor);text-decoration: none;
+.blogHead-content > p > strong > a {
+  color: var(--customColor);
+  text-decoration: none;
 }
 .blogHead-content > ul {
   width: 100%;

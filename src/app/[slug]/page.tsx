@@ -139,11 +139,11 @@ export default async function SlugPage({
           <AboutUsHeader heading={content.title} bread={content.title} />
         )}
 
-        {/* <h1
+        <h1
           className={isNews || isPost ? "blogHead-content" : "head-container"}
         >
           {content.title}
-        </h1> */}
+        </h1>
 
         {isNews && content.publishedAt && content.author && (
           <b className="published-date">
