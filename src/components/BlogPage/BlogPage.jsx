@@ -3,7 +3,7 @@ import React from "react";
 import "./../Styles.css";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
-import { client } from './../../../sanity/lib/client';
+import { client } from '@/sanity/client';
 import Image from "next/image";
 
 const POSTS_QUERY = `*[
