@@ -12,6 +12,7 @@ import BlogSidebar from "./../../components/BlogPage/BlogSidebar/BlogSidebar";
 import "@/components/Styles.css";
 import AboutUsHeader from "@/components/AboutUsPage/AboutUsHeader/AboutUsHeader";
 
+export const revalidate = 0;
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
   _id,
