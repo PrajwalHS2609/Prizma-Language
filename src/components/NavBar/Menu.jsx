@@ -11,7 +11,7 @@ import Link from "next/link";
 import Image from "next/image";
 const Menu = () => {
   let [drop, setDrop] = useState(false);
-  const pathname = usePathname();
+    const pathname = usePathname();
 
   let dropRef = useRef();
   let showSideBar = () => {
