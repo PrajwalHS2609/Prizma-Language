@@ -10,7 +10,7 @@ import { portableTextComponents } from "./../../components/PortableTextComponent
 import BlogSidebar from "./../../components/BlogPage/BlogSidebar/BlogSidebar";
 import "@/components/Styles.css";
 import AboutUsHeader from "@/components/AboutUsPage/AboutUsHeader/AboutUsHeader";
-import { client } from "../../../sanity/lib/client";
+import { client } from "@/sanity/client";
 
 export const revalidate = 0;
 
