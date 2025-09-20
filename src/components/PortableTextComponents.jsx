@@ -1,4 +1,3 @@
-import { PortableTextComponents } from "@portabletext/react";
 import Image from "next/image";
 import imageUrlBuilder from "@sanity/image-url";
 import { client } from "@/sanity/client"; // adjust this path to match your setup
