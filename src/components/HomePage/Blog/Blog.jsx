@@ -44,7 +44,7 @@ export default async function Blog() {
   //   },
   // ];
   return (
-    <div className="blog-container">
+    <div className="homeBlog-container">
       <div className="blog-content">
         <div className="blog-heading">
           <h6>Our Blog</h6>
