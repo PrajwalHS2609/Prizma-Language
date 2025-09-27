@@ -1,30 +1,29 @@
 "use client"
 import React from "react";
-import "./CourseHeader.css";
 import reading from "./../../Imgs/reading.png";
 import listening from "./../../Imgs/listening.png";
 import writing from "./../../Imgs/writing.png";
 import speaking from "./../../Imgs/speaking.png";
 import Image from "next/image";
-const CourseHeader = (props) => {
-    const handlePopUp = (e) => {
+import "./ContentHeader.css";
+const ContentHeader = (props) => {
+  const handlePopUp = (e) => {
     e.preventDefault();
     document.querySelector(".popup").style.display = "flex";
-    }
+  };
   return (
-    <div className="coursesHeader-container">
-      <div className="coursesHeader-content">
-        <h2>{props.country}</h2>
-        <div className="bar"><Image src={props.bar} alt=""/></div>
+    <div className="contentHeader-container">
+      <div className="contentHeader-content">
+        <h2>{props.language}</h2>
       </div>
-      <div className="coursesHeader-content">
-        <Image src={props.img} alt={props.heading} />
-        <div className="coursesHeader-cover">
-          <div className="coursesHeader-title">
+      <div className="contentHeader-content">
+        <Image src={props.img} alt={props.heading} width={1300} height={800}/>
+        <div className="contentHeader-cover">
+          <div className="contentHeader-title">
             <h2>{props.heading}</h2>
           </div>
-          <div className="coursesHeader-desp" id="coursesHeader-desp1">
-            <div className="coursesHeader-despContent">
+          <div className="contentHeader-desp" id="contentHeader-desp1">
+            <div className="contentHeader-despContent">
               <li>
                 <Image src={speaking} alt="speaking" /> Speaking
               </li>
@@ -41,18 +40,23 @@ const CourseHeader = (props) => {
                 Writing
               </li>
             </div>
-            <div className="coursesHeader-despContent">
-              <p>{props.description}</p>
+            <div className="contentHeader-despContent">
+              <p>
+                ` If you have a basic knowledge of {props.country} , you are
+                ready to move on to our Elementary courses where you’ll build
+                upon the foundations and gain a more solid understanding of the
+                language.`
+              </p>
             </div>
-            <div className="coursesHeader-despContent">
+            <div className="contentHeader-despContent">
               <button onClick={handlePopUp}>Speak To Advisor</button>
             </div>
           </div>
         </div>
       </div>
-      <div className="coursesHeader-content">
-        <div className="coursesHeader-desp" id="coursesHeader-desp2">
-          <div className="coursesHeader-despContent">
+      <div className="contentHeader-content">
+        <div className="contentHeader-desp" id="contentHeader-desp2">
+          <div className="contentHeader-despContent">
             <li>
               <Image src={speaking} alt="speaking" /> Speaking
             </li>
@@ -69,12 +73,14 @@ const CourseHeader = (props) => {
               Writing
             </li>
           </div>
-          <div className="coursesHeader-despContent">
+          <div className="contentHeader-despContent">
             <p>
-             {props.description}
+              ` If you have a basic knowledge of {props.language} , you are ready
+              to move on to our Elementary courses where you’ll build upon the
+              foundations and gain a more solid understanding of the language.`
             </p>
           </div>
-          <div className="coursesHeader-despContent">
+          <div className="contentHeader-despContent">
             <button onClick={handlePopUp}>View Course Details</button>
           </div>
         </div>
@@ -83,4 +89,4 @@ const CourseHeader = (props) => {
   );
 };
 
-export default CourseHeader;
+export default ContentHeader;

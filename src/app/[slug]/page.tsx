@@ -10,7 +10,7 @@ import HomeYoutube from "@/components/HomePage/HomeYoutube/HomeYoutube";
 import { portableTextComponents } from "./../../components/PortableTextComponents";
 import BlogSidebar from "./../../components/BlogPage/BlogSidebar/BlogSidebar";
 import "@/components/Styles.css";
-import AboutUsHeader from "@/components/AboutUsPage/AboutUsHeader/AboutUsHeader";
+import ContentHeader from "./../../components/ContentHeader/ContentHeader";
 
 export const revalidate = 0;
 
@@ -45,7 +45,9 @@ const SERVICE_QUERY = `*[_type == "ServiceCategory" && slug.current == $slug][0]
   mainImage {
     asset->{ _id, url }
   },
-  youtubeVideoUrl
+  youtubeVideoUrl,
+    language
+
 }`;
 
 const NEWS_QUERY = `*[_type == "news" && slug.current == $slug][0]{
@@ -136,7 +138,12 @@ export default async function SlugPage({
         )}
 
         {isService && imageUrl && (
-          <AboutUsHeader heading={content.title} bread={content.title} />
+          <ContentHeader
+            language={content.language}
+            img={imageUrl}
+            heading={content.title}
+            description=""
+          />
         )}
 
         <h1
@@ -202,7 +209,6 @@ export default async function SlugPage({
               <HomeWhy />
               <HomeReviews />
               <HomeYoutube />{" "}
-              
             </div>
             {Array.isArray(content.body2) && (
               <div className="slugContent-wrapper">

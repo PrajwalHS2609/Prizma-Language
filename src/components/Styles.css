@@ -1196,7 +1196,7 @@
 
 .slugContent-container > p {
   font-size: 18px;
-  text-align: start;
+  text-align: justify;
   width: 100%;
 }
 /* .slugContent-container > p > strong {
@@ -1265,8 +1265,12 @@
 .slugContent-container > ul > li {
   margin: 20px;
   font-size: 18px;
-  text-align: start;
+  text-align: justify;
   width: fit-content;
+}
+.slugContent-container > ul > li > a {
+  color: var(--customColor);
+  text-decoration: none;
 }
 /* .slugContent-container > ul > li > strong {
   color: var(--customColor);

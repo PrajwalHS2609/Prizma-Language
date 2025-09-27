@@ -28,6 +28,20 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'language',
+      title: 'Language',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'German', value: 'Germany'},
+          {title: 'Italian', value: 'Italian'},
+          {title: 'Spanish', value: 'Spanish'},
+          {title: 'French', value: 'French'},
+        ],
+        layout: 'dropdown', // makes it a dropdown in the Studio
+      },
+    }),
+    defineField({
       name: 'body1',
       title: 'Body1',
       type: 'blockContent',

@@ -1,4 +1,4 @@
-.coursesHeader-container {
+.contentHeader-container {
   /* border: solid red; */
   width: 100%;
   height: 100%;
@@ -7,36 +7,36 @@
   align-items: center;
   flex-direction: column;
 }
-.coursesHeader-content {
+.contentHeader-content {
   /* border: solid blue; */
   width: 100%;
   padding: 40px;
   position: relative;
 }
-.coursesHeader-content > img {
+.contentHeader-content > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 0 0;
 }
-.coursesHeader-content:nth-child(1) {
+.contentHeader-content:nth-child(1) {
   height: 200px;
 }
-.coursesHeader-content > h2 {
+.contentHeader-content > h2 {
   position: absolute;
   bottom: 20px;
   left: 40px;
   font-size: 50px;
   font-weight: bold;
 }
-.coursesHeader-content:nth-child(2) {
+.contentHeader-content:nth-child(2) {
   height: 700px;
   padding: 0;
 }
-.coursesHeader-content:nth-child(3) {
+.contentHeader-content:nth-child(3) {
   height: 150px;
 }
-.coursesHeader-cover {
+.contentHeader-cover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -59,7 +59,7 @@
   height: 100%;
   object-fit: fill;
 }
-.coursesHeader-desp {
+.contentHeader-desp {
   /* border: solid teal; */
   width: 500px;
   height: 350px;
@@ -73,14 +73,14 @@
   background-color: white;
   z-index: 1;
 }
-#coursesHeader-desp2 {
+#contentHeader-desp2 {
   display: none;
 }
-.coursesHeader-despContent {
+.contentHeader-despContent {
   width: 100%;
   /* border: solid red; */
 }
-.coursesHeader-despContent:nth-child(1) {
+.contentHeader-despContent:nth-child(1) {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -88,11 +88,11 @@
   padding: 30px;
   gap: 20px;
 }
-.coursesHeader-despContent:nth-child(2) {
+.contentHeader-despContent:nth-child(2) {
   height: 50%;
   padding: 30px;
 }
-.coursesHeader-despContent:nth-child(3) {
+.contentHeader-despContent:nth-child(3) {
   height: 20%;
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@
   background-color: var(--customColor);
   color: white;
 }
-.coursesHeader-despContent > button {
+.contentHeader-despContent > button {
   background-color: var(--customColor);
   border: none;
   color: white;
@@ -110,7 +110,7 @@
   width: 100%;
   height: 100%;
 }
-.coursesHeader-despContent > li {
+.contentHeader-despContent > li {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -119,74 +119,76 @@
   gap: 10px;
   font-weight: bold;
 }
-.coursesHeader-despContent > li > img {
+.contentHeader-despContent > li > img {
   width: 50px;
   height: 50px;
   object-fit: cover;
 }
-.coursesHeader-title {
+.contentHeader-title {
   position: absolute;
   z-index: 1;
   left: 30px;
   bottom: 20px;
   width: 500px;
 }
-.coursesHeader-title > h2 {
+.contentHeader-title > h2 {
   color: white;
   font-size: 50px;
 }
-.coursesHeader-despContent > p {
+.contentHeader-despContent > p {
   text-align: justify;
 }
 @media screen and (max-width: 768px) {
-  #coursesHeader-desp1 {
+  #contentHeader-desp1 {
     display: none;
   }
+
   .bar {
     position: absolute;
     bottom: -25px;
     left: 0px;
     width: 100%;
   }
-  #coursesHeader-desp2 {
+  .contentHeader-content:nth-child(2) {
+    height: 100%;
+    width: 100%;
+    /* border: solid red; */
+  }
+
+  #contentHeader-desp2 {
     display: flex;
     position: static;
   }
-  .coursesHeader-desp {
+  .contentHeader-desp {
     /* border: solid teal; */
     width: 100%;
     height: 100%;
   }
-  .coursesHeader-content {
+  .contentHeader-content {
     /* border: solid blue; */
     width: 100%;
     padding: 20px;
     position: relative;
   }
-  .coursesHeader-content:nth-child(1) {
+  .contentHeader-content:nth-child(1) {
     height: 100px;
   }
-  .coursesHeader-content:nth-child(2) {
-    height: 100%;
-    width: 100%;
-    /* border: solid red; */
-  }
-  .coursesHeader-content > img {
+  .contentHeader-content > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 0em;
+    object-position: 0;
   }
-  .coursesHeader-content:nth-child(3) {
+  .contentHeader-content:nth-child(3) {
     height: 100%;
   }
-  .coursesHeader-despContent:nth-child(1) {
+  .contentHeader-despContent:nth-child(1) {
     padding: 10px;
   }
-  .coursesHeader-despContent:nth-child(2) {
+  .contentHeader-despContent:nth-child(2) {
     padding: 10px;
   }
-  .coursesHeader-title {
+  .contentHeader-title {
     position: absolute;
     z-index: 1;
     left: 0px;
@@ -195,12 +197,12 @@
     padding: 20px;
   }
 
-  .coursesHeader-title > h2 {
+  .contentHeader-title > h2 {
     color: white;
     font-size: 30px;
     text-align: center;
   }
-    .coursesHeader-content > h2 {
+  .contentHeader-content > h2 {
   position: absolute;
   bottom: 20px;
   left: 40px;
