@@ -42,7 +42,7 @@ const ContentHeader = (props) => {
             </div>
             <div className="contentHeader-despContent">
               <p>
-                {` If you have a basic knowledge of ${props.country} , you are
+                {` If you have a basic knowledge of ${props.language} , you are
                 ready to move on to our Elementary courses where you’ll build
                 upon the foundations and gain a more solid understanding of the
                 language.`}
@@ -75,7 +75,7 @@ const ContentHeader = (props) => {
           </div>
           <div className="contentHeader-despContent">
               <p>
-                {` If you have a basic knowledge of ${props.country} , you are
+                {` If you have a basic knowledge of ${props.language} , you are
                 ready to move on to our Elementary courses where you’ll build
                 upon the foundations and gain a more solid understanding of the
                 language.`}
