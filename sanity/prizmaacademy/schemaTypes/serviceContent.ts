@@ -33,7 +33,7 @@ export default defineType({
       type: 'string',
       options: {
         list: [
-          {title: 'German', value: 'Germany'},
+          {title: 'German', value: 'German'},
           {title: 'Italian', value: 'Italian'},
           {title: 'Spanish', value: 'Spanish'},
           {title: 'French', value: 'French'},

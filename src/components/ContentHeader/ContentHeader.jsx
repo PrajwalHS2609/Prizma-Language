@@ -14,7 +14,7 @@ const ContentHeader = (props) => {
   return (
     <div className="contentHeader-container">
       <div className="contentHeader-content">
-        <h2>{props.language}</h2>
+        {/* <h2>{props.language}</h2> */}
       </div>
       <div className="contentHeader-content">
         <Image src={props.img} alt={props.heading} width={1300} height={800}/>
