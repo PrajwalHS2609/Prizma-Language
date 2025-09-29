@@ -151,6 +151,9 @@
   border-radius: 10px;
   background-color: white;
 }
+.homeBlog-container > h2 {
+  color: var(--customColor);
+}
 @media screen and (max-width: 768px) {
   .blog-container {
     /* border: solid red; */
