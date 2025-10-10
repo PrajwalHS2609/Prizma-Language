@@ -440,3 +440,57 @@
     display: flex;
   }
 }
+@media screen and (min-width: 990px) and (max-width: 1024px) {
+  .navbarContainerBtn {
+    display: none;
+  }
+  .menuContainer {
+    display: none;
+  }
+  .navbarContainer {
+    /* border: solid blue; */
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    position: sticky;
+    justify-content: space-between;
+  }
+  .navbarContainer1 {
+    /* border: solid red; */
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    position: sticky;
+    background-color: white;
+    justify-content: space-between;
+  }
+  .logoContainer {
+    /* border: solid green; */
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logoContainer > a > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .menuWrapper {
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .respMenuBar {
+    /* border: solid red; */
+    display: flex;
+  }
+}

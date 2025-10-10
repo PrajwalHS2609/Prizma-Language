@@ -142,7 +142,7 @@
     color: white;
   }
 }
-.aboutTxtBtn > button>span{
+.aboutTxtBtn > button > span {
   position: static;
   z-index: 2;
 }
@@ -158,7 +158,7 @@
   z-index: 1;
 }
 
-.menuBtnIcon{
+.menuBtnIcon {
   position: static;
   z-index: 2;
 }
@@ -219,5 +219,19 @@
     font-weight: bolder;
     font-size: 30px;
     text-align: center;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .homeAbout {
+    /* border: solid red; */
+
+    padding: 30px 10px;
+  }
+  .homeAboutContent1 {
+    width: 50%;
+  }
+  .homeAboutContent2 {
+    /* border: solid salmon; */
+    width: 50%;
   }
 }
