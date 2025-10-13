@@ -1,0 +1,70 @@
+.privacyTerms-wrapper {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.privacyTerms-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--lightCustomColor);
+  border-radius: 20px;
+}
+.privacyTerms-container > h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--customColor);
+}
+.privacyTerms-container > p {
+  font-size: 20px;
+}
+
+.privacyTerms-container > ul > b {
+  font-size: 20px;
+  color: var(--customColor);
+}
+.privacyTerms-container > ul > li {
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 20px;
+}
+.privacyTerms-container > ul > li > span {
+  color: var(--customColor);
+  font-size: 2rem;
+}
+li::marker {
+  color: var(--customColor);
+}
+.privacyTerms-container > ol > b {
+  font-size: 20px;
+  color: var(--customColor);
+}
+.privacyTerms-container > ol > li {
+  font-size: 20px;
+  margin: 10px;
+  margin-left: 20px;
+}
+.privacyTerms-container > ol > li > b {
+  color: var(--customColor);
+}
+.privacyTerms-container > ol > li>ul>li{
+    list-style: disc;
+}
+li::marker {
+  color: var(--customColor);
+  font-weight: 500;
+}
