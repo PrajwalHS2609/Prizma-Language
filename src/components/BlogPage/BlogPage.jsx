@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
-  ]|order(publishedAt desc)[0...3]{
+  ]|order(publishedAt desc)[0...100]{
     _id,
     title,
     slug,
