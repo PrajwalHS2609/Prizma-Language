@@ -31,7 +31,7 @@ const PopUpForm = () => {
         icon: "success",
         confirmButtonText: "OK",
       }).then(() => {
-        router.push("/thank-you"); // <-- Redirect after confirmation
+        router.push("/"); // <-- Redirect after confirmation
       });
       form.reset();
     } else {
@@ -70,7 +70,7 @@ const PopUpForm = () => {
           ></textarea>
         </div>
         <div className="contactFormBtn">
-          <button onClick={onSubmit}>Send Message</button>
+          <button type="submit">Send Message</button>
         </div>
       </form>
     </div>

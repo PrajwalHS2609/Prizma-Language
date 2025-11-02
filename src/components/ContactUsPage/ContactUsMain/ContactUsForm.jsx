@@ -33,7 +33,7 @@ const ContactUsForm = () => {
         icon: "success",
         confirmButtonText: "OK",
       }).then(() => {
-        router.push("/thank-you");
+        router.push("/");
       });
       form.reset();
     } else {
