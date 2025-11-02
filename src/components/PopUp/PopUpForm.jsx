@@ -2,9 +2,7 @@
 import React from "react";
 import "./PopUp.css";
 import Swal from "sweetalert2";
-import { useRouter } from "next/navigation";
 const PopUpForm = () => {
-  const router = useRouter(); // <-- Initialize router
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -30,9 +28,7 @@ const PopUpForm = () => {
         text: "Mail Sent successfully",
         icon: "success",
         confirmButtonText: "OK",
-      }).then(() => {
-        router.push("/"); // <-- Redirect after confirmation
-      });
+      })
       form.reset();
     } else {
       Swal.fire({
@@ -44,13 +40,13 @@ const PopUpForm = () => {
   };
   return (
     <div className="contactUsForm" id="popupForm">
-      <form action="">
+      <form action="" onSubmit={onSubmit}>
         <div className="firstInput">
-          <input type="text" name="" id="" placeholder="Name*" />
-          <input type="text" name="" id="" placeholder="Email*" />
+          <input type="text" name="name" id="" placeholder="Name*" />
+          <input type="text" name="email" id="" placeholder="Email*" />
         </div>
         <div className="secondInput">
-          <input type="text" name="" id="" placeholder="Phone*" />
+          <input type="text" name="phone" id="" placeholder="Phone*" />
           <select name="" id="">
             <option value="">Select Course</option>
             <option value="German">German</option>
@@ -63,7 +59,7 @@ const PopUpForm = () => {
         </div>
         <div className="thirdInput">
           <textarea
-            name=""
+            name="message"
             id=""
             rows={5}
             placeholder="Your Message"

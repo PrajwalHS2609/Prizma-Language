@@ -3,10 +3,8 @@
 import React from "react";
 import "./ContactUsMain.css";
 import Swal from "sweetalert2";
-import { useRouter } from "next/navigation";
 
 const ContactUsForm = () => {
-  const router = useRouter();
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -32,9 +30,7 @@ const ContactUsForm = () => {
         text: "Mail Sent successfully",
         icon: "success",
         confirmButtonText: "OK",
-      }).then(() => {
-        router.push("/");
-      });
+      })
       form.reset();
     } else {
       Swal.fire({
