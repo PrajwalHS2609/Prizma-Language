@@ -8,7 +8,11 @@ import HomeWhy from "../components/HomePage/HomeWhy/HomeWhy";
 import CefrShow from "./../components/HomePage/CefrShow/CefrShow";
 import HomeYoutube from "./../components/HomePage/HomeYoutube/HomeYoutube";
 import HomeReviews from "./../components/HomePage/HomeReviews/HomeReviews";
-import Blog from "../components/HomePage/Blog/Blog";
+import dynamic from "next/dynamic";
+
+const Blog = dynamic(() => import("../components/HomePage/Blog/Blog"), {
+  ssr: true, // ✅ ensures it's server-rendered
+});
 export const metadata = {
   title:"Online Foreign Language Course - German, French, Spanish & Italian",
   description:
