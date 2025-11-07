@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import { client } from "@/sanity/client";
+export const revalidate = 0;
 
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
