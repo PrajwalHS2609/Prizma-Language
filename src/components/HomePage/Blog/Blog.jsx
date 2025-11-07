@@ -1,11 +1,10 @@
+"use client"
 import React from "react";
 import "./Blog.css";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import { client } from "@/sanity/client";
-import { SanityDocument } from "next-sanity";
-export const revalidate = 0;
 
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
@@ -23,7 +22,7 @@ const POSTS_QUERY = `*[
     }
   }`;
 export default async function Blog() {
-  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {});
+      const posts = await client.fetch(POSTS_QUERY);
 
   // const card = [
   //   {
