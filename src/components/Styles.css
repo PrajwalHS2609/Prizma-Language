@@ -2339,14 +2339,14 @@ blockquote > em {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   width: 100%;
-  background-color: var(--neutralColor);
+  background-color: var(--lightCustomColor);
 }
 
 /* Accordion Header */
 .accordion-title {
   cursor: pointer;
   padding: 1rem 1.5rem;
-  background: var(--accentColor1);
+  background: var(--customColor2);
   color: #222;
   font-weight: 600;
   font-size: 1.05rem;
@@ -2361,7 +2361,7 @@ blockquote > em {
   color: white;
 }
 .accordion-title:hover {
-  background: var(--accentColor1);
+  background: var(--customColor2);
 }
 
 /* Add + / - icon automatically */
@@ -2381,7 +2381,7 @@ blockquote > em {
 /* When accordion is open */
 .accordion-item[open] .accordion-title::after {
   content: "−";
-  color: var(--accentColor1);
+  color: var(--customColor2);
 }
 
 /* Accordion Content */
@@ -2402,12 +2402,12 @@ blockquote > em {
   width: 100%;
 }
 .accordion-content > p > strong {
-  color: var(--accentColor1);
+  color: var(--customColor2);
 }
 .accordion-content > p > a {
   text-decoration: none;
   font-weight: 500;
-  color: var(--accentColor1);
+  color: var(--customColor2);
 }
 /* Animate open content */
 .accordion-item[open] .accordion-content {
@@ -2417,6 +2417,6 @@ blockquote > em {
 
 /* Optional – subtle border highlight when open */
 .accordion-item[open] {
-  border-color: var(--accentColor1);
-  box-shadow: 0 2px 8px var(--neutralColor);
+  border-color: var(--customColor2);
+  box-shadow: 0 2px 8px var(--lightCustomColor);
 }

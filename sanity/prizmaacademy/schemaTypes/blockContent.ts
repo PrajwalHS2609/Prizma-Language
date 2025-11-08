@@ -79,5 +79,10 @@ export default defineType({
     defineArrayMember({
       type: 'customTable', // <-- matches the name in table.ts
     }),
+
+        // ✅ Accordion Support
+    defineArrayMember({
+      type: 'accordionBlock',
+    }),
   ],
 })
