@@ -2295,8 +2295,10 @@
 
 blockquote {
   font-weight: bold;
-
 }
 blockquote > strong {
+  color: var(--customColor);
+}
+blockquote > em {
   color: var(--customColor);
 }
