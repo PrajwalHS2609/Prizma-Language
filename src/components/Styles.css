@@ -695,6 +695,8 @@
   position: relative;
   color: var(--customColor);
   text-align: center;
+  font-size: 40px;
+
 }
 .head-container > h1 > span {
   color: var(--customColor2);
@@ -713,6 +715,7 @@
   position: relative;
   color: var(--customColor);
   text-align: center;
+  font-size: 30px;
 }
 .head-container > h2::after {
   content: "";
@@ -729,6 +732,7 @@
   color: var(--customColor);
   text-align: start;
   width: 100%;
+  font-size: 30px;
 }
 .head-container > ul {
   margin: 0;
