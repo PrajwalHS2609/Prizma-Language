@@ -674,23 +674,22 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
-}
-.head-container > p:nth-child(odd) {
-  background-color: var(--customLightColor);
-  border-radius: 20px;
-  padding: 20px;
-  width: 100%;
+  padding: 40px;
 }
 .head-container > p {
   font-size: 18px;
   text-align: justify;
-  padding: 20px;
+  width: 100%;
 }
+/* .slugContent-container > p > strong {
+  color: var(--customColor);
+} */
 .head-container > p > a {
   text-decoration: none;
+  font-weight: 500;
   color: var(--customColor);
 }
+
 .head-container > h1 {
   position: relative;
   color: var(--customColor);
@@ -700,7 +699,7 @@
 .head-container > h1 > span {
   color: var(--customColor2);
 }
-.head-container > h1::after {
+/* .slugContent-container > h1::after {
   content: "";
   position: absolute;
   display: flex;
@@ -709,14 +708,15 @@
   border: 2px solid var(--customColor2);
   width: 50%;
   left: 20%;
-}
+} */
 .head-container > h2 {
   position: relative;
   color: var(--customColor);
-  text-align: center;
+  text-align: start;
+  width: 100%;
   font-size: 30px;
 }
-.head-container > h2::after {
+/* .head-container > h2::after {
   content: "";
   position: absolute;
   display: flex;
@@ -725,13 +725,26 @@
   border: 2px solid var(--customColor2);
   width: 50%;
   right: -20px;
-}
+} */
 
+.head-container > h4 {
+  text-align: start;
+  color: var(--customColor);
+  width: 100%;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.head-container > strong {
+  text-align: start;
+  color: var(--customColor);
+  width: 100%;
+}
 .head-container > h3 {
   color: var(--customColor);
   text-align: start;
   width: 100%;
   font-size: 30px;
+  margin-top: 30px;
 }
 .head-container > ul {
   margin: 0;
@@ -739,14 +752,14 @@
   width: 100%;
 }
 .head-container > ul > li {
-  list-style: none;
-  margin: 20px;
+  margin: 5px;
   font-size: 18px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-  text-align: start;
+  text-align: justify;
+  width: fit-content;
+}
+.head-container > ul > li > a {
+  color: var(--customColor);
+  text-decoration: none;
 }
 .headList-icon {
   color: var(--customColor);
@@ -1244,6 +1257,7 @@
   text-align: start;
   color: var(--customColor);
   width: 100%;
+  margin-top: 30px;
 }
 .slugContent-container > strong {
   text-align: start;
@@ -1254,6 +1268,7 @@
   color: var(--customColor);
   text-align: start;
   width: 100%;
+  margin-top: 30px;
 }
 .slugContent-container > ul {
   margin: 0;
@@ -2321,13 +2336,13 @@ blockquote > em {
   object-fit: contain;
   /* border: solid blue; */
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .portableImg > a > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  /* border: solid blue; */
-}
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* border: solid blue; */
+  }
 }
 
 /* --------------------------------Accordian Component------------------------------- */
@@ -2540,5 +2555,5 @@ details[open] .faq-answer {
 
   .faq-question {
     font-size: 1rem;
-  }   
+  }
 }
