@@ -47,7 +47,7 @@ const PopUpForm = () => {
         </div>
         <div className="secondInput">
           <input type="text" name="phone" id="" placeholder="Phone*" />
-          <select name="" id="">
+          <select name="course" id="">
             <option value="">Select Course</option>
             <option value="German">German</option>
             <option value="French">French</option>
