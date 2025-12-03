@@ -118,7 +118,7 @@ faq: ({ value }: { value: FAQBlockValue }) => {
     <div className="faq-section">
       {value.title && <h2 className="faq-title">{value.title}</h2>}
       <div className="accordion-items">
-        {value.items.map((item: any, idx: number) => (
+        {value.items.map((item, idx) => (
           <details key={idx} className="faq-item">
             <summary className="faq-question">{item.question}</summary>
             <div className="faq-answer">
