@@ -20,7 +20,7 @@
   object-position: 0 0;
 }
 .coursesHeader-content:nth-child(1) {
-  height: 200px;
+  height: 100px;
 }
 .coursesHeader-content > h2 {
   position: absolute;
