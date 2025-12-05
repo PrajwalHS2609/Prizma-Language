@@ -1,15 +1,30 @@
+"use client"
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./../components/Footer/Footer";
 import NavBar from "./../components/NavBar/NavBar";
 import PopUp from "./../components/PopUp/PopUp";
 import Whatsapp from "./../components/Whatsapp/Whatsapp";
+import SnowFall from './../components/Christmas/SnowFall/SnowFall';
+import SantaClause from './../components/Christmas/SantaClause/SantaClause';
+import { useEffect, useState } from "react";
+import Loader from './../components/Loader/Loader';
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+    const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // fake loading for animation effect
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 1200);
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <html lang="en">
       <head>
@@ -28,8 +43,10 @@ export default function RootLayout({
 </script>
       </head>
       <body>
+        <SnowFall/>
+        <SantaClause/>
         <NavBar />
-        {children}
+        <main> {loading ? <Loader /> : children}</main>
         <PopUp />
         <Whatsapp />
         <Footer />
