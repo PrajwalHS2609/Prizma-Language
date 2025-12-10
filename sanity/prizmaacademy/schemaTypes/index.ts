@@ -5,4 +5,18 @@ import serviceContent from './serviceContent'
 import faqContent from './faqContent'
 import table from './table'
 import accordionBlock from './accordionBlock'
-export const schemaTypes = [post, blockContent, serviceContent,blogCategory,table,faqContent,accordionBlock]
+import carouselBlock from './carouselBlock'
+import quoteContent from './quoteContent'
+import highlightBlock from './highlightBlock'
+export const schemaTypes = [
+  post,
+  blockContent,
+  serviceContent,
+  blogCategory,
+  table,
+  faqContent,
+  accordionBlock,
+  carouselBlock,
+  quoteContent,
+  highlightBlock,
+]

@@ -9,7 +9,7 @@ import SnowFall from './../components/Christmas/SnowFall/SnowFall';
 import SantaClause from './../components/Christmas/SantaClause/SantaClause';
 import { useEffect, useState } from "react";
 import Loader from './../components/Loader/Loader';
-
+import "./../components/Styles.css"
 export default function RootLayout({
   children,
 }: Readonly<{
