@@ -33,13 +33,7 @@ export default async function BlogPost() {
             <ul>
               <li>
                 {post.mainImage?.asset?.url && (
-                  <Image
-                    src={post.mainImage.asset.url}
-                    alt={post.title}
-                    width={550}
-                    height={310}
-                    className="rounded-md object-cover aspect-video"
-                  />
+                  <img src={post.mainImage.asset.url} alt={post.title} />
                 )}
                 <h4>{post.title}</h4>
               </li>

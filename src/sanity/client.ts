@@ -4,7 +4,7 @@ export const client = createClient({
   projectId: "uqym272j",
   dataset: "production",
   apiVersion: "2024-01-01",
-  useCdn: false, // ⚠️ false for server
+  useCdn: true, // ⚠️ false for server
 });
 export async function sanityFetch({ query }: { query: string }) {
   const data = await client.fetch(query)

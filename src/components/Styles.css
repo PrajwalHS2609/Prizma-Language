@@ -671,7 +671,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 20px;
   padding: 40px;
@@ -1196,7 +1196,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 10px;
   padding: 20px;
@@ -1594,7 +1594,7 @@
   padding: 10px !important;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 20px;
   margin: 10px;
@@ -2486,6 +2486,7 @@ blockquote > em {
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
   overflow: hidden;
+  margin-top: 10px;
 }
 
 .faq-item:hover {
@@ -2579,11 +2580,11 @@ details[open] .faq-answer {
 
 /* ---------------------------QuoteBlock----------------------------- */
 .quote-block {
-  border-left: 4px solid var(--accentColor1);
+  border-left: 4px solid var(--customColor);
   padding-left: 1rem;
   margin: 1.5rem 0;
   font-style: italic;
-  background-color: var(--customBg1);
+  background-color: var(--lightCustomColor);
   padding: 15px 10px;
   border-radius: 10px;
 }
@@ -2591,7 +2592,7 @@ details[open] .faq-answer {
 .quote-text {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: var(--customColor1);
+  color: var(--customColor2);
 }
 
 .quote-author {
@@ -2608,8 +2609,8 @@ details[open] .faq-answer {
 /* ----------------------------------Highlight----------------------------------- */
 
 .highlight-box {
-  background: #fffbf6;
-  border: 4px dotted var(--accentColor1);
+  background: var(--customColor2);
+  border: 4px dotted var(--customColor);
   margin: 20px 0;
   border-radius: 8px;
   display: flex;
@@ -2622,7 +2623,9 @@ details[open] .faq-answer {
 .highlight-title {
   margin-bottom: 8px;
   font-weight: bold;
+  color: white;
 }
 .highlight-content > p {
   font-size: 16px;
+  color: white;
 }
