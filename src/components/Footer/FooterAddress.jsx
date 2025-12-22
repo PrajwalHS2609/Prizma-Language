@@ -1,9 +1,8 @@
 import React from "react";
 import "./Footer.css";
 
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
 import { FaLocationDot } from "react-icons/fa6";
@@ -18,32 +17,32 @@ const FooterAddress = () => {
     <div className="footerAddress">
       <h3>Address</h3>
       <li>
-        <FaLocationDot className="addressIco"/>
+        <FaLocationDot className="addressIco" />
         <a href="https://www.google.com/maps/place/Prizma+Academy/@13.0216592,77.6382462,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae171dd011b4e5:0xabab1818c3e26cae!8m2!3d13.0216592!4d77.6408211!16s%2Fg%2F11f8p4861f?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D">
           {" "}
           Bangalore, Jaipur
         </a>
       </li>
       <li>
-        <FaPhone className="addressIco"/>
+        <FaPhone className="addressIco" />
         <a href="tel:9538608484">(+91) 9538 608 484</a>
       </li>
       <li>
-        <FaEnvelopeOpenText className="addressIco"/>
+        <FaEnvelopeOpenText className="addressIco" />
         <a href="mailto:info@prizmaacademy.com">info@prizmaacademy.com</a>
       </li>
 
       <div className="footerBioSocial">
-        <a href="https://www.facebook.com/PrizmaAcademyfb">
+        <a href="https://www.instagram.com/prizmalanguageacademy/">
           <FaInstagram className="socialIco" />
         </a>
-        <a href="https://www.linkedin.com/company/prizmaacademy/">
+        <a href="https://www.facebook.com/PrizmaAcademyfb">
           <FaFacebook className="socialIco" />
         </a>
-        <a href="https://www.instagram.com/prizmalanguageacademy/">
-          <FaXTwitter className="socialIco" />
-        </a>
         <a href="https://www.youtube.com/channel/UC_MS3y-5o36akwsI6hNbA9Q">
+          <FaYoutube className="socialIco" />
+        </a>
+        <a href="https://www.linkedin.com/company/prizmaacademy/">
           <FaLinkedin className="socialIco" />
         </a>
       </div>
