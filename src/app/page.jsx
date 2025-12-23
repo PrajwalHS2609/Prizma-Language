@@ -10,7 +10,7 @@ import HomeYoutube from "./../components/HomePage/HomeYoutube/HomeYoutube";
 import HomeReviews from "./../components/HomePage/HomeReviews/HomeReviews";
 import dynamic from "next/dynamic";
 
-const Blog = dynamic(() => import("../components/HomePage/Blog/Blog"), {
+const  Blog = dynamic(() => import("../components/HomePage/Blog/Blog"), {
   ssr: true, // ✅ ensures it's server-rendered
 });
 export const metadata = {

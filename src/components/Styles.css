@@ -2488,7 +2488,17 @@ blockquote > em {
   overflow: hidden;
   margin-top: 10px;
 }
-
+.faq-item > button {
+  background: #fff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+}
 .faq-item:hover {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   transform: translateY(-2px);
@@ -2508,9 +2518,10 @@ blockquote > em {
   position: absolute;
   right: 0;
   top: 0;
-  font-size: 1.5rem;
+  font-size: 20px;
   color: var(--customColor);
   transition: transform 0.3s ease;
+  transform: scale(1.4);
 }
 
 .faq-item[open] .faq-question::after {

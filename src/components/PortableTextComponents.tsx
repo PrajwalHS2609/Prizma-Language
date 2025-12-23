@@ -7,6 +7,7 @@ import { PortableText } from "@portabletext/react";
 import "@/components/Styles.css";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
 const builder = imageUrlBuilder(client);
 function urlFor(source: SanityImageSource) {
   return builder.image(source);
@@ -135,28 +136,45 @@ export const portableTextComponents: PortableTextComponents = {
     },
 
     // ----------------------Faq Block-----------------------------------
+faq: ({ value }: { value: FAQBlockValue }) => {
+  if (!value?.items?.length) return null;
 
-    faq: ({ value }: { value: FAQBlockValue }) => {
-      if (!value?.items?.length) return null;
-      return (
-        <div className="faq-section">
-          {value.title && <h2 className="faq-title">{value.title}</h2>}
-          <div className="accordion-items">
-            {value.items.map((item, idx) => (
-              <details key={idx} className="faq-item">
-                <summary className="faq-question">{item.question}</summary>
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  return (
+    <div className="faq-section">
+      {value.title && <h2 className="faq-title">{value.title}</h2>}
+
+      <div className="accordion-items">
+        {value.items.map((item, idx) => {
+          const isOpen = openIndex === idx;
+
+          return (
+            <div key={idx} className={`faq-item ${isOpen ? "open" : ""}`}>
+              <button
+                className="faq-question"
+                onClick={() => setOpenIndex(isOpen ? null : idx)}
+                aria-expanded={isOpen}
+              >
+                {item.question}
+              </button>
+
+              {isOpen && (
                 <div className="faq-answer">
                   <PortableText
                     value={item.answer}
                     components={portableTextComponents}
                   />
                 </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      );
-    },
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+},
+
 
     // --------------------------------------Quote------------------------------------
     // 📝 Quote Block Renderer
@@ -204,8 +222,8 @@ export const portableTextComponents: PortableTextComponents = {
               <img
                 src={imageUrl}
                 alt={img.alt || `Slide ${i + 1}`}
-                className="d-block w-100 rounded"
-              />
+
+                />
             );
 
             return (

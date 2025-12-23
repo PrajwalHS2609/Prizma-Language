@@ -23,11 +23,14 @@ export type CarouselImage = {
   caption?: string;
   link?: string; // ✅ Added link field
 };
+export type TableContentItem = {
+  title: string;
+};
 export type ServiceContentType = {
   _id: string;
   title: string;
   slug: string;
-  language:string;
+  language: string;
   body1?: PortableTextBlock[];
   body2?: PortableTextBlock[];
   mainImage?: { asset?: { url?: string } };
@@ -38,6 +41,7 @@ export type ServiceContentType = {
     title?: string;
     images?: CarouselImage[];
   };
+  tableOfContent?: TableContentItem[];
 };
 
 export default function ServiceContent({

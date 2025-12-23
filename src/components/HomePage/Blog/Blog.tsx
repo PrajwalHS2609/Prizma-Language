@@ -69,12 +69,9 @@ export default async function Blog() {
           <div className="blog-Card" key={post._id}>
             <div className="blog-ImgContainer">
               {post.mainImage?.asset?.url && (
-                <Image
+                <img
                   src={post.mainImage.asset.url}
                   alt={post.title}
-                  width={550}
-                  height={310}
-                  className="rounded-md object-cover aspect-video"
                 />
               )}{" "}
             </div>

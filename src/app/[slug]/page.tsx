@@ -1,11 +1,12 @@
 import React from "react";
 import { notFound } from "next/navigation";
+
 import "@/components/Styles.css";
 
 import { client } from "../../sanity/client";
 import BlogSidebar from "../../components/BlogPage/BlogSidebar/BlogSidebar";
-import ServiceContent, { ServiceContentType } from "@/components/Sanity/Service";
 import PostContent, { PostContentType } from "@/components/Sanity/Post";
+import ServiceContent, { ServiceContentType } from "@/components/Sanity/Service";
 
 // =========================
 // GROQ QUERIES
@@ -90,8 +91,8 @@ export default async function SlugPage({
           }}
         />
         <div className="blog-wrapper2">
-        <BlogSidebar />
-      </div>
+          <BlogSidebar />
+        </div>
       </div>
     );
   }
