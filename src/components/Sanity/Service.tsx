@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { PortableText } from "next-sanity";
 import { portableTextComponents } from "@/components/PortableTextComponents";
 import type { PortableTextBlock } from "@portabletext/types";
 
@@ -10,6 +9,7 @@ import HomeWhy from "../HomePage/HomeWhy/HomeWhy";
 import HomeReviews from "../HomePage/HomeReviews/HomeReviews";
 import HomeYoutube from "../HomePage/HomeYoutube/HomeYoutube";
 import ContentHeader from "../ContentHeader/ContentHeader";
+import { PortableText } from '@portabletext/react';
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type CustomTable = {

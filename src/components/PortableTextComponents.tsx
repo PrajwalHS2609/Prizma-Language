@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { PortableTextComponents, PortableTextBlock } from "@portabletext/react";
 import imageUrlBuilder from "@sanity/image-url";
 import { client } from "@/sanity/client";
@@ -45,9 +45,7 @@ export interface ContentHighlight {
 }
 interface CarouselImage {
   _type: "image";
-  asset: {
-    _ref: string;
-  };
+  asset: SanityImageSource;
   alt?: string;
   caption?: string;
   link?: string;
@@ -136,45 +134,44 @@ export const portableTextComponents: PortableTextComponents = {
     },
 
     // ----------------------Faq Block-----------------------------------
-faq: ({ value }: { value: FAQBlockValue }) => {
-  if (!value?.items?.length) return null;
+    faq: ({ value }: { value: FAQBlockValue }) => {
+      if (!value?.items?.length) return null;
 
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+      const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  return (
-    <div className="faq-section">
-      {value.title && <h2 className="faq-title">{value.title}</h2>}
+      return (
+        <div className="faq-section">
+          {value.title && <h2 className="faq-title">{value.title}</h2>}
 
-      <div className="accordion-items">
-        {value.items.map((item, idx) => {
-          const isOpen = openIndex === idx;
+          <div className="accordion-items">
+            {value.items.map((item, idx) => {
+              const isOpen = openIndex === idx;
 
-          return (
-            <div key={idx} className={`faq-item ${isOpen ? "open" : ""}`}>
-              <button
-                className="faq-question"
-                onClick={() => setOpenIndex(isOpen ? null : idx)}
-                aria-expanded={isOpen}
-              >
-                {item.question}
-              </button>
+              return (
+                <div key={idx} className={`faq-item ${isOpen ? "open" : ""}`}>
+                  <button
+                    className="faq-question"
+                    onClick={() => setOpenIndex(isOpen ? null : idx)}
+                    aria-expanded={isOpen}
+                  >
+                    {item.question}
+                  </button>
 
-              {isOpen && (
-                <div className="faq-answer">
-                  <PortableText
-                    value={item.answer}
-                    components={portableTextComponents}
-                  />
+                  {isOpen && (
+                    <div className="faq-answer">
+                      <PortableText
+                        value={item.answer}
+                        components={portableTextComponents}
+                      />
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-},
-
+              );
+            })}
+          </div>
+        </div>
+      );
+    },
 
     // --------------------------------------Quote------------------------------------
     // 📝 Quote Block Renderer
@@ -214,16 +211,12 @@ faq: ({ value }: { value: FAQBlockValue }) => {
         <Carousel className="carouselContainer" interval={3000}>
           {value.images.map((img: CarouselImage, i: number) => {
             // ✅ Build URL with Sanity's image URL builder
-            const imageUrl = img.asset?._ref ? urlFor(img.asset).url() : null;
+            const imageUrl = img.asset ? urlFor(img.asset).url() : null;
 
             if (!imageUrl) return null;
 
             const ImageElement = (
-              <img
-                src={imageUrl}
-                alt={img.alt || `Slide ${i + 1}`}
-
-                />
+              <img src={imageUrl} alt={img.alt || `Slide ${i + 1}`} />
             );
 
             return (
