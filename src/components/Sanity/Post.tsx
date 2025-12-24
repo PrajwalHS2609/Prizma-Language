@@ -1,9 +1,7 @@
-"use client";
+"use client"
 import type { PortableTextBlock } from "@portabletext/types";
 import { portableTextComponents } from "../PortableTextComponents";
-import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
 import { PortableText } from '@portabletext/react';
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
@@ -34,7 +32,6 @@ export default function PostContent({
 }) {
   const imageUrl = content?.mainImage?.asset?.url;
   const youtubeUrl = content?.youtubeVideoUrl;
-  const [index, setIndex] = useState(0);
 
   return (
       <div className="blog-wrapper1">
@@ -64,45 +61,7 @@ export default function PostContent({
           )}
 
           {/* Carousel */}
-          {content.carouselBlock?.images?.length ? (
-            <Carousel
-              activeIndex={index}
-              onSelect={(i) => setIndex(i)}
-              className="carouselContainer"
-            >
-              {content.carouselBlock.images.map((img, i) =>
-                img.asset?.url ? (
-                  <Carousel.Item key={i} className="carouselItem">
-                    {img.link ? (
-                      <a
-                        href={img.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src={img.asset.url}
-                          alt={img.alt || `Slide ${i + 1}`}
-                          className="d-block w-100 rounded"
-                        />
-                      </a>
-                    ) : (
-                      <img
-                        src={img.asset.url}
-                        alt={img.alt || `Slide ${i + 1}`}
-                        className="d-block w-100 rounded"
-                      />
-                    )}
-
-                    {img.caption && (
-                      <Carousel.Caption>
-                        <h3>{img.caption}</h3>
-                      </Carousel.Caption>
-                    )}
-                  </Carousel.Item>
-                ) : null
-              )}
-            </Carousel>
-          ) : null}
+         
 
           {/* Blog Body */}
           <PortableText

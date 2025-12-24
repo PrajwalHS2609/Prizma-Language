@@ -1,9 +1,8 @@
-"use client";
-import React, { useState } from "react";
+"use client"
+
+import React from "react";
 import { portableTextComponents } from "@/components/PortableTextComponents";
 import type { PortableTextBlock } from "@portabletext/types";
-
-import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomeWhy from "../HomePage/HomeWhy/HomeWhy";
 import HomeReviews from "../HomePage/HomeReviews/HomeReviews";
@@ -51,9 +50,6 @@ export default function ServiceContent({
 }) {
   const imageUrl = content?.mainImage?.asset?.url;
   const youtubeUrl = content?.youtubeVideoUrl;
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex: number) => setIndex(selectedIndex);
   return (
     <div className="main-container service-wrapper1">
       {imageUrl && (
@@ -74,43 +70,6 @@ export default function ServiceContent({
               value={content.body1}
               components={portableTextComponents}
             />
-            {/* ✅ Carousel Section */}
-            {content.carouselBlock?.images?.length ? (
-              <Carousel
-                activeIndex={index}
-                onSelect={handleSelect}
-                className="carouselContainer"
-              >
-                {content.carouselBlock.images.map((img, i) => (
-                  <Carousel.Item key={i} className="carouselItem">
-                    {img.link ? (
-                      <a
-                        href={img.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src={img.asset?.url}
-                          alt={img.alt || `Slide ${i + 1}`}
-                          className="d-block w-100 rounded"
-                        />
-                      </a>
-                    ) : (
-                      <img
-                        src={img.asset?.url}
-                        alt={img.alt || `Slide ${i + 1}`}
-                        className="d-block w-100 rounded"
-                      />
-                    )}
-                    {img.caption && (
-                      <Carousel.Caption>
-                        <h3>{img.caption}</h3>
-                      </Carousel.Caption>
-                    )}
-                  </Carousel.Item>
-                ))}
-              </Carousel>
-            ) : null}
           </div>
         </div>
       )}
