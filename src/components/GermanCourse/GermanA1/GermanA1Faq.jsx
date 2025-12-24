@@ -1,10 +1,10 @@
-"use client";
+"use client"
 import React from "react";
-import "../Styles.css";
+import "../../Styles.css";
 import { Accordion } from "react-bootstrap";
 import faqImg from "@/imgs/headerBanner.png";
 import Image from "next/image";
-const GermanCourseFaq = () => {
+const GermanA1Faq = () => {
   return (
     <div className="courseFaq-container">
       <h2>
@@ -16,51 +16,52 @@ const GermanCourseFaq = () => {
           <Accordion defaultActiveKey="0">
             <Accordion.Item className="courseFaq-accItem" eventKey="0">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>1. Who can join the online German language course?</h5>
-              </Accordion.Header>
-              <Accordion.Body className="courseFaq-body">
-                <div className="courseFaq-item">
-                  <p>
-                    {" "}
-                    Our online German language course is suitable for students,
-                    working professionals, job seekers, and beginners with no
-                    prior knowledge of German. Anyone interested in learning
-                    German for education, career, or migration purposes can
-                    enroll.
-                  </p>
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item className="courseFaq-accItem" eventKey="1">
-              <Accordion.Header className="courseFaq-accHeader">
                 <h5>
-                  2. Is this course suitable for working professionals with a
-                  busy schedule?
+                  1. Who can join the A1 online German language course in
+                  Bangalore?
                 </h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
                   <p>
                     {" "}
-                    Yes. The course is designed with flexible class schedules,
-                    including evening and weekend batches, making it ideal for
-                    working professionals.
+                    The A1 Online German Language Course in Bangalore is ideal
+                    for students, working professionals, job seekers, and
+                    beginners with no prior knowledge of German. Anyone starting
+                    their German learning journey can enroll.
+                  </p>
+                </div>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item className="courseFaq-accItem" eventKey="1">
+              <Accordion.Header className="courseFaq-accHeader">
+                <h5>2. What is the A1 level in German?</h5>
+              </Accordion.Header>
+              <Accordion.Body className="courseFaq-body">
+                <div className="courseFaq-item">
+                  <p>
+                    A1 is the beginner level as per the CEFR (Common European
+                    Framework of Reference for Languages). At this level,
+                    learners can understand and use basic everyday expressions,
+                    introduce themselves, and communicate in simple situations.
                   </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="courseFaq-accItem" eventKey="2">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>3. What German levels are offered in the online course?</h5>
+                <h5>
+                  3. Is this A1 online German course suitable for working
+                  professionals in Bangalore?
+                </h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p> We offer all levels based on the CEFR framework:</p>
-                  <ul>
-                    <li> A1 & A2 – Beginner & Elementary</li>
-                    <li> B1 & B2 – Intermediate & Upper Intermediate</li>
-                    <li> C1 – Advanced (on request)</li>
-                  </ul>
+                  <p>
+                    Yes. The course offers flexible schedules, including early
+                    morning, evening, and weekend batches, making it perfect for
+                    Bangalore’s working professionals.
+                  </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
@@ -82,245 +83,253 @@ const GermanCourseFaq = () => {
             <Accordion.Item className="courseFaq-accItem" eventKey="4">
               <Accordion.Header className="courseFaq-accHeader">
                 <h5>
-                  5. Will I receive a certificate after completing the course?
+                  5. What is the duration of the A1 online German course?{" "}
                 </h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
                   <p>
-                    {" "}
-                    Yes. Upon successful completion, you will receive a course
-                    completion certificate, which is useful for resumes, job
-                    applications, and academic purposes.
+                    The typical duration of the A1 Online German Course in
+                    Bangalore is 6 to 8 weeks, depending on the batch type and
+                    learning pace.
                   </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="courseFaq-accItem" eventKey="5">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>6. Is the certification recognized?</h5>
+                <h5>
+                  6. Will I receive a certificate after completing the A1
+                  course?
+                </h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
                   <p>
-                    The course prepares learners for internationally recognized
-                    German exams such as Goethe, TestDaF, and TELC. While the
-                    completion certificate confirms training, exam
-                    certifications are issued by respective exam bodies.
+                    Yes. You will receive an A1 German course completion
+                    certificate, which can be used for academic records,
+                    resumes, and professional profiles.
                   </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="courseFaq-accItem" eventKey="6">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>7. What is the course duration? </h5>
+                <h5>7. Is the A1 certificate recognized?</h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p> The duration depends on the level:</p>
-                  <ul>
-                    <li> A1 / A2: 6–8 weeks</li>
-                    <li> B1 / B2: 8–10 weeks</li>
-                  </ul>
-                  <div className="courseFaq-item">
-                    <p>
-                      {" "}
-                      Course duration may vary based on batch type and learning
-                      pace.
-                    </p>
-                  </div>
+                  <p>
+                    {" "}
+                    The course prepares students for international German
+                    language exams such as Goethe-Institut A1, TELC A1, and
+                    Start Deutsch A1. Official exam certificates are issued by
+                    the respective exam authorities.
+                  </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="courseFaq-accItem" eventKey="7">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>8. What teaching methods are used? </h5>
+                <h5>8. What topics are covered in the A1 German course?</h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p> The course focuses on:</p>
+                  <p> The A1 syllabus includes:</p>
                   <ul>
-                    <li> Speaking & pronunciation</li>
-                    <li> Listening & comprehension</li>
-                    <li> Reading & writing</li>
-                    <li> Grammar with practical usage</li>
-                    <li> Real-life conversation practice</li>
+                    <li> German alphabet & pronunciation</li>
+                    <li> Basic grammar and sentence structure</li>
+                    <li> Everyday vocabulary</li>
+                    <li> Self-introduction and greetings</li>
+                    <li> Numbers, dates, time & directions</li>
+                    <li> Simple conversations and role-plays</li>
                   </ul>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="courseFaq-accItem" eventKey="9">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>9. Do I need any prior knowledge of German? </h5>
+                <h5>9. Do I need any prior knowledge of German to join? </h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
                   <p>
-                    {" "}
-                    No prior knowledge is required for A1 (Beginner) level.
-                    Higher levels require completion of the previous level or a
-                    placement test.
+                    No. The A1 level is designed for absolute beginners, and no
+                    previous German language knowledge is required.
                   </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item className="courseFaq-accItem" eventKey="10">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>
-                  10. What technical requirements are needed to attend the
-                  course?
-                </h5>
+                <h5>10. What teaching methodology is followed?</h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p>You will need:</p>
+                  <p>The course focuses on:</p>
                   <ul>
-                    <li> A laptop / desktop / tablet or smartphone</li>
-                    <li> Stable internet connection</li>
-                    <li> Headset or earphones (recommended)</li>
-                    <li> Zoom / Google Meet access</li>
+                    <li> Speaking & listening practice</li>
+                    <li> Reading & writing skills</li>
+                    <li> Grammar explained in a simple manner</li>
+                    <li> Real-life conversation examples</li>
+                    <li> Interactive activities and exercises</li>
                   </ul>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="11">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>11. Will I get study materials?</h5>
+                <h5>
+                  11. What are the technical requirements to attend online
+                  classes?
+                </h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p>
-                    Yes. Digital study materials, worksheets, vocabulary lists,
-                    and practice exercises are provided as part of the course.
-                  </p>
+                  <p>You need:</p>
+                  <ul>
+                    <li> Laptop / desktop / smartphone</li>
+                    <li>Stable internet connection</li>
+                    <li>Headset or earphones (recommended)</li>
+                    <li>Access to Zoom / Google Meet</li>
+                  </ul>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="12">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>12. Is one-on-one training available?</h5>
+                <h5>12. Will study materials be provided?</h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
                   <p>
-                    Yes. We offer individual (1-to-1) online German classes for
-                    learners who prefer personalized training and flexible
-                    timing.
+                    Yes. Digital study materials, worksheets, vocabulary lists,
+                    and practice exercises are included in the course fee.
                   </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="13">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>13. How does learning German help my career?</h5>
+                <h5>
+                  13. Are weekend or fast-track batches available in Bangalore?
+                </h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p>German language skills open opportunities in:</p>
-                  <ul>
-                    <li> MNCs & German companies</li>
-                    <li>Engineering, IT, Automobile & Manufacturing sectors</li>
-                    <li> Higher education in Germany</li>
-                    <li>
-                      Career growth, salary advantage, and global mobility
-                    </li>
-                  </ul>
+                  <p>
+                    Yes. Weekend batches, fast-track batches, and corporate
+                    batches are available for students and professionals in
+                    Bangalore.
+                  </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="14">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>14. Can students learn German for studies abroad?</h5>
+                <h5>14. Is one-to-one A1 German training available?</h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
                   <p>
-                    Absolutely. German is highly beneficial for students
-                    planning higher education in Germany, student exchange
-                    programs, and international internships.
+                    Yes. We offer 1-to-1 online A1 German classes for learners
+                    who prefer personalized attention and flexible timings.
                   </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="15">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>15. Is there doubt-clearing support?</h5>
+                <h5>15. How does learning A1 German help students?</h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p>
-                    Yes. Dedicated doubt-clearing sessions and trainer support
-                    are available throughout the course.
-                  </p>
+                  <p>A1 German helps students:</p>
+                  <ul>
+                    <li> Build a strong foundation for higher levels</li>
+                    <li> Prepare for study in Germany</li>
+                    <li>
+                      Improve chances for internships and exchange programs
+                    </li>
+                    <li> Gain an early advantage in global education</li>
+                  </ul>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="16">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>16. How are assessments conducted?</h5>
+                <h5>16. How does A1 German benefit working professionals?</h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p>
-                    Regular tests, assignments, and speaking assessments are
-                    conducted to track progress and improve language fluency.
-                  </p>
+                  <p>For working professionals, A1 German:</p>
+                  <ul>
+                    <li> Opens opportunities in German MNCs</li>
+                    <li>
+                      Supports career growth in IT, engineering, automotive, and
+                      manufacturing sectors
+                    </li>
+                    <li>Improves chances for onsite projects and promotions</li>
+                  </ul>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="17">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>17. What if I miss a class?</h5>
+                <h5>17. Are assessments conducted during the course?</h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
                   <p>
-                    Recorded sessions are provided, and you can also attend
-                    backup or revision classes, depending on availability.
+                    Yes. Regular assignments, quizzes, and speaking practice
+                    tests are conducted to track progress.
                   </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="18">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>18. How do I enroll in the online German course?</h5>
+                <h5>18. What if I miss a class?</h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p>You can enroll by:</p>
-                  <ul>
-                    <li> Filling out the online registration form</li>
-                    <li> Contacting our support team via phone or WhatsApp</li>
-                    <li> Choosing your preferred batch and level</li>
-                  </ul>
+                  <p>
+                    You can access recorded sessions and attend revision or
+                    backup classes, subject to availability.
+                  </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="19">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>19. Is this course beginner-friendly?</h5>
+                <h5>
+                  19. Is this course beginner-friendly and easy to follow?
+                </h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
                   <p>
-                    Yes. The course follows a step-by-step learning approach,
-                    making it easy for beginners to understand and speak German
-                    confidently.
+                    Absolutely. The course follows a step-by-step approach,
+                    ensuring beginners learn comfortably and confidently.
                   </p>
                 </div>
               </Accordion.Body>
             </Accordion.Item>{" "}
             <Accordion.Item className="courseFaq-accItem" eventKey="20">
               <Accordion.Header className="courseFaq-accHeader">
-                <h5>20. Can I balance work/studies along with this course?</h5>
+                <h5>
+                  20. How can I enroll in the A1 Online German Language Course
+                  in Bangalore?
+                </h5>
               </Accordion.Header>
               <Accordion.Body className="courseFaq-body">
                 <div className="courseFaq-item">
-                  <p>
-                    Definitely. The course is specifically designed to ensure
-                    work-life-study balance for both students and working
-                    professionals.
-                  </p>
+                  <p>You can enroll by:</p>
+                  <ul>
+                    <li> Filling out the online registration form</li>
+                    <li>Contacting the admission team via call or WhatsApp</li>
+                    <li> Selecting your preferred batch and timing</li>
+                  </ul>
                 </div>
               </Accordion.Body>
             </Accordion.Item>
@@ -334,4 +343,4 @@ const GermanCourseFaq = () => {
   );
 };
 
-export default GermanCourseFaq;
+export default GermanA1Faq;

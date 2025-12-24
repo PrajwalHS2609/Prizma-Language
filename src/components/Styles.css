@@ -371,6 +371,102 @@
   padding: 10px;
   overflow: hidden;
 }
+
+/* -----------------------------Faq in service------------------------------------ */
+
+.courseFaq-container {
+  /* border: solid red; */
+  padding: 50px;
+  background-color: var(--customBg1);
+  margin-top: 30px;
+}
+.courseFaq-container > h2 {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.courseFaq-container > h2>span{
+  color: var(--customColor);
+}
+.courseFaq-wrapper {
+  /* border: solid blue; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.courseFaq-content {
+  /* border: solid green; */
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+.courseFaq-content > h2 {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.courseFaq-content > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.courseFaq-content:nth-child(2) {
+  background-color: var(--lpCustom3);
+  height: 100%;
+  padding: 50px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--customBg) !important;
+  color: black;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.courseFaq-accItem {
+  border-bottom: 1px solid rgb(203, 203, 203);
+  margin: 10px;
+}
+.courseFaq-accHeader {
+  font-weight: 500;
+}
+.courseFaq-item{
+  width: 100%;
+  /* border: solid red; */
+}
+@media screen and (max-width: 768px) {
+  .courseFaq-container > h2 {
+    font-size: 30px;
+  }
+  .courseFaq-container {
+    /* border: solid red; */
+    padding: 10px;
+  }
+  .courseFaq-wrapper {
+    /* border: solid blue; */
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .courseFaq-content {
+    /* border: solid green; */
+    width: 100%;
+    padding: 10px;
+  }
+  .courseFaq-content > img {
+    display: none;
+  }
+  .courseFaq-content:nth-child(2) {
+    background-color: #86a5a8;
+    height: 700px;
+    display: none;
+  }
+}
+
 /* --------------------------nestedGermanReview-------------------- */
 .nestedGermanReview {
   /* border: solid red; */
