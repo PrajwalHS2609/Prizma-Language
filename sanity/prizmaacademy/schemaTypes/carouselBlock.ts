@@ -3,7 +3,7 @@ import { defineType, defineField } from "sanity";
 export default defineType({
   name: "carouselBlock",
   title: "Carousel Block",
-  type: "document",
+  type: "object",
   fields: [
     defineField({
       name: "title",
