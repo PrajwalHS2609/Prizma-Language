@@ -2,7 +2,7 @@
 import React from "react";
 import "../../Styles.css";
 import { Accordion } from "react-bootstrap";
-import faqImg from "@/imgs/headerBanner.png";
+import faqImg from "@/Imgs/faq.png";
 import Image from "next/image";
 const GermanA1Faq = () => {
   return (

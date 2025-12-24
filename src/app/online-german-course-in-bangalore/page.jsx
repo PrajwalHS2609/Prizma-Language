@@ -244,7 +244,7 @@ export default function GermanCourse() {
         <HomeWhy />
         <HomeReviews />
         <HomeYoutube />
-        <GermanCourseFaq />
+        <GermanCourseFaq/>
         <GermanContent />
       </div>
     </>
