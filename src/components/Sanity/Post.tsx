@@ -3,12 +3,15 @@ import type { PortableTextBlock } from "@portabletext/types";
 import { portableTextComponents } from "../PortableTextComponents";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { PortableText } from '@portabletext/react';
+import BlogAuthor from "../BlogPage/BlogAuthor/BlogAuthor";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type PostContentType = {
   _id: string;
   title: string;
-  slug: string;
+  slug: {
+    current: string;
+  };
   body: PortableTextBlock[];
   mainImage?: { asset?: { url?: string } };
   youtubeVideoUrl?: string;
@@ -34,57 +37,44 @@ export default function PostContent({
   const youtubeUrl = content?.youtubeVideoUrl;
 
   return (
-      <div className="blog-wrapper1">
-        {/* Main Image */}
-        {imageUrl && (
-          <img
-            src={imageUrl}
-            alt={content.title}
-            // width={550}
-            // height={310}
-            // priority
-          />
+    <div className="blog-wrapper1">
+      {/* Main Image */}
+      {imageUrl && (
+        <img
+          src={imageUrl}
+          alt={content.title}
+        // width={550}
+        // height={310}
+        // priority
+        />
+      )}
+
+      <div className="blogHead-content">
+        <h1>{content.title}</h1>
+
+        {content.publishedAt && (
+          <p className="postPublished-date">
+            📅{" "}
+            {new Date(content.publishedAt).toLocaleDateString("en-IN", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </p>
         )}
 
-        <div className="blogHead-content">
-          <h1>{content.title}</h1>
+        {/* Carousel */}
 
-          {content.publishedAt && (
-            <p className="postPublished-date">
-              📅{" "}
-              {new Date(content.publishedAt).toLocaleDateString("en-IN", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </p>
-          )}
 
-          {/* Carousel */}
-         
-
-          {/* Blog Body */}
-          <PortableText
-            value={content.body}
-            components={portableTextComponents}
-          />
-        </div>
-
-        {/* YouTube */}
-        {/* {youtubeUrl && (
-          <div className="youtube-container">
-            <iframe
-              width="100%"
-              height="500"
-              src={getYoutubeEmbedUrl(youtubeUrl)}
-              title={content.title}
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        )} */}
+        {/* Blog Body */}
+        <PortableText
+          value={content.body}
+          components={portableTextComponents}
+        />
       </div>
+      <BlogAuthor slug={content.slug.current} />
+
+    </div>
 
   );
 }
