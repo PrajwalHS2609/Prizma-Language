@@ -5,8 +5,6 @@ import Footer from "./../components/Footer/Footer";
 import NavBar from "./../components/NavBar/NavBar";
 import PopUp from "./../components/PopUp/PopUp";
 import Whatsapp from "./../components/Whatsapp/Whatsapp";
-import SnowFall from "./../components/Christmas/SnowFall/SnowFall";
-import SantaClause from "./../components/Christmas/SantaClause/SantaClause";
 import { useEffect, useState } from "react";
 import Loader from "./../components/Loader/Loader";
 import "./../components/Styles.css";
@@ -119,8 +117,6 @@ export default function RootLayout({
         </script>
       </head>
       <body>
-        <SnowFall />
-        <SantaClause />
         <NavBar />
         <main> {loading ? <Loader /> : children}</main>
         <PopUp />
