@@ -65,7 +65,7 @@ export default function ServiceContent({
 
       {content.body1 && (
         <div className="slugContent-wrapper">
-          <div className="head-container">
+          <div className="slugContent-container">
             <PortableText
               value={content.body1}
               components={portableTextComponents}

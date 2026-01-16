@@ -18,7 +18,7 @@ const GermanCourseEssential = () => {
       case "GermanA1Instructor":
         return <GermanA1Instructor />;
       case "GermanA1Reviews":
-        return <GermanA1Reviews />;
+        return <GermanA1Reviews />; 
       default:
         return null;
     }
@@ -33,7 +33,7 @@ const GermanCourseEssential = () => {
           <ul>
             <li>
               <button
-                className={activeTab === "GermanA1Curriculum" ? "active" : ""}
+                className={activeTab === "/GermanA1Curriculum" ? "active" : ""}
                 onClick={() => setActiveTab("GermanA1Curriculum")}
               >
                 Curriculum
@@ -41,7 +41,7 @@ const GermanCourseEssential = () => {
             </li>
             <li>
               <button
-                className={activeTab === "GermanA1Description" ? "active" : ""}
+                className={activeTab === "/GermanA1Description" ? "active" : ""}
                 onClick={() => setActiveTab("GermanA1Description")}
               >
                 Description
@@ -49,7 +49,7 @@ const GermanCourseEssential = () => {
             </li>
             <li>
               <button
-                className={activeTab === "GermanA1Instructor" ? "active" : ""}
+                className={activeTab === "/GermanA1Instructor" ? "active" : ""}
                 onClick={() => setActiveTab("GermanA1Instructor")}
               >
                 Instructor
@@ -57,7 +57,7 @@ const GermanCourseEssential = () => {
             </li>
             <li>
               <button
-                className={activeTab === "GermanA1Reviews" ? "active" : ""}
+                className={activeTab === "/GermanA1Reviews" ? "active" : ""}
                 onClick={() => setActiveTab("GermanA1Reviews")}
               >
                 Reviews
