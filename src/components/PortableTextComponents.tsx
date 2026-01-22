@@ -56,6 +56,11 @@ interface CarouselBlockValue {
   title?: string;
   images: CarouselImage[];
 }
+interface SeoKeywordsBlockValue {
+  _type: "seoKeywordsBlock";
+  _key?: string;
+  keywords: string[];
+}
 function FaqBlock({ value }: { value: FAQBlockValue }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -174,47 +179,47 @@ export const portableTextComponents: PortableTextComponents = {
     },
 
     // ----------------------Faq Block-----------------------------------
-        faq: ({ value }: { value: FAQBlockValue }) => {
+    faq: ({ value }: { value: FAQBlockValue }) => {
       return <FaqBlock value={value} />;
     },
-// faq: ({ value }: { value: FAQBlockValue }) => {
-//   if (!value?.items?.length) return null;
+    // faq: ({ value }: { value: FAQBlockValue }) => {
+    //   if (!value?.items?.length) return null;
 
-//   const [openIndex, setOpenIndex] = useState<number | null>(null);
+    //   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-//   return (
-//     <div className="faq-section">
-//       {value.title && <h2 className="faq-title">{value.title}</h2>}
+    //   return (
+    //     <div className="faq-section">
+    //       {value.title && <h2 className="faq-title">{value.title}</h2>}
 
-//       <div className="accordion-items">
-//         {value.items.map((item, idx) => {
-//           const isOpen = openIndex === idx;
+    //       <div className="accordion-items">
+    //         {value.items.map((item, idx) => {
+    //           const isOpen = openIndex === idx;
 
-//           return (
-//             <div key={idx} className={`faq-item ${isOpen ? "open" : ""}`}>
-//               <button
-//                 className="faq-question"
-//                 onClick={() => setOpenIndex(isOpen ? null : idx)}
-//                 aria-expanded={isOpen}
-//               >
-//                 {item.question}
-//               </button>
+    //           return (
+    //             <div key={idx} className={`faq-item ${isOpen ? "open" : ""}`}>
+    //               <button
+    //                 className="faq-question"
+    //                 onClick={() => setOpenIndex(isOpen ? null : idx)}
+    //                 aria-expanded={isOpen}
+    //               >
+    //                 {item.question}
+    //               </button>
 
-//               {isOpen && (
-//                 <div className="faq-answer">
-//                   <PortableText
-//                     value={item.answer}
-//                     components={portableTextComponents}
-//                   />
-//                 </div>
-//               )}
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// },
+    //               {isOpen && (
+    //                 <div className="faq-answer">
+    //                   <PortableText
+    //                     value={item.answer}
+    //                     components={portableTextComponents}
+    //                   />
+    //                 </div>
+    //               )}
+    //             </div>
+    //           );
+    //         })}
+    //       </div>
+    //     </div>
+    //   );
+    // },
 
 
     // --------------------------------------Quote------------------------------------
@@ -264,7 +269,7 @@ export const portableTextComponents: PortableTextComponents = {
                 src={imageUrl}
                 alt={img.alt || `Slide ${i + 1}`}
 
-                />
+              />
             );
 
             return (
@@ -286,6 +291,20 @@ export const portableTextComponents: PortableTextComponents = {
             );
           })}
         </Carousel>
+      );
+    },
+    // ----------------------------------SeoKeyword-----------------------------------------
+    seoKeywordsBlock: ({ value }: { value: SeoKeywordsBlockValue }) => {
+      if (!value?.keywords?.length) return null;
+
+      return (
+        <div className="keywords-container">
+          <ul className="keywords-list">
+            {value.keywords.map((keyword: string, index: number) => (
+              <li className="keywords-item" key={index}>{keyword}</li>
+            ))}
+          </ul>
+        </div>
       );
     },
   },
