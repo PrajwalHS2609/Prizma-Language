@@ -155,10 +155,10 @@
   color: var(--customColor);
 }
 @media screen and (max-width: 768px) {
-  .blog-container {
-    /* border: solid red; */
-    padding: 10px;
-  }
+.homeBlog-container {
+  /* border: solid red; */
+  padding: 20px;
+}
   .blog-content {
     flex-direction: column;
   }
@@ -178,6 +178,7 @@
   .blog-Card {
     /* border: solid green; */
     width: 300px;
+    max-width: 400px;
     height: 100%;
     gap: 10px;
     margin: 10px;

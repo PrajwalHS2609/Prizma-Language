@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaQuora, FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -44,6 +44,9 @@ const FooterAddress = () => {
         </a>
         <a href="https://www.linkedin.com/company/prizmaacademy/">
           <FaLinkedin className="socialIco" />
+        </a>
+        <a href="https://www.quora.com/profile/Prizma-Academy-2">
+          <FaQuora className="socialIco" />
         </a>
       </div>
       <div className="footerPay">
