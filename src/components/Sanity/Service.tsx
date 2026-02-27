@@ -9,6 +9,7 @@ import HomeReviews from "../HomePage/HomeReviews/HomeReviews";
 import HomeYoutube from "../HomePage/HomeYoutube/HomeYoutube";
 import ContentHeader from "../ContentHeader/ContentHeader";
 import { PortableText } from '@portabletext/react';
+import SanitySeoKeywords from "./SanitySeoKeywords";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type CustomTable = {
@@ -33,6 +34,9 @@ export type ServiceContentType = {
   body1?: PortableTextBlock[];
   body2?: PortableTextBlock[];
   mainImage?: { asset?: { url?: string } };
+  seoKeywords?: {
+    keywords?: string[];
+  };
   youtubeVideoUrl?: string;
   faq?: FaqItem[];
   customTable?: CustomTable;
@@ -40,6 +44,7 @@ export type ServiceContentType = {
     title?: string;
     images?: CarouselImage[];
   };
+
   tableOfContent?: TableContentItem[];
 };
 
@@ -78,7 +83,9 @@ export default function ServiceContent({
         <HomeWhy />
         <HomeReviews />
         <HomeYoutube />
-
+        {content.seoKeywords?.keywords && (
+          <SanitySeoKeywords keywords={content.seoKeywords.keywords} />
+        )}
         {youtubeUrl && (
           <div className="youtube-container">
             <iframe

@@ -1,24 +1,16 @@
-// schemas/seoKeywordsBlock.ts
 import { defineType, defineField } from "sanity";
 
 export default defineType({
-  name: "seoKeywordsBlock",
-  title: "SEO Keywords Block",
+  name: "seoKeywords",
+  title: "SEO Keywords",
   type: "object",
   fields: [
     defineField({
       name: "keywords",
-      title: "Keywords",
+      title: "Keywords List",
       type: "array",
       of: [{ type: "string" }],
-      description: "Add SEO keywords (one per line)",
+      description: "Add SEO keyword phrases (one per line)",
     }),
   ],
-  preview: {
-    prepare() {
-      return {
-        title: "SEO Keywords (Hidden)",
-      };
-    },
-  },
 });

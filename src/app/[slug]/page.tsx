@@ -30,6 +30,9 @@ const SERVICE_QUERY = `{
   "service": *[_type == "ServiceCategory" && slug.current == $slug][0]{
     _id, title, slug, body1, body2,
     mainImage{ asset->{url} },
+              seoKeywords{
+    keywords
+  },
     youtubeVideoUrl,
     faq[]{ question, answer },
    tableOfContent[]{
@@ -37,6 +40,7 @@ const SERVICE_QUERY = `{
     },
     customTable{ title, headers, rows[]{ cells } }
   },
+
   "carouselBlock": *[_type == "carouselBlock"][0]{
     title,
     images[]{ alt, caption, link, asset->{ url } }
