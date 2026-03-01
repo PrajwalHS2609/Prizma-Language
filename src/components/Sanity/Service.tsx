@@ -104,7 +104,9 @@ export default function ServiceContent({
           </div>
         )}
       </div>
-
+      {/* {Array.isArray(content?.faq) && content.faq.length > 0 && (
+            <FaqComponent faqs={content.faq} />
+          )} */}
       {content.body2 && (
         <div className="slugContent-wrapper">
           <div className="slugContent-container">
@@ -140,9 +142,7 @@ export default function ServiceContent({
             )}
           </div>
 
-          {/* {Array.isArray(content?.faq) && content.faq.length > 0 && (
-            <FaqComponent faqs={content.faq} />
-          )} */}
+
         </div>
       )}
     </div>
